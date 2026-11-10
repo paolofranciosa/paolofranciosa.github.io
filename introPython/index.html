@@ -1,0 +1,1675 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Introduction to computer programming, 3 CFU (2023-2024)</title>
+<style type="text/css">
+	* {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table.lezione {
+		border: 3px solid #822433
+	}
+	 table.lezione td, table.lezione th {
+		border: 1px solid #822433;
+		padding: 10px
+	}
+	pre {
+	    font-family: monospace, monospace;
+	}
+	hr {
+		border: 1px solid #822433
+	}
+
+	td p {
+		margin: 3 0
+	}
+</style>
+
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+<table summary="logo e intestazione"><tr><td width="150" align="center" valign="middle">
+<img src="../loghi/logo.jpg" alt="logo sapienza"></td><td valign="middle">
+<h1>Introduction to computer programming<br>2023-2024</h1>
+<h2>Teacher: <a href="../index.html">Paolo Franciosa</a>
+<br>3 CFU 
+</h2></td></tr></table>
+<hr><a name="inizio">
+</a>
+<!--
+<hr>
+<hr>
+<h2><center><font color="red">Importante: leggere l'<a href="notaAppello.html" target="_blank">avviso per l'appello di Febbraio 2021</a></font></center></h2>
+<hr>
+
+<h2><center><font color="red">Importante: <a href="https://youtu.be/tpswmVkSsbE" target="_blank">tutorial per lo svolgimento della prova di programmazione</a></font><br> (a cura del prof. Massimo Lauria)</center></h2>
+
+<hr>
+<hr>
+<hr>
+-->
+<!--
+<strong><font size=5>Le lezioni in remoto sono trasmesse su Zoom a <a href="https://uniroma1.zoom.us/j/82747076079?pwd=M1ZCRTdkZ1k5SmZFbG9ZUzZzeDE4dz09" target="_blank">questo link</a> durante l'orario di lezione.<br>Si consiglia di accedere a Zoom utilizzando le credenziali Sapienza (....@studenti.uniroma1.it).
+</font></strong>
+
+<hr>
+-->
+<center>
+<table class="lezione" cellspacing="4">
+  <tbody>
+    <tr>
+	<td valign="middle" align="center"><a href="#contenuti"><span
+ style="letter-spacing: 1pt;">Goals</span></a> </td>
+      <td valign="middle" align="center"><a href="#programma"><span
+ style="letter-spacing: 1pt;">Program</span></a> </td>
+      <td valign="middle" align="center"><a href="#materiale"><span
+ style="letter-spacing: 1pt;">Teaching resources</span></a> </td>
+    </tr>
+    <tr>
+      <td valign="middle" align="center"><a
+ href="http://www.dss.uniroma1.it/"
+ target="_blank"><span style="letter-spacing: 1pt;">Lectures timetable</span></a>
+      </td>
+      <td valign="middle" align="center"><span
+ style="letter-spacing: 1pt;"><a href="#ricevimento" target="_blank">Office hours</a></span> </td>
+      <td valign="middle" align="center"><a href="#modalita"><span
+ style="letter-spacing: 1pt;">Exams</span></a> </td>
+    </tr>
+    <tr>
+      <td valign="middle" align="center" colspan="3"><a
+ href="#elencolezioni"><span style="letter-spacing: 1pt;">Lectures, with content details</span></a> </td>
+	</tr>
+</tbody>
+</table>
+</center>
+
+<!--
+<hr>
+<center>
+<p><font color="red"><strong>I tutor del corso hanno organizzato una sessione di esercizi on-line per il giorno 9 Dicembre 2022 dalle ore 10:00 alle ore 12:00<br>Per partecipare collegarsi via meet a <a href="https://meet.google.com/fmu-kfon-bxn" target="_blank">https://meet.google.com/fmu-kfon-bxn</a>
+</strong></font>
+</p>
+</center>
+-->
+<hr>
+<!--
+<center>
+<p><strong>I tutor del corso, Davide Gabrielli e Matteo Sorrentini, hanno cresto un gruppo Telegram dedicato agli studenti per risolvere problemi legati all'installazione e all'uso del software, e alla soluzione dei problemi proposti.<br>Al gruppo non partecipa alcun docente, e i tutor potranno comunicare ai docenti il contenuto delle richieste ricevute solo se necessario, e comunque in forma anonima.<br>Il gruppo per il terzo canale &egrave; su 
+<a href="https://t.me/+gHynhfkpDhxjNTU0" target="_blank">https://t.me/+gHynhfkpDhxjNTU0</a></strong>
+</p>
+</center>
+-->
+<hr>
+<center>
+<p>For comments, please contact the teacher at<br>
+paolo<font color="red">A_DOT_HERE</font>franciosa<font color="red">AT_SYMBOL</font>uniroma1<font color="red">A_DOT_HERE</font>it
+</p>
+</center>
+
+
+
+<hr>
+<h3 align="center"><a name="ricevimento">Office hours</a></h3>
+Each Tuesday from 10:00 to 12:00 in building CU002, fourth floor, room 9). Please fix appointments via e-mail.<br>
+Appointments in other hours can be fixed via e-mail.
+<p align="right">
+<a href="#inizio">back to top</a> </p>
+
+
+<hr>
+<h3 align="center"><a name="contenuti">Goals</a></h3>
+<p>The main  goal of the  course is to introduce students to computer
+programming, giving basic  skills in
+Python programming language.<p>
+
+<p>At the end  of the course the students will  be  able to solve simple problems by coding an algorithm
+in  Python, using a user friendly IDE.<p>
+<p align="right">
+<a href="#inizio">back to top</a> </p>
+<hr>
+<h3 align="center"><a name="programma">Program</a></h3>
+
+<h4>Programming in Python</h4>
+<ul>
+   <li>variables, expressions and statements</li>
+   <li>numeric data types</li>
+   <li>calling and defining functions</li>
+   <li>conditional statement</li>
+   <li>iteration statement</li>
+   <li>iteration and recursion</li>
+   <li>stack diagrams and recursion bounds</li>
+   <li>data types: strings and text manipulation</li>
+   <li>lists and sequences of data</li>
+   <li>dictionaries</li>
+   <li>file manipulation</li>
+</ul>
+<h4>Encoding of text and numbers</h4>
+<ul>
+   <li>binary, decimal, hexadecimal representation</li>
+   <li>ASCII, Unicode and UTF-8</li>
+</ul>
+
+<h4>Development tools</h4>
+<ul>
+   <li>command line interaction with the file system</li>
+   <li>interactive Python interpreter</li>
+   <li>text editor</li>
+   <li>IDE (Thonny)</li>
+</ul>
+
+
+<p align="right">
+<a href="#inizio">back to top</a> </p>
+<hr>
+<h3 align="center"><a name="materiale">Teaching resources</a></h3>
+<h4>Suggested books</h4>
+      <ul>
+        <li>Allen Downey,
+            Think Python - How to Think Like a Computer Scientist<br>
+			available <a href="https://greenteapress.com/wp/think-python/" target="blank">here</a>
+			under GNU Free Documentation License<br>
+			Chapters (rif. version 2.0.17) 1, 2, 3, 5, 6, 7, 8, 10, 11, 14.1-14.5, Appendix A</li>
+        <li>A comprehensive book on computer programming in Python<br>
+        Cay S. Horstmann, Rance D. Necaise<br>
+            Python for everyone<br>
+            Wiley.
+        </li>
+        <li><a name="cheatsheet">A summary of python syntax and functions</a> that
+        can be used during the exam<a href="mementopython3-english.pdf" target="_blank">PDF version</a></li>
+</ul>
+
+
+<h4>Programming tools</h4>
+      <ul>
+      	<li>basic Python environment, to be installed on PC: <a href="https://www.python.org/downloads/" target="blank">www.python.org/downloads</a>:
+      	   </li>
+        <li><a target="blank" href="http://thonny.org">Thonny</a>: a multiplatform IDE (Interactive Development Environment) to write, run and debug Python programs</li>
+		<li><a href="https://www.pythonanywhere.com" target="blank">python anywhere</a>: a web based platform for Python programming</li>
+		<li><a href="http://pythontutor.com/" target="blank">pythontutor.com</a>: a web based platform for Python programming: provides code animation</li>
+</ul>
+
+<h4><a name="ambiente">Virtual machine installed in via Tiburtina labs</a></h4>
+By running virtualization software VirtualBox &egrave; it is possible to replicate on any PC the same environment available in via Tiburtina labs.
+<br>Once Virtual Box has been installed (available at <a href="https://www.virtualbox.org" target=_blank">https://www.virtualbox.org</a>), it is possible to run the DSS virtual machine, that can be downloaded from 
+ <a href="https://www.massimolauria.net/informatica2021/vm.html" targte="_blank">https://www.massimolauria.net/informatica2021/vm.html</a>.
+<!--
+ avendo cos&igrave; a disposizione esattamente lo stesso ambiente di lavoro che sar&agrave; utilizzato durante l'esame in presenza.
+ <br>Per informazioni pi&ugrave; dettagliate consultare la pagina
+ <a href="https://www.massimolauria.net/informatica2021/vm.html" targte="_blank">https://www.massimolauria.net/informatica2021/vm.html</a>
+-->
+
+
+<h4>More links</h4>
+<p>A tutorial on Python programming tools <a
+ href="http://www.allendowney.com/wp/books/think-python-2e/" target="_blank">http://www.allendowney.com/wp/books/think-python-2e/</a>
+ </p>
+
+<p align="right">
+<a href="#inizio">back to top</a> </p>
+<hr>
+<h3 align="center"><a name="modalita">Exams</a></h3>
+<p>The exam consists of a practical programming test in Python to be taken on the computer in the same way as during the lab exercises. The test will be followed by a possible interview at the discretion of the teacher.</p>
+<p>It is recommended to practice the test as described during the laboratory lectures. The test will be taken in via Tiburtina labs on the DSS virtual machine. It is recommended to practice using this machine by downloading the virtual machine as <a href="#ambiente">described above</a>. Only the synoptic table available <a href="mementopython3-english.pdf" target="_blank">here in PDF version</a> can be used during the programming test.</p>
+<p><a href="#15-12-23">Register to December 15, 2023, exam test</a></p>
+<p><strong>More exercises are available <a href="more_exercises/moreexercises.html">here</a></strong></p>
+
+
+<!--
+in <a href="esercitazioni/Esercitazione6/Esercitazione6.html"
+ target="_ blank">Esercitazione 6</a>, <a href="esercitazioni/Esercitazione7/Esercitazione7.html"
+ target="_ blank">Esercitazione 7</a>, <a href="esercitazioni/Esercitazione8/Esercitazione8.html"
+ target="_ blank">Esercitazione 8</a>, <a href="esercitazioni/Esercitazione9/Esercitazione9.html"
+ target="_ blank">Esercitazione 9</a> e <a href="esercitazioni/Esercitazione9/Esercitazione10.html"
+ target="_ blank">Esercitazione 10</a>.<br>
+-->
+
+<!--
+<h4>Esempi di prove di esame</h4>
+<p>Esempi di prove di esame sul programma degli anni accademici precedenti sono disponibili su
+<a href="https://massimolauria.net/courses/informatica2019/docs/esempio_prova_programmazione.zip" target="_blank"">Prova di programmazione</a>
+-->
+<p align="right">
+<a href="#inizio">back to top</a> </p>
+<hr>
+<h2 align="center"><a name="elencolezioni">2023-2024 lectures</a>
+</h2>
+<center>
+<table class="lezione" width="70%">
+  <tbody>
+    <tr>
+      <td width="33%" align="center"><a href="#29-09-23">September 29, 2023<br> 14:00-18:00</a></td>
+      <td width="34%" align="center"><a href="#06-10-23">October 6, 2023<br> 14:00-18:00</a></td>
+      <td width="33%" align="center"><a href="#13-10-23">October 13, 2023<br> 14:00-18:00</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><a href="#20-10-23">October 20, 2023<br> 14:00-18:00</a></td>
+      <td width="34%" align="center"><a href="#27-10-23">October 27, 2023<br> 14:00-18:00</a></td>
+      <td width="33%" align="center"><a href="#10-11-23">November 10, 2023<br> 14:00-18:00</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><a href="#17-11-23">November 17, 2023<br> 14:00-18:00</a></td>
+      <td width="34%" align="center"><a href="#01-12-23">December 1, 2023<br> 14:00-18:00</a></td>
+      <td width="33%" align="center">register to<br><a href="#15-12-23">December 15, 2023<br> 14:00-18:00<br>Exam test</a></td>
+    </tr>
+</tbody>
+</table>
+
+</center>
+
+
+<hr>
+<center>
+<p>For comments, please contact the teacher at<br>
+paolo<font color="red">A_DOT_HERE</font>franciosa<font color="red">AT_SYMBOL</font>uniroma1<font color="red">A_DOT_HERE</font>it
+</p>
+</center>
+<p align="right">
+<a href="#inizio">back to top</a> </p>
+<hr>
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="29-09-23">September 29, 2023</th>
+    </tr>
+    <tr>
+		<th>Topics </th>
+		<td>
+		<ul>
+      	<li>Introduction</li>
+      	<li>Problems vs. Algorithms</li>
+      	<li>Algorithm executors, programming languages, Von Neumann architecture</li>
+      	<li>Examples of algorithms</li>
+		<li>Programming languages: compilers vs. interpreters</li>
+		<li>Syntax errors, semantic errors, exceptions</li>
+		</ul>
+<hr>
+		<ul>
+        <li>Hierarchical file systems: disks, file, directories</li>
+        <li>Linux shell (or Terminal in Mac OS, or Command prompt in Windows)</li>
+        <li>Navigating in the file system: commands <code>ls</code> (or <code>dir</code> in Windows),
+         command  <code>cd</code>. Absolute and relative paths</li>
+      	<li>Interactive use of Python 3 interpreter</li>
+		<li>Arithmetic operators, expressions, variables, assignments</li>
+      	<li>Simple problems that can be solved in the interactive mode</li>
+		<li>Function <code>type(...)</code></li>
+		</td>
+    </tr>
+    <tr>
+      <th>Material</th>
+      <td>
+		<p>A recording of September 29, 2023 lesson is available at 
+      <a href="https://uniroma1.zoom.us/rec/share/yi8CnKPRQcLXFmlkD57-ylGFapz_HDNB6j126KOO_dM6Qcqi4MIrgfabzK1zQY5q.3S0mkCAOCrBwG-7p"
+ target="_blank">this Zoom link</a> Passcode: =68MA#&7<br>
+<strong>Due to technical problems, this recording only contains the audio part.</strong><br>
+ This recording is for personal use only, and is reserved to Sapienza students.
+ Dissemination of this link to persons outside the Statistics degree and master degree programs of Sapienza is not allowed.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lectures list</a></p>
+
+<hr>
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="06-10-23">October 6, 2023</th>
+    </tr>
+    <tr>
+      <th>Topics </th>
+      <td>
+		<p>Calling methods and using the returned value</p>
+		<p>Defining methods: the <code>def</code> statement</p>
+		<p>Generating pseudo-random numbers with <code>random.random()</code> and <code>random.randint(a, b)</code></p>
+        <p>Simple programs with <code>input(...)</code>, <code>print(...)</code> and pseudo-random numbers</p>
+		<p>Conditional statement <code>if</code></p>
+		<p>Relational operators <code><pre><     <=     >     >=     ==     !=</pre></code></p>
+	</td>
+    </tr>
+    <tr>
+      <th>Lab activity </th>
+      <td><p><a href="Esercitazione2.html"
+ target="_blank">Activity 2</a></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Material</th>
+      <td>
+		<p>A recording of October 6, 2023 lesson is available at 
+      <a href="https://uniroma1.zoom.us/rec/share/0lqihkfODSkUOo14sK5wtEWs8nbHSGJageIYFG6qN0KjgVoHaJah7ncabLG-6uJk.iOjXSoJGiaaQJ8CY"
+ target="_blank">this Zoom link</a> Passcode: zt32&?EE<br>
+ This recording is for personal use only, and is reserved to Sapienza students.
+ Dissemination of this link to persons outside the Statistics degree and master degree programs of Sapienza is not allowed.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Sources and exercises</th>
+      <td>
+      <ol>
+        <li>Given three distinct <code>float</code> values, that represent the coefficient of a degree two equation,
+            print its real solutions, if they exist, or print a message if they do not exist.
+            The program must properly deal with any three real coefficients, also in case
+            some of them are 0.</li>
+		<li>Sort three numbers. Given three distinct numbers, print them in increasing order.</li>
+            <li>Check whether three given numbers can be the measures of the sides of a triangle.
+            For example, 3, 2 and 8 cannot be because ...</li>
+ 			<li>As above, but in the positive case decide whether the triangle is rectangle, obtuse or acute-angled (Hint: check whether Pitagora's
+ 			theorem holds, otherwise ...)</li>
+		<li>Given the coordinates of three points, thus six numbers xa, ya, xb, yb, xc, yc,
+		    compute the length of the sides of the triangle having those vertices</li>
+ 			<li>Let x1, y1, x2, y2, x3, y3, x4, y4 be the coordinates of four points.
+ 			Compute and print the slopes (angular coefficient) of the line passing through (x1, y1) and (x2, y2),
+ 			and the  line passing through (x3, y3) e (x4, y4). <em>notice: lines could be vertical</em></li>
+
+<!--
+ 			<li>Dati due intervalli I1=[a, b] e I2=[c, d], rappresentati nel programma da
+ 			quattro variabili <code>int a, b, c, d;</code>, con <code>a&lt;b</code> e <code>c&lt;d</code>, decidere se
+ 			l'intervallo I1 contiene l'intervallo I2 (come ad esempio nel caso I1=[3, 40] e I2=[12, 25])
+ 			oppure I2 contiene I1, oppure non c'&egrave; relazione di contenimento (come ad esempio
+ 			nel caso I1=[11, 56] e I2=[28, 80]. Visualizzare gli intervalli e un messaggio che indica
+ 			l'eventuale contenimento.		 
+ </li>
+			<li>Si vuole studiare un insieme di 5 pazienti a, b, c, d, e, dei quali conosciamo
+ 			il peso espresso in kg (pa, pb, pc, pd, pe) e l'altezza espressa in metri (ha, hb, hc, hd, he)  (inserire  a piacere questi valori).
+ 			<br>Calcolare e stampare il <em>body mass index</em> (BMI) dei 5 soggetti.
+ 			Il BMI di una persona &egrave; definito dal peso in kg diviso il quadrato dell'altezza in metri.
+ 			<br>Per i valori da utilizzare: il peso deve essere compreso tra 50 e 90 kg, l'altezza tra 1,50 e 2,00 m.
+
+ 			<li>Dato capitale iniziale (inserire a piacere) e interesse annuo (ad esempio 4.5 se l'interesse &egrave; del 4,5% annuo), calcolare il capitale dopo un anno e
+ 			dopo 3 anni.</li>
+
+
+ 			<li>Stampare (per ora usando una sequenza di istruzioni molto simili tra loro) una tabella con il valore del seno e del coseno degli angoli da 0 a 90 gradi, con incrementi di 10 gradi.
+<pre>
+angolo   seno         coseno
+0        0            1
+10       0.17364...   0.98480...
+20       0.34202...   0.93969...
+30   .....
+...
+90       1            0
+
+</pre> 
+</li>
+-->
+
+      </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lectures list</a></p>
+
+
+<!--
+ 			<li>Dati due intervalli I1=[a, b] e I2=[c, d], rappresentati nel programma da
+ 			quattro variabili <code>int a, b, c, d;</code>, con <code>a&lt;b</code> e <code>c&lt;d</code>, decidere se
+ 			l'intervallo I1 contiene l'intervallo I2 (come ad esempio nel caso I1=[3, 40] e I2=[12, 25])
+ 			oppure I2 contiene I1, oppure non c'&egrave; relazione di contenimento (come ad esempio
+ 			nel caso I1=[11, 56] e I2=[28, 80]. Visualizzare gli intervalli e un messaggio che indica
+ 			l'eventuale contenimento.		 
+ </li>
+			<li>Si vuole studiare un insieme di 5 pazienti a, b, c, d, e, dei quali conosciamo
+ 			il peso espresso in kg (pa, pb, pc, pd, pe) e l'altezza espressa in metri (ha, hb, hc, hd, he)  (inserire  a piacere questi valori).
+ 			<br>Calcolare e stampare il <em>body mass index</em> (BMI) dei 5 soggetti.
+ 			Il BMI di una persona &egrave; definito dal peso in kg diviso il quadrato dell'altezza in metri.
+ 			<br>Per i valori da utilizzare: il peso deve essere compreso tra 50 e 90 kg, l'altezza tra 1,50 e 2,00 m.
+
+ 			<li>Dato capitale iniziale (inserire a piacere) e interesse annuo (ad esempio 4.5 se l'interesse &egrave; del 4,5% annuo), calcolare il capitale dopo un anno e
+ 			dopo 3 anni.</li>
+
+
+ 			<li>Stampare (per ora usando una sequenza di istruzioni molto simili tra loro) una tabella con il valore del seno e del coseno degli angoli da 0 a 90 gradi, con incrementi di 10 gradi.
+<pre>
+angolo   seno         coseno
+0        0            1
+10       0.17364...   0.98480...
+20       0.34202...   0.93969...
+30   .....
+...
+90       1            0
+
+</pre> 
+</li>
+-->
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="13-10-23">October 13, 2023</th>
+    </tr>
+    <tr>
+      <th>Topics</th>
+      <td>
+		<p>Activation record stack. Local variables.<p>
+		<p>Parameter passing. Absence of side effects on simple (immutable) parameters.</p>
+      	<p>Cycle statement <code>while</code></p>
+      	<p>Exercises on cycles and conditional statements</p>
+      	</td>
+    </tr>
+    <tr>
+      <th>Lab activity </th>
+      <td><p><a href="Esercitazione4.html"
+ target="_blank">Activity 3</a></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Material</th>
+      <td>
+		<p>A recording of October 13, 2023 lesson is available at the following links:</p>
+		<ul>
+		<li>first part: <a href="https://uniroma1.zoom.us/rec/share/2tfeMynA5DxulwwXVCbBqkYLkH-XyMYMNvY5acDQWuLwEFHe38aWXkiU1d3ozR4.jMKGyPPgQsuxtkoR"
+ target="_blank">this Zoom link</a> Passcode: s!Mq2?Yq</li>
+		<li>second part: <a href="https://uniroma1.zoom.us/rec/share/Cmk1MMXlPTB6sisX9cuy-WhR50aDk8UlLXRTyk-CqOu08xrp42F8QCCTVlh49R4.LjQ6gccmPOho8cSL"
+ target="_blank">this Zoom link</a> Passcode: $1Xvl=sT</li>
+</ul>
+<p> These recordings are for personal use only, and are reserved to Sapienza students.
+ Dissemination of these links to persons outside the Statistics degree and master degree programs of Sapienza is not allowed.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Sources and exercises</th>
+      <td>
+      <ul>
+        <li>Write a program that shows how many times a sheet of 0.1 millimeter thickness must be folded in two for a thickness of 500 mm. to be reached. Print the thickness obtained after each folding.</li>
+        <li>Modify the previous program, printing only the number of folds needed. Only one number should be printed. Then try to reach the Earth-Moon distance, about 380000 km (380,000,000,000 mm, 3.8e+11 mm).</li>
+        <li>Modify the previous program by defining a function that takes as parameters the thickness of the sheet and the distance it is intended to achieve, and returns the number of folds required. Write a program that calls the function just defined with various parameter values.</li>
+        <li>Find out what this program does
+           <a href="listatiPython/ignoto.py"
+ target="_blank">ignoto.py</a></li>
+		<li>Modify program <a href="listatiPython/ignoto.py"
+ target="_blank">ignoto.py</a> so that it also works when <code>a</code> and/or <code>b</code> are negative.</li>
+ 		<li>Write a program that, given two natural numbers <code>a</code> and <code>b</code>, prints <code>a<sup>b</sup></code>, without using the power operator <code>**</code></li>
+		<li>Define a function that returns the number of years it takes to reach a given capital
+        from an initial capital and an annual interest rate. At the end of each year, the accrued interest is added to the capital, so that in the following year the interest added to the capital also gives rise to interest.
+        </li>
+        <li>Check whether a natural number is prime, defining a function that has a natural <code>n</code> as a parameter and returns <code>True</code> (in case it is prime) or <code>False</code> (otherwise). To check whether a number <code>a</code> is divided by <code>b</code> it suffices testing whether <code>a % b</code> is zero.</li>
+        </li>
+        <li>Function that given a natural number returns the number of its divisors, excluded 1 and the number itself.</li>
+		</li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="20-10-23">October 20, 2023</th>
+    </tr>
+    <tr>
+      <th>Topics</th>
+      <td>
+        <p>Sequences</p>
+      	<p><code>for ... in ...</code> statement</p>
+      	<p>Using <code>range(...)</code></p>
+      	<p>Simple programs with <code>for</code> cycles and conditional statements</p>
+	</td>
+    </tr>
+
+    <tr>
+      <th>Material</th>
+      <td>
+		<p>A recording of October 13, 2023 lesson is available at 
+		<a href="
+https://uniroma1.zoom.us/rec/share/rYycs2pzI-XPUpnvl-Sy-o2_S9GWpnuIQmUsieLwbEuFZH_8C2tR3gUFyLR7nL_I.8aVAE8Mhcy-lEFae"
+ target="_blank">this Zoom link</a> Passcode: !9RMe8mD</p>
+<p> This recording is for personal use only, and is reserved to Sapienza students.
+ Dissemination of this link to persons outside the Statistics degree and master degree programs of Sapienza is not allowed.</p>
+      </td>
+    </tr>
+
+
+    <tr>
+      <th>Sources and exercises</th>
+      <td>
+      <ul>
+        <li>Given a natural number <code>n</code>, print a full square of stars with size <code>n</code>.
+        	The square is made by <code>n</code> rows, each row containing <code>n</code> stars.
+          <pre>
+  **********
+  **********
+  **********
+  **********
+  **********
+  **********
+  **********
+  **********
+  **********
+  **********
+
+</pre>
+        </li>
+        <li>Given a natural number <code>n</code>, print the border of square with size <code>n</code>, as follows:
+          <pre><tt>
+  ************************
+  *                        *
+  *                        *
+  *                        *
+  *                        *
+    . . . . . . . .
+    
+  *                        *
+  ************************
+</tt>
+</pre>
+        </li>
+<!--
+        <li>Dati due numeri naturali <code>n</code> e <code>b</code>, con <code>b < n/2</code>, stampare un quadrato di asterischi di lato <code>n</code> con il bordo di spessore <code>b</code>.
+        	Ad esempio, se il valore di <code>b</code> fosse 3, il quadrato dovrebbe avere l'aspetto seguente:
+          <pre>
+  ********** . . . ****
+  ********** . . . ****
+  ********** . . . ****
+  ***               ***
+  ***               ***
+  ***               ***
+    . . . . . . . .
+    
+  ***               ***
+  ********** . . . ****
+  ********** . . . ****
+  ********** . . . ****
+
+</pre>
+        </li>
+-->
+        <li>Given a natural number <code>n</code>, print a triangle (full) of stars as follows.
+        	The triangle consists in <code>n</code> rows, with growing length from 1 to <code>n</code>.
+          <pre>
+  *
+  **
+  ***
+  ****
+   . . .
+  
+  *********
+  **********
+
+</pre>
+        </li>
+<!--
+        <li>Dato un numero naturale <code>n</code>, stampare un triangolo rettangolo (solo il bordo) di asterischi di lato <code>n</code>.
+        	Il triangolo dovr&agrave; avere l'aspetto seguente:
+          <pre>
+  *
+  **
+  * *
+  *  *
+   . . .
+  
+  *      *
+  *       *
+  **********
+
+</pre>
+        </li>
+-->
+        <li>Print the sum of the first <code>n</code> items in the harmonic series:
+            1/1 + 1/2 + 1/3 + ... + 1/<code>n</code>
+		</li>
+	</ul>
+<hr>
+	<ul>
+	    <li>Print the Pytagorean table <i>n</i> &times; <i>n</i>
+	     assuming that <i>n</i> is in [1,18]</li>
+      </ul>
+<hr>
+<h2>Pytagoric triples</h2>
+	<p>Write a program that given a natural number <code>n</code> prints all triples
+	<code>x, y, z</code> such that
+ x^2 + y^2 = z^2, with x, y, z &leq; n. and x &leq; y</p>
+	
+	<p>For <code>n = 20</code> the only solutions are:</p>
+	<pre>
+3^2 + 4^2 = 5^2
+5^2 + 12^2 = 13^2
+6^2 + 8^2 = 10^2
+8^2 + 15^2 = 17^2
+9^2 + 12^2 = 15^2
+12^2 + 16^2 = 20^2
+	</pre>
+<p>
+<span style="color:red">Solution: <a href="listatiPython/cercaTernePitagoriche.py" target="_blank">cercaTernePitagoriche.py</a></span>
+</p>
+<hr>
+<p>Function that, given two lists a, b of numbers with the same length,
+returns the scalar product<br>
+a_0 * b_0 + a_1 * b_1 + a_2 * b_2 + ..... + a_(n-1) * b_(n-1)</p>
+
+<pre>print(scalar([1, 4, 3, 0], [3, 0, 5, 5])) should give 18</pre>
+
+<hr>
+<p>Function that, given a list, returns <code>True</code> if the list is in
+decreasing order, <code>False</code> otherwise</p>
+
+<hr>
+<p>Function that, given a natural n, returns the list containing
+the first n elements of the Fibonacci sequence.<br>
+Start by [1, 1], add element s[i] as s[i-2] + s[i-1]</p>
+<pre>
+s = fibonacci(10)
+print(s) gives [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]</pre>
+
+<hr>
+<p>Function that, given two lists a, b of numbers with the same length,
+returns the sum of the lists, i.e., a list c of the same length
+such that c_i = a_i + b_i<br>
+Builds and returns the list c</p>
+
+<hr>
+<p>Function that, given a list x, separate elements larger that the average from elements
+smaller or equal to the average
+<pre>def separate(seq):
+    small = []
+    large = []
+    ......
+       ....  here you append to small or to large
+    return small, large
+
+x = [..., ... , .]
+s, l = separate(x)
+print(s, l)
+</pre></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="27-10-23">October 27, 2023</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Topics</th>
+      <td>
+      	<p>List parameters can be modified by a function</p>
+      	<p>Exercises on lists and cycles.</p>
+		<p>Slicing, methods available in class <list>list</code></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Material</th>
+      <td>
+		<p>A recording of October 27, 2023 lesson is available at 
+		<a href="
+https://uniroma1.zoom.us/rec/share/oJP932XexWuTdVn7Dzm2iSmCRddeyxea0rdFHNxtsMy6zs2gHqKpBm5aeE0o5VlI.HV6Y0qFCP5ErDGTb"
+ target="_blank">this Zoom link</a> Passcode: kh28cRA^</p>
+<p> This recording is for personal use only, and is reserved to Sapienza students.
+ Dissemination of this link to persons outside the Statistics degree and master degree programs of Sapienza is not allowed.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Sources and exercises</th>
+      <td><p><a href="Activity5/Activity5.html"
+ target="_ blank">Activity 5</a></p>
+
+        <p>Solutions are proposed in
+        <a href="Activity5/solutionsActivity5.zip"
+ target="_ blank">solutionsActivity5.zip</a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="10-11-23">November 10,  2023</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Topics</th>
+      <td>
+        <p>List comprehension</p>
+      	<p>Lists of lists (matrices)</p>
+      	<p>Exercises on lists of lists</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Material</th>
+      <td>
+		<p>A recording of November 10, 2023 lesson is available at 
+		<a href="
+https://uniroma1.zoom.us/rec/share/VR69h8goOg6kSvsW7qR0A5tqhUifpQph_jSn0f4FVcjh-RBO3NmjSyyS4klGsbAM.sB-Nm9-UR99YicYj"
+ target="_blank">this Zoom link</a> Passcode: .Q^hTL9*</p>
+<p> This recording is for personal use only, and is reserved to Sapienza students.
+ Dissemination of this link to persons outside the Statistics degree and master degree programs of Sapienza is not allowed.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Sources and exercises</th>
+      <td><p><a href="Activity6/Activity6.html"
+ target="_ blank">Activity 6</a></p>
+        <p>Solutions are proposed in
+        <a href="Activity6/solutionsActivity6.zip"
+ target="_ blank">solutionsActivity6.zip</a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="17-11-23">November 17,  2023</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Topics</th>
+      <td>
+        <p>Dictionaries. Accessing and adding pairs</p>
+      	<p>Scanning dictionaries keys. Getting keys and values by <code>keys()</code>, <code>values()</code>, <code>items()</code> methods. Deleting pairs by <code>pop(...)</code>.</p>
+      	<p>Compute frequencies from a list</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Material</th>
+      <td>
+		<p>A recording of November 17, 2023 lesson is available at 
+		<a href="
+https://uniroma1.zoom.us/rec/share/QO13lUvjHr7nrXyyLs25ne1_sTu3l6RS3Qqq2duVQYKj-wIiIZd3WNuKXXKK3WWO.rFgbLfbKSEZgYGP_"
+ target="_blank">this Zoom link</a> Passcode: #Y^95F?M</p>
+<p> This recording is for personal use only, and is reserved to Sapienza students.
+ Dissemination of this link to persons outside the Statistics degree and master degree programs of Sapienza is not allowed.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Sources and exercises</th>
+      <td><p><a href="Activity7/Activity7.html"
+ target="_ blank">Activity 7</a></p>
+ 
+        <p>Solutions are proposed in
+        <a href="Activity7/solutionsActivity7.zip"
+ target="_ blank">solutionsActivity7.zip</a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="01-12-23">December 1,  2023</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Topics</th>
+      <td>
+        <p>Reading and writing text files</p>
+        <p>ASCII and UNICODE coding, UTF-8 representation</p>
+      	<p>Opening a text file by <code>open</code> function</p>
+      	<p>Writing by <code>print(..., file = ...)</code> or <code>.write(...)</code></p>
+      	<p>Reading lines by <code>for</code> loop.</p>
+      	<p>The <code>try ...  except ...</p> statement.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Material</th>
+      <td>
+		<p>A recording of November 1, 2023 lesson is available at 
+		<a href="
+https://uniroma1.zoom.us/rec/share/2R-X4aAT1ODIcrHYYdUyiHcUAQpqrt3_nqHJuHtGaPVAbLiIVVmR6HkS2l57Kq3z.guz5tIA0zLm_o4So"
+ target="_blank">this Zoom link</a> Passcode: 8ev1S.b+</p>
+ <p>Due to technical reasons, audio has only been recorded for the initial part of the lesson.</p>
+<p> This recording is for personal use only, and is reserved to Sapienza students.
+ Dissemination of this link to persons outside the Statistics degree and master degree programs of Sapienza is not allowed.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Sources and exercises</th>
+      <td>
+      <ul>
+      <li>Function that, given two strings representing file names, copies the first file into the second.</li>
+      <li>Function that, given three file names and an integer threshold value, reads integer values from the first file, one per line. Values larger than the threshold are written in the second file, values smaller than or equal to the threshold are written in the third file.</li>
+      <li>Function that, given a string representing a file name, reads key-value pairs from the file and returns the dictionary containing those pairs. File lines are assumed to contain a string, a blank space, and an integer in each line.</li>
+      <li>Function that, given a string representing file name, reads the file in the same format as above and returns a dictionary. The same key may appear many times in the file: in the returned dictionary the corresponding values will be the sum of all values associated to that key in the file. For example, if the file contains:<pre>
+John 34
+Ann 25
+John 10
+Paul 18
+Frank 15
+Ann 10
+</pre>
+the returned dictionary should be:
+{"John": 44, "Paul": 18, "Ann": 35, "Frank": 15}</li>
+	</ul>
+<!-- 
+        <p>Solutions are proposed in
+        <a href="Activity7/solutionsActivity7.zip"
+ target="_ blank">solutionsActivity7.zip</a></p>
+-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="15-12-23">December 15, 2023</a>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <p>Exam test will be given on December 15, 2023, in via Tiburtina 205, room 15.<br>
+        To register, compile <a href="
+https://docs.google.com/forms/d/e/1FAIpQLSeQlBkhpIkDtSsmusjgga3ZRNNgUzUkKYtFQ2ZGDDGeryjNKg/viewform"
+ target="_blank">this Google form</a>.</p>
+ <p><strong>More exercises are available <a href="more_exercises/moreexercises.html">here</a></strong><br>
+A solution to <em>word count</em> problem is 
+<a href="listatiPython/word_count.py">word_count.py</a></p>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+
+
+<!--
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="01-12-23">December 1, 2023</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+		<p>Algoritmo per approssimare uno zero di una funzione continua
+		   <a href="listatiPython/ricercaZero.py"
+ target="_blank">ricercaZero.py</a></p>
+		<p>Esempi di programmi con cicli multipli e istruzioni di selezione</p>
+		<p>Introduzione alle stringhe. Indicizzazione, funzione <code>len</code>,  operatore <code>in</code></p>
+      </td>
+    </tr>
+    <tr>
+     <th>Listati ed esercizi proposti </th>
+      <td>
+      <ul>
+        <li>funzione che verifica se una stringa &egrave; palindroma</li>
+        <li>funzione che conta gli spazi in una stringa</li>
+        <li>funzione che conta le vocali in una stringa</li>
+        <li>funzione che, data una stringa, stampa una parola della stringa su ciascuna riga</li>
+        <li>migliorare la funzione precedente facendo s&igrave; che NON vengano stampati a capo multipli in presenza di spazi adiacenti nella stringa</li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="24-10-22">24 Ottobre 2022</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+		<p>Esercizi su cicli, istruzioni condizionali, stringhe</p>
+<!--
+		<p>Commento della funzione di ricerca binaria
+		   <a href="listatiPython/ricercaZero.py"
+ target="_blank">ricercaZero.py</a></p>
+-->
+<!--
+      	<p>Liste</p>
+		<p>Accesso e modifica di  elementi di una lista.</p>
+      	<p>Scansione di liste con <code>for elem in lista:</code> oppure con 
+      	<code>for i in range(len(lista)):</code></p>
+		<p>I metodi <code>append(...)</code> ed <code>extend(...)</code> delle liste</p>
+      	<p>Costruzione di liste</p>
+      </td>
+    </tr>
+    <tr>
+     <th>Listati ed esercizi proposti </th>
+      <td>
+      <ul>
+        <li>funzione che verifica se un numero &egrave; perfetto</li>
+        <li>funzione che restituisce il k-esimo elemento della sequenza di Fibonacci</li>
+        <li>funzione che restituisce il primo elemento della successione di Fibonacci maggiore di un valore dato come parametro</li>
+<!-- 
+        <li>funzione che a partire da una stringa di caratteri restituisce la stessa stringa privata degli eventuali spazi iniziali e finali</li>
+        <li>funzione che, a partire da una parola, restituisce la stessa parola privata delle vocali</li>
+        <li>funzione che, data una lista di parole, restituisce una stringa composta dalle parole intervallate da spazi</li>
+-->
+<!--
+        <li>funzione che dato n restituisce il minimo numero primo maggiore di n</li>
+        <li>funzione che dati due naturali a, b restituisce il Massimo Comun Divisore di a e b</li>
+        <li>funzione che dati due naturali a, b restituisce il minimo comune multiplo di a e b</li>
+        <li>funzione che restituisce la somma degli elementi di una lista</li>
+        <li>funzione che restituisce la media degli elementi di una lista</li>
+        <li>funzione che restituisce minimo e massimo di una lista</li>
+        <li>funzione che, data una lista di numeri L e una soglia s, restituisce il numero di elementi di L maggiori di s</li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Materiale</th>
+      <td>
+        <p>La prossima esercitazione si svolger&agrave; secondo le modalit&agrave; descritte nel video del prof. Massimo Lauria <a href="https://youtu.be/-HBeJ4-kyZ4"
+ target="_blank">disponibile a questo link</a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="25-10-22">25 Ottobre 2022</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercizi su liste</p>
+		<p>I metodi <code>index(...)</code>, <code>pop(...)</code>, <code>remove(...)</code> e <code>insert(...)</code> delle liste</p>
+      	<p>Implementazione della ricerca sequenziale su lista</p>
+		<p>Liste disomogenee. Verifica del tipo degli elementi di una lista con la  funzione <code>isinstance(val, tipo)</code></p>
+      </td>
+    </tr>
+    <tr>
+     <th>Listati ed esercizi proposti </th>
+      <td>
+        	<p>Esercizi di base su liste:</p>
+      <ul>
+        <li>Leggi da tastiera una sequenza di numeri,
+memorizzala in una lista, stampa la somma degli elementi <a
+ href="listatiPython/sommaSequenzaInLista.py" target="_blank">sommaSequenzaInLista.py</a> </li>
+        <li>Leggi da tastiera una sequenza di <code>double</code>,
+memorizzala in una lista, crea un lista che contiene una copia degli elementi della prima lista,
+ma in ordine inverso
+<a href="listatiPython/copiaOrdineInverso.py" target="_blank">copiaOrdineInverso.py</a> </li>
+        <li>Leggi da tastiera una sequenza di interi che rappresentano delle frequenze,
+memorizzala in una lista, crea una lista che contiene le frequenze cumulate e stampa, in due colonne,
+la sequenza delle frequenze (sulla sinistra) e la sequenza delle frequenze cumulate (sulla destra)
+<a href="listatiPython/cumula.py" target="_blank">cumula.py</a> </li>
+      	<li>Ricerca sequenziale in una lista
+      	    <a href="listatiPython/ricercaSequenziale.py" target="_blank">ricercaSequenziale.py</a></li>
+      </ul>
+      </p>
+      <hr>
+	<p>Data in input una sequenza di interi che rappresentano frequenze:
+	<ul>
+		<li>stampare la frequenza massima e la frequenza minima;</li>
+		<li>calcolare la lista delle frequenze relative e stamparlo;</li>
+		<li>calcolare la lista delle frequenze relative cumulate e stamparlo;</li>
+		<li>stampare in quale posizione si trovano la frequenza massima e la frequenza minima.</li>
+	</ul>
+	</p>
+<p>
+<span style="color:red">Soluzione: <a href="listatiPython/frequenze.py" target="_blank">frequenze.py</a></span>
+</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="27-10-22">27 Ottobre 2022 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercizi su liste.</p>
+      	<p></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><a href="esercitazioni/Esercitazione6/Esercitazione6.html"
+ target="_ blank">Esercitazione 6</a>
+ 
+ (soluzioni in <a href="esercitazioni/Esercitazione6/soluzioni6.zip"
+ target="_ blank">soluzioni6.zip</a>)
+     </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="03-11-22">3 Novembre 2022 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+		<p>Ricerca del massimo valore o della sua posizione in una lista non ordinata.</p>
+        <p>Funzioni che creano liste</p>
+        <p>Funzioni che modificano liste</p>
+      	<p>Esercizi su liste</p>
+      	<p></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><a href="esercitazioni/Esercitazione7/Esercitazione7.html"
+ target="_ blank">Esercitazione 7</a>
+ (soluzioni in <a href="esercitazioni/Esercitazione7/soluzioni7.zip"
+ target="_ blank">soluzioni7.zip</a>)
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="07-11-22">7 Novembre 2022</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+           <p>Algoritmo di ordinamento per selezione <a href="listatiPython/selectionSort.py" target="_blank">selectionSort.py</a></p>
+           <p>Liste di liste per la rappresentazione di matrici. Esercizi su liste di liste:
+                <ul>
+                <li>Creazione di una matrice n per m con elementi 0 <a href="listatiPython/creaMatrice.py" target="_blank"><code>creaMatrice.py</code></a>.</li>
+                <li>Somma degli elementi di una matrice <a href="listatiPython/sommaMatrice.py" target="_blank"><code>sommaMatrice.py</code></a>.</li>
+                <li>Calcolo della somma di ciascuna riga <a href="listatiPython/sommaRigheMatrice.py" target="_blank"><code>sommaRigheMatrice.py</code></a>.</li>
+                </ul>
+            </p>
+    </tr>
+    </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="08-11-22">8 Novembre 2022</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+			<p>Introduzione alla ricorsione.</p>
+      		<p>Esempio di algoritmo ricorsivo per il calcolo del fattoriale
+ <a href="listatiPython/fattorialeRicorsivo.py" target="_blank"><code>fattorialeRicorsivo.py</code></a></p>
+      		<p>Esempio di algoritmo iterativo per il calcolo del fattoriale
+ <a href="listatiPython/fattorialeIterativo.py" target="_blank"><code>fattorialeIterativo.py</code></a></p>
+      		<p>Esempio di algoritmo ricorsivo per il calcolo di un elemento della sequenza di Fibonacci
+ <a href="listatiPython/fibonacciRicorsivo.py" target="_blank"><code>fibonacciRicorsivo.py</code></a></p>
+      		<p>Somma dei numeri contenuti in una lista di liste di liste ...
+ <a href="listatiPython/sommaListaBipartizione.py" target="_blank"><code>sommaListaBipartizione.py</code></a></p>
+     </tr>
+    <tr>
+      <th>Riferimenti al testo </th>
+      <td><a href="#cormen">Cormen, Leiserson, Rivest</a> oppure
+        		<a href="https://www.massimolauria.net/informatica2022/docs/algoritmi.pdf" target="_blank">dispense a cura del prof. Massimo Lauria</a></td>
+    </tr>
+    <tr>
+      <th>Listati proposti </th>
+      <td>
+      <ul>
+		<li>scrivere un metodo ricorsivo che data una lista di numeri restituisce il massimo elemento dell'array</li>
+		<li>scrivere un metodo ricorsivo che data una lista di numeri restituisce il numero di elementi negativi contenuti nell'array</li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="10-11-22">10 Novembre 2022 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercizi su liste bidimensionali.</p>
+      	<p></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><a href="esercitazioni/Esercitazione8/Esercitazione8.html"
+ target="_ blank">Esercitazione 8</a>
+ 
+ (soluzioni in <a href="esercitazioni/Esercitazione8/soluzioni8.zip"
+ target="_ blank">soluzioni8.zip</a>)
+     </td>
+    </tr>
+    </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="15-11-22">15 Novembre 2022</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Ricerca binaria su liste ordinate.</p>
+      	<p>Complessit&agrave; della ricerca binaria</p>
+		<p>Algoritmo di ordinamento <em>insertion sort</em></p>
+        <p>Animazione di algoritmi di ordinamento visibile su <a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">https://www.toptal.com/developers/sorting-algorithms</a></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Riferimenti al testo </th>
+      <td><a href="#cormen">Cormen, Leiserson, Rivest</a> oppure
+        		<a href="https://www.massimolauria.net/informatica2022/docs/algoritmi.pdf" target="_blank">dispense a cura del prof. Massimo Lauria</a></td>
+    </tr>
+    <tr>
+     <th>Listati ed esercizi proposti </th>
+      <td>
+          <ul>
+      	<li>Ricerca binaria in una lista ordinata crescente
+      	    <a href="listatiPython/ricercaBinaria.py" target="_blank">ricercaBinaria.py</a>.<br>
+      	    Una versione animata dell'algoritmo &egrave; disponibile in <a href="listatiPython/ricercaBinariaAnimata.py" target="_blank">ricercaBinariaAnimata.py</a></li>
+      	<li>Algoritmo di ordinamento
+      	    <a href="listatiPython/insertionSort.py" target="_blank">insertionSort.py</a></li>
+      	    </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="17-11-22">17 Novembre 2022 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercizi su liste e liste bidimensionali.</p>
+      	<p></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><a href="esercitazioni/Esercitazione9/Esercitazione9.html"
+ target="_ blank">Esercitazione 9</a>
+(soluzioni in <a href="esercitazioni/Esercitazione9/soluzioni9.zip"
+ target="_ blank">soluzioni9.zip</a>)
+     </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="21-11-22">21 Novembre 2022</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti</th>
+      <td>
+		<p>Algoritmo di ordinamento a bolle - Bubble Sort (<a href="listatiPython/bubbleSortSemplice.py" target="_blank">codice Bubble sort semplice</a>) e suoi
+		miglioramenti  (<a href="listatiPython/bubbleSortMigliorato.py" target="_blank">codice Bubble sort migliorato</a>)</p>
+		<p>Bubble Sort con flag per verifica ordinamento <a href="listatiPython/bobbleSortFlag.py" target="_blank">codice Bubble sort con flag</a></p>
+		<p>Analisi della prestazioni del bubble sort</p>
+		<p>Introduzione alla complessit&agrave; computazionale</p>
+		<p>Le notazioni asintotiche <i>O</i>(), &Omega;(), &Theta;()</p>
+		<p>Complessit&agrave; computazionale di: insertion sort, bubble sort, selection sort</p>
+    </td>
+    </tr>
+    <tr>
+      <th>Link utili</th>
+      <td>
+       <ul>
+       <li>Animazione di algoritmi di ordinamento <a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">https://www.toptal.com/developers/sorting-algorithms</a></li>
+       </ul>
+       </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="22-11-22">22 Novembre 2022</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+		<p>Uso dele notazioni asintotiche <i>O</i>(), &Omega;(), &Theta;()</p>
+		<p>Esempi di classi di funzioni</p>
+		<p>Esercizio: calcolo dei numeri primi con il crivello di Eratostene</p>
+
+       <li>Crivello di Eratostene <a href="https://it.wikipedia.org/wiki/Crivello_di_Eratostene" target="_blank">https://it.wikipedia.org/wiki/Crivello_di_Eratostene</a>, implementazione in Python <a href="listatiPython/eratostene.py" target="_blank">eratostene.py</a></li>
+
+     		<p>Il paradigma <em>divide et impera</em>.</p>
+      		<p>Somma di una sequenza applicando il paradigma <em>divide et impera</em>
+      		<a href="listatiPython/sommaListaRicorsiva.py" target="_blank"><code>sommaListaRicorsiva.py</code></a>.
+</p>
+      		<p>Introduzione all'algoritmo di ordinamento per fusione (merge sort)</p>
+    </td>
+    </tr>
+    <tr>
+      <th>Riferimenti al testo </th>
+	  <td>
+	  	<p>dispense del corso, oppure <a href="#cormen">Cormen, Leiserson, Rivest</a></td></p>
+	  </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="23-11-22">23 Novembre 2022 (laboratorio)</a>
+      </th>
+    </tr>
+
+    <tr>
+      <th>Link</th>
+    <td>
+      <p>La lezione si svolger&agrave; on-line sulla piattaforma Zoom al link<br> 
+<a href="https://uniroma1.zoom.us/j/92977519640?pwd=TFpYTU42WWF6a1FZY1kvSXZzaHVFdz09" target = "_blank">https://uniroma1.zoom.us/j/92977519640?pwd=TFpYTU42WWF6a1FZY1kvSXZzaHVFdz09</a><br>
+ID riunione: 929 7751 9640<br>
+Passcode: 258229
+      </p>
+      </td>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercizi su stringhe di caratteri e liste.</p>
+      	<p></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><a href="esercitazioni/Esercitazione10/Esercitazione10.html"
+ target="_ blank">Esercitazione 10</a>
+    (soluzioni in <a href="esercitazioni/Esercitazione10/soluzioni10.zip"
+ target="_ blank">soluzioni10.zip</a>)
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="24-11-22">24 Novembre 2022</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti</th>
+      <td>
+		<p>Algoritmo di ordinamento per fusione - Merge Sort (<a href="listatiPython/mergeSort.py" target="_blank">codice merge sort</a>)</p>
+		<p>Analisi della prestazioni del merge sort</p>
+ 		    <p>Confronto con la complessit&agrave; minima possibile (lower bound) per il problema dell'ordinamento basato su confronti</p>
+      	 <p>Algoritmo MCD di Euclide:
+      	     <ul>
+      	     <li>versione ricorsiva
+      		<a href="listatiPython/MCDEuclideRicorsivo.py" target="_blank"><code>MCDEuclideRicorsivo.py</code></a></li>
+            <li>versione iterativa
+      		<a href="listatiPython/MCDEuclideIterativo.py" target="_blank"><code>MCDEuclideIterativo.py</code></a></li>
+      		</p>
+    </td>
+    </tr>
+    <tr>
+      <th>Link utili</th>
+      <td> Animazione di algoritmi di ordinamento <a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">https://www.toptal.com/developers/sorting-algorithms</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="28-11-22">28 Novembre 2022</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti</th>
+      <td>
+		<p>Algoritmo di ordinamento Quick Sort (<a href="listatiPython/quickSort.py" target="_blank">quickSort.py</a>)</p>
+		<p>Analisi della prestazioni del quick sort nel caso migliore e nel caso  peggiore.</p>
+		<p>Animazione del Quick Sort (<a href="listatiPython/quickSortAnimato.py" target="_blank">quickSortAnimato.py</a>), eseguire in Python3</p>
+		      	</ul>
+    </td>
+    </tr>
+    <tr>
+       <th>Riferimenti al testo </th>
+	  <td>
+	  	<p>dispense del corso, oppure <a href="#cormen">Cormen, Leiserson, Rivest</a></td></p>
+	  </td>
+   </tr>
+    <tr>
+      <th>Link utili</th>
+      <td> Aminazione di algoritmi di ordinamento <a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">https://www.toptal.com/developers/sorting-algorithms</a></td>
+    </tr>
+</tbody>
+</table>
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="29-11-22">29 Novembre 2022</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti</th>
+      <td>
+      		<p>Analisi della complessit&agrave; computazionale di algoritmi ricorsivi.</p>
+      		<ul>
+      			<li>Equazioni di ricorrenza.</li>
+      			<li>Soluzione di equazioni di ricorrenza attraverso il teorema principale (senza dimostrazione).</li>
+      			<li>Esempi di applicazione del teorema principale: ricerca binaria, merge sort, quick sort.</li>
+      		</ul>
+ 			<p>Algoritmo per il calcolo del k-esimo elemento:
+		<a href="listatiPython/selection.py" target="_blank">selection.py</a></p>
+		<p>Analisi di complessit&agrave; dell'algoritmo per il k-esimo elemento</p>
+		<p>Animazione del k-esimo elemento (<a href="listatiPython/selectionAnimato.py" target="_blank">selectionAnimato.py</a>), eseguire in Python3</p>
+        </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>Un elenco di esercizi di programmazione <a href="esercizi.html"
+ target="_ blank">&egrave; disponible qui</a>
+      </td>
+    </tr>
+    <tr>
+      <th>Riferimenti al testo</th>
+	  <td>
+	  	<p>dispense del corso, oppure <a href="#cormen">Cormen, Leiserson, Rivest</a></td></p>
+	  </td>
+    </tr>
+</tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="01-12-22">1 Dicembre 2022 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercitazione su matrici.</p>
+      	<p></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><a href="esercitazioni/Esercitazione11/Esercitazione11.html"
+ target="_ blank">Esercitazione 11</a>
+    (soluzioni in <a href="esercitazioni/Esercitazione11/soluzioni11.zip"
+ target="_ blank">soluzioni11.zip</a>)
+     </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="05-12-22">5 Dicembre 2022</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti</th>
+      <td>
+      		<p>Lettura e scrittura di file di testo.</p>
+      		<p>Funzioni <code>open</code> e <code>print</code> con parametro <code>file = </code>.</p>
+      		<p>Metodi <code>readline</code>, <code>write</code>, <code>close</code>. Uso di metodi di <code>str</code> su righe di testo: <code>strip</code>, <code>split</code>, <code>join</code>.</p>
+      		<p>Ciclo <code>for</code> su file in lettura</p>
+    </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+      	<ul>
+      	<li>Funzione che mostra la lettura e la scrittura di file di testo
+      	<a href="listatiPython/fileInOut.py" target="_blank">fileInOut.py</a></li>
+      	<li>Lettura di un file CSV 
+      	<a href="listatiPython/letturaCSV.py" target="_blank">letturaCSV.py</a>. Assume che esista un file <a href="listatiPython/datiProva.txt" target="_blank">datiProva.txt</a> nella stessa cartella.</li>
+      		</ul>
+      	</li>
+      	</ul>
+      </td>
+    </tr>
+</tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="06-12-22">6 Dicembre 2022</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti</th>
+      <td>
+ 			<p>Dizionari: definizione, indicizzazione, scansione con ciclo <code>for</code>, metodi <code>keys()</code>, <code>values()</code>, <code>items()</code>.
+ 			Condizione <code>in</code> su dizionari.</p>
+
+    </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+      <ul>
+      	<li>Funzione che a partire da una stringa contenente parole separate da spazi, restituisce un dizionario con le parole come chiavi e le rispettive frequenze come valori
+      	<a href="listatiPython/frequenzeDizionario.py" target="_blank">frequenzeDizionario.py</a>.</li>
+
+      	<li>Funzione che a partire da un dizionario che contiene frequenze assolute delle chiavi, restituisce il dizionario contenente le frequenze relative
+      	delle chiavi <a href="listatiPython/frequenzeRelative.py" target="_blank">frequenzeRelative.py</a></li>
+    </ul>
+    
+    <p>Scrivere le seguenti funzioni, che hanno tutte come parametri un dizionario <em>esami</em> in cui ogni chiave &egrave; il titolo di un insegnamento e il corrispondente valore &egrave; il voto riportato, e un secondo dizionario <em>crediti</em> in cui ogni chiave &egrave; il titolo di un insegnamento e il corrispondente valore &egrave; il numero di crediti.
+    <ol>
+    <li>Restituire il numero di esami sostenuti.</li>
+    <li>Restituire il numero di esami sostenuti, escluse le idoneit&agrave;.</li>
+    <li>Restituire la media (non pesata) dei voti conseguiti, escluse le idoneit&agrave;.</li>
+    <li>Restituire il numero di crediti conseguiti, incluse le idoneit&agrave;.</li>
+    <li>Restituire una coppia formata dal numero totale di crediti conseguiti e il numero di crediti conseguiti come idoneit&agrave;.</li>
+    <li>Restituire la media dei voti conseguiti, escluse le idoneit&agrave;, pesata in base ai crediti.</li>
+    <li>Restituire il voto pi&ugrave; alto e il voto pi&ugrave; basso.</li>
+    <li>Come il punto precedente, includendo anche i titoli di uno qualsiasi degli esami con voto massimo e uno di quelli con voto minimo. La funzione deve restituire una stringa composta dai due titoli e i rispettivi voti.</li>
+    <li>Come il punto precedente, includendo tutti gli esami con voto massimo e tutti quelli con voto minimo.</li>
+    <li>Restituire il dizionario contenente solo gli esami, con i relativi voti, nel cui titolo compare la stringa "Statistic". La stringa da cercare nel titolo pu&ograve; essere un parametro opzionale della funzione.</li>
+    <li>Come il punto precedente, ma la ricerca della stringa non deve tener conto della differenza tra lettere maiuscole e minuscole.</li>
+    </ol>
+        Per il test, costruire dizionari sufficientemente ricchi.
+</p>
+
+
+</tbody>
+</table>
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="12-12-22">12 Dicembre 2022</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+ 		    <p>Codifica dell'informazione:
+ 		    <ul>
+          		<li>Generalit&agrave; sulla notazione posizionale per numeri 
+      		naturali, interpretazione di numeri espressi in base <i>b</i></li>
+         		<li>conversione da base <i>b</i> a base 10 e da base 10 a base 
+      	    	<i>2</i></li>
+      		<li>codifica esadecimale, conversione dalla base 2 alla base 16</li>
+ 		    </ul>
+ 		    </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="13-12-22">13 Dicembre 2022</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      <ul>
+          <li>rappresentazione di numeri in virgola mobile (floating point), errori di troncamento</li>
+         <li>Codifica di caratteri: codice ASCII, codici ASCII estesi, codice Unicode, rappresentazione UTF-8</li>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="15-12-22">15 Dicembre 2022 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercitazione su files e dizionari.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><ul>
+          <li><a href="esercitazioni/Esercitazione12.html"
+ target="_ blank">Esercitazione 12</a></li>
+          <li>Simulazione esame di programmazione: scaricare e decomprimere il <a href="esercitazioni/simulazione/materialeEsame.zip"
+ target="_ blank">materiale d'esame</a>, che contiene anche i file di test pubblici, e scaricare anche i <a href="esercitazioni/simulazione/test_segreti.zip"
+ target="_ blank">test segreti</a></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="19-12-22">19 Dicembre 2022</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      <p>Esercizi di teoria e programmazione</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfP8Vfio9WEWvB1Z62u58c70c-jZGSbt_4lK5XF5MLOSlX-2Q/viewform" target="_blank">Rilevamento presenze</a></p>
+<p><a href="#elencolezioni">back to lectures list</a> </p>
+
+
+<!-- Inizio Codice ShinyStat -->
+<script type="text/javascript" src="http://codice.shinystat.com/cgi-bin/getcod.cgi?USER=pgfInf"></script>
+<noscript>
+<h6><a href="http://www.shinystat.com/it/">
+<img src="http://www.shinystat.com/cgi-bin/shinystat.cgi?USER=pgfInf" alt="Statistiche gratis" style="border:0px" /></a></h6>
+</noscript>
+<!-- Fine Codice ShinyStat -->
+
+
+
+</body>
+</html>

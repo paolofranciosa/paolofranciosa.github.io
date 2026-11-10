@@ -1,0 +1,2 @@
+create_square_dict
+create_dict_from_lists

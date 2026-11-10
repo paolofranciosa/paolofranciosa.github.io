@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Esercizi su file</title>
+<style type="text/css">
+	table.lezione {
+		border: 3px solid #822433
+	}
+	 table.lezione td, table.lezione th {
+		border: 1px solid #822433;
+		padding: 10px
+	}
+	
+	hr {
+		border: 1px solid #822433
+	}
+
+	td p {
+		margin: 3 0
+	}
+</style>
+</head>
+<body link="#0000ff" vlink="#800080">
+<h1>Esercizi su file</h1>
+
+<ol>
+<li>Dato un file di testo che contiene n righe, dove ciascuna riga contiene due numeri interi separati dal carattere ";", creare un file di testo che contiene n righe, dove ciascuna riga contiene la somma dei due interi letti.<br>
+Si pu&ograve; utilizzare come input il file <a href="numeri.txt" target="_blank">numeri.txt</a>
+</li>
+<li>
+Come sopra, separando in due file diversi le somme > 100 e le somme <= 100.
+</li>
+<li>
+Dato un file di testo in cui ciascuna riga &egrave; formata da una sequenza di numeri separati da ";"   <code>xxx;yyy;zzz;...;kkkkk</code>  creare un file di testo che contiene su ciascuna riga gli stessi valori divisi per la somma della riga. P.es., se leggo una riga 10;30;60 devo scrivere la riga 0.1;0.2;0.6 (poich&eacute; in questo caso la somma &egrave; 100).<br>
+Si pu&ograve; utilizzare come input il file <a href="valori.txt" target="_blank"><code>valori.txt</code></a>
+</li>
+<li>
+Dato un file chiamato <code>PIL.txt</code>, contenente righe del tipo  <code>Grecia;1245</code>  in un ordine qualsiasi, e dato un file <code>valori.txt</code> contenente righe del tipo <code>Grecia;12;34;2;678</code>, dove il secondo file contiene righe di lunghezza non nota e diversa da riga a riga, creare un file di testo <code>valori_norm.txt</code> che normalizza i valori rispetto al valore presente nel file PIL per la stessa nazione. I due file presentano le righe in un ordine qualsiasi, quindi la posizione in cui compare la riga "Italia" nel file <code>valori.txt</code> &egrave; in generale diversa dalla posizione in cui compare la riga "Italia" nel file <code>PIL.txt</code>. Suggerimento: leggere prima il file <code>PIL.txt</code>, creando un dizionario.
+<br>
+Si possono utilizzare come input i file <a href="PIL.txt" target="_blank"><code>PIL.txt</code></a> e <a href="valori.txt" target="_blank"><code>valori.txt</code></a></li>
+<li>
+Come nel punto precedente, ma se una riga di <code>valori.txt</code> non compare nella file <code>PIL.txt</code>, questa riga deve essere scritta immutata in un altro file <code>anomalie.txt</code> invece che nel file <code>valori_norm.txt</code>.
+<br>
+Si possono utilizzare come input i file <a href="PIL.txt" target="_blank"><code>PIL.txt</code></a> e <a href="valoriEsteso.txt" target="_blank"><code>valoriEsteso.txt</code></a></li>
+</ol>
+
+</body>
+</html>

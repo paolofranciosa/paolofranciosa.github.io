@@ -1,0 +1,4 @@
+nome: studente71
+cognome: esercitazione
+matricola: //
+

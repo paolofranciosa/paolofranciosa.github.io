@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Esercitazione 11</title>
+   <link rel="stylesheet" href="http://www.statistica.uniroma1.it/users/pfrancio/styles/sapienzaStyle.css">
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+
+
+<h1>Esercitazione 11</h1>
+<h2>Analisi di righe e colonne di matrici</h2>
+<ol>
+<li>Data una matrice A di dimensioni n x m di valori reali, 
+costruire e restituire una matrice n x m di -1/0/1, in cui -1 indica che il valore
+corrispondente di A &egrave; un minimo locale, +1 che &egrave; un massimo locale, 0 che non &egrave; n&eacute;
+un minimo n&eacute; un massimo locale.<br>
+L'essere minimo o massimo locale &egrave; definito rispetto alla 4-adiacenza (i vicini sono i 4 elementi
+che si trovano sopra/sotto/destra/sinistra dell'elemento). Gli elementi di bordo non sono 
+ n&eacute; minimi locali n&eacute; massimi locali.
+</li>
+
+<li>
+<p>Data una matrice di reali, restituire per ciascuna riga il numero di elementi che si trovano al di fuori
+dell'intervallo [m-&sigma;, m+&sigma;], dove m e &sigma; sono rispettivamente la media e la deviazione standard degli elementi della riga.
+Inizialmente stampare per ciascuna riga i valori m, &sigma;, m-&sigma; ed m+&sigma;.</p>
+<p>Si suggerisce di utilizzare inizialmente una matrice fissata. Una volta messo a punto il programma, sperimentarlo su matrici contenenti elementi random.</p>
+</li>
+
+<li>
+Ripetere l'esercizio precedente per le colonne. Pu&ograve; essere utile creare ogni volta una lista contenente gli elementi di una colonna.
+</li>
+</ol>
+</body>
+</html>

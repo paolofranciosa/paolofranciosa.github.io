@@ -1,0 +1,96 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guida esercitazione 4</title>
+   <link rel="stylesheet" href="http://www.statistica.uniroma1.it/users/pfrancio/styles/sapienzaStyle.css">
+</head>
+
+<body>
+<h1>Esercitazione n. 4</h1>
+<h2>Esame di una sequenza pseudocasuale</h2>
+	<p>Il metodo <code>random.random()</code> (dopo  aver eseguito una <code>import random</code>) restituisce un valore <code>float</code> pseudocasuale compreso tra 0 (incluso) e 1 (escluso). Ad ogni chiamata del metodo <code>random.random()</code> viene restituito un nuovo valore. Quindi, il frammento di codice seguente stampa una successione di 10 numeri casuali compresi in [0, 1):</p>
+	<pre>
+    conta = 0
+    while conta<10:
+        x = random.random()
+        print(x)
+        conta = conta + 1
+	</pre>
+	
+	<p>
+	Prendendo spunto dal frammento di codice proposto, scrivere un programma che:</p>
+	<ul>
+		<li>accetta in input un numero intero positivo <code>n</code>,</li>
+		<li>genera e stampa <code>n</code> valori pseudocasuali.</li>
+	</ul>
+	<p>Modificare il programma in modo da raggiungere, uno alla volta, i seguenti obiettivi.<br>
+	   Deve essere generata una sola sequenza, e da quella sequenza devono essere ricavati tutti i valori richiesti nel seguito.</p>
+	<ol>
+	    <li>Stampare la somma dei valori generati (la somma deve essere stampata una  sola  volta)</li>
+	    <li>stampare il  massimo dei valori generati (il massimo deve essere stampato una  sola  volta)</li>
+	    <li>stampare il  minimo dei valori generati (il minimo deve essere stampato una  sola  volta)</li>
+		<li>verificare se la sequenza generata contiene almeno un elemento compreso tra 0.4 e 0.5 (<em>utilizzare una variabile boolean ...</em>),</li>
+		<li>verificare se la sequenza generata &egrave; crescente (<em>per risolvere questo punto &egrave; necessario mantenere sia il valore corrente che il valore generato nell'iterazione precedente; a ciascuna iterazione il valore corrente viene copiato nella variabile che contiene il valore della iterazione precedente ...</em>),</li>
+		<li>contare il numero di sequenze massimali crescenti. Ad esempio, la sequenza<br>
+		0.23 - 0.15 - 0.01 - 0.48 - 0.68 - 0.27 - 0.83<br>
+		&egrave; composta da 4 sequenze crescenti:<br> 0.23;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.15;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.01 - 0.48 - 0.68;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.27 - 0.83;<br>
+		(<em>una sequenza crescente termina appena si incontra ..., oppure alla fine della sequenza ...</em>),</li>
+		<li>trovare la lunghezza della massima porzione crescente della sequenza (<em>questo punto &egrave; particolarmente impegnativo</em>): ad esempio, se la sequenza generata fosse 0.23 - 0.15 - 0.01 - 0.48 - 0.68 - 0.27 - 0.83, la massima porzione crescente sarebbe lunga 3 (0.01 - 0.48 - 0.68)</li>
+      	<li>contare il numero di massimi locali (un <em>massimo locale</em> &egrave; un elemento che &egrave; preceduto da un elemento minore e seguito da un elemento minore. Il primo e l'ultimo elemento non possono essere massimi locali)</li>
+	</ol>
+
+<!--
+<hr>
+<h2>Somme di quadrati</h2>
+	<p>Scrivere un programma che, dato in input un numero naturale n, stampa tutte le coppie di naturali
+	x, y tali che x^2 + y^2 = z^2, con x, y <= n e z naturale.</p>
+	
+	<p>Per n = 20 le soluzioni dovrebbero essere le seguenti:</p>
+	<pre>
+3^2 + 4^2 = 5^2
+5^2 + 12^2 = 13^2
+6^2 + 8^2 = 10^2
+8^2 + 15^2 = 17^2
+9^2 + 12^2 = 15^2
+12^2 + 16^2 = 20^2
+	</pre>
+	
+<h3>Soluzione</h3>
+<ul>
+	<li><a href="../soluzioni/Equazioni.java" target="_blank">Equazioni.java</a></li>
+</ul>
+-->
+<hr>
+<h2>Fattorizzazione di un numero naturale</h2>
+	<p>Scrivere un programma che, dato in input un numero naturale, stampa la sua scomposizione in fattori primi.</p>
+	<p>Ad esempio, se fosse dato in input il numero 792, il programma dovrebbe stampare</p>
+	<pre>
+    792 = 2  2  2  3  3  11
+	</pre>
+	<p>o, preferibilmente,</p>
+	<pre>
+    792 = 2 * 2 * 2 * 3 * 3 * 11
+	</pre>
+	
+	<em>Suggerimenti:
+		<ul>
+		<li>una volta trovato un divisore, dovr&agrave; essere stampato il divisore e poi fattorizzato il quoziente ...</li>
+		<li>ogni divisore deve essere considerato pi&ugrave; volte, finch&eacute; divide il numero residuo. Quindi il divisore cambia solo quando &egrave; stato utilizzato il pi&ugrave; possibile</li>
+		</ul>
+<pre>792: 2 * 396
+         396: 2 * 198
+                  198: 2 * 99
+
+                           99: 3 * 33 
+                                   33: 3 * 11
+
+                                           11: 11 * 1
+                                                    fine
+</pre>
+	</em>
+</body>
+
+</html>

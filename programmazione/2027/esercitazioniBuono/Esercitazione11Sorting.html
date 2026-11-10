@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Esercitazione 11</title>
+<style type="text/css">
+	table.lezione {
+		border: 3px solid #822433
+	}
+	 table.lezione td, table.lezione th {
+		border: 1px solid #822433;
+		padding: 10px
+	}
+	
+	hr {
+		border: 1px solid #822433
+	}
+
+	td p {
+		margin: 3 0
+	}
+</style>
+
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+
+
+<h1>Esercitazione 11</h1>
+<h2>Sperimentazione di algoritmi di ordinamento</h2>
+<ol>
+<li>Scrivere una funzione che crea e restituisce una lista di interi casuali in un certo intervallo, specificando come parametri la lunghezza della lista e l'intervallo di interi desiderato</li>
+<li>Individuare il metodo della classe <code>list</code> che crea una copia di una lista</li>
+<li>Implementare il quick sort</li>
+<li>Implementare il merge sort</li>
+<li>Implementare il bubble sort con flag per arresto in caso di raggiunto ordinamento</li>
+<li>Sperimentare l'uso della funzione <code>time.time_ns()</code>, importando il modulo time, per misurare il tempo trascorso tra l'esecuzione di due istruzioni</li>
+<li>Scrivere una funzione che, data una lista, restituisce il tempo impiegato per ordinarla usando il quick sort</li>
+<li>Come sopra per merge sort, bubble sort e il metodo <code>sort</code> della classe <code>list</code></li>
+<li>Scrivere una funzione che, data una lista, restituisce il tempo impiegato per ordinarla usando il quick sort, merge sort, il bubble sort e il metodo <code>sort</code> della classe <code>list</code>. I metodi di ordinamento devono essere applicati a copie della stessa lista</li>
+<li>Stampare una tabella con le seguenti colonne:<br>
+lunghezza - T quick - T merge - T list.sort<br>
+in cui la lunghezza è la sequenza 50, 100, 200, 400, 800, ..., raddoppiando ad ogni passo
+fino a un valore della lunghezza per il quale il tempo di esecuzione è ancora ragionevolmente breve</li>
+<li>Modificare il quick sort e il merge sort, definendo come passo base il caso in cui la lunghezza della sequenza da ordinare &egrave; minore di k, ad esempio con k=5. Nel passo base ordinare utilizzando l'insertion sort (che deve essere scritto in modo da lavorare su una porzione di una sequenza, come il merge e il quick)</li>
+<li>Sperimentare la modifica descritta al punto precedente su liste casuali lunghe, osservando come varia il tempo di esecuzione al variare della soglia k</li>
+</ol>
+</body>
+</html>

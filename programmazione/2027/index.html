@@ -1,0 +1,1743 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Informatica, terzo canale 2026-2027)</title>
+   <link rel="stylesheet" href="sapienzaStyle.css">
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+<table summary="logo e intestazione"><tr><td width="150" align="center" valign="middle">
+<img src="logo.jpg" alt="logo sapienza"></td><td valign="middle">
+<h1>Informatica, terzo canale,<br>anno accademico 2026-2027</h1>
+<h2>Docente: <a href="../../index.html">Paolo Franciosa</a>
+<br>9 CFU 
+<br>Statistica, Economia e Scienze Sociali
+<br>Statistica, Finanza e Scienze Attuariali
+<br>Statistica e Data Analytics
+</h2></td></tr></table>
+<hr><a name="inizio">
+</a>
+<!--<h2><center><font color="red">Le lezioni del terzo canale (cognomi da PB a Z), per tutti e tre i corsi di laurea triennale,
+inizieranno luned&igrave; 22 settembre 2025 alle ore 12:00 in aula II (edificio CU002, piano terra)</font></center></h2>
+-->
+<p>Le lezioni si svolgeranno con il seguente orario:
+<ul>
+   <li>luned&igrave; dalle 12:00 alle 14:00 in aula II (edificio CU002, piano terra)</li>
+   <li>marted&igrave; dalle 12:00 alle 14:00 in aula III (edificio CU002, terzo piano)</li>
+   <li>gioved&igrave; dalle 14:00 alle 16:00 in aula 15 (laboratorio informatico, via Tiburtina 205)</li>
+</ul>   
+</p>
+<!--
+<hr>
+		<strong>
+		<p>I tutor Pierpaolo Bolognini, Rebecca Mastronicola e Riccardo Nese hanno creato un gruppo Whatsapp
+		per le attivit&agrave; di tutoraggio.
+		Al gruppo NON partecipano i docenti. Si raccomanda a tutti gli studenti di Informatica
+		di entrare a far parte del gruppo per essere informati sulle attivit&agrave; del corso,
+		eventuali spostamenti/annullamenti di lezioni
+		e in particolare sulle iniziative di tutoraggio.</p>
+		<p>
+		Il link per iscriversi &egrave; <a href="https://chat.whatsapp.com/BlhqeLGymAh2Djv2fSGSv4?s=cl&p=a&mlu=4&ilr=" target = "_blank">
+    https://chat.whatsapp.com/BlhqeLGymAh2Djv2fSGSv4?s=cl&p=a&mlu=4&ilr=</a>
+    </p>
+    </strong>
+-->
+<hr>
+
+<!--
+<h2><center><font color="red">Importante: Si
+raccomanda di compilare
+<a href="https://forms.gle/d5u86ngFN9cR4M9o8" target="_blank">questo modulo</a> per essere inseriti nella mailing list relativa al corso di Informatica terzo canale</center>
+</h2>
+<hr>
+-->
+<!--
+
+<h2><center><font color="red">Importante: <a href="https://youtu.be/tpswmVkSsbE" target="_blank">tutorial per lo svolgimento della prova di programmazione</a></font><br> (a cura del prof. Massimo Lauria)</center></h2>
+
+<hr>
+<hr>
+<hr>
+-->
+<center>
+<table class="lezione" cellspacing="4">
+  <tbody>
+    <tr>
+	<td valign="middle" align="center"><a href="#contenuti"><span
+ style="letter-spacing: 1pt;">Obiettivi</span></a> </td>
+      <td valign="middle" align="center"><a href="#programma"><span
+ style="letter-spacing: 1pt;">Programma</span></a> </td>
+      <td valign="middle" align="center"><a href="#materiale"><span
+ style="letter-spacing: 1pt;">Materiale didattico</span></a> </td>
+    </tr>
+    <tr>
+      <td valign="middle" align="center"><a
+ href="http://www.dss.uniroma1.it/"
+ target="_blank"><span style="letter-spacing: 1pt;">Orario delle lezioni</span></a>
+      </td>
+      <td valign="middle" align="center"><span
+ style="letter-spacing: 1pt;"><a href="../../didattica.html#ricevimento" target="_blank">Ricevimento
+studenti</a></span> </td>
+      <td valign="middle" align="center"><a href="#modalita"><span
+ style="letter-spacing: 1pt;">Modalit&agrave; d'esame</span></a> </td>
+    </tr>
+    <tr>
+      <td valign="middle" align="center" colspan="3"><a
+ href="#elencolezioni"><span style="letter-spacing: 1pt;">Diario delle
+lezioni, con dettaglio degli argomenti trattati</span></a> </td>
+	</tr>
+</tbody>
+</table>
+</center>
+
+<!--
+<hr>
+<center>
+<p><font color="red"><strong>I tutor del corso hanno organizzato una sessione di esercizi on-line per il giorno 9 dicembre 2022 dalle ore 10:00 alle ore 12:00<br>Per partecipare collegarsi via meet a <a href="https://meet.google.com/fmu-kfon-bxn" target="_blank">https://meet.google.com/fmu-kfon-bxn</a>
+</strong></font>
+</p>
+</center>
+-->
+<!--
+<hr>
+<center>
+<strong><p>I tutor del corso hanno creato un gruppo Telegram dedicato agli studenti per risolvere problemi legati all'installazione e all'uso del software, e alla soluzione dei problemi di programmazione proposti.</p><p>Verranno inoltre organizzate delle sessioni di esercitazione in vista degli appelli di esame.</p><p>Al gruppo non partecipa alcun docente, e i tutor potranno comunicare ai docenti il contenuto delle richieste ricevute solo se necessario, e comunque in forma anonima.</p><p>Il gruppo &egrave; su 
+<a href="https://t.me/Stat_Informatica" target="_blank">https://t.me/Stat_Informatica</a>
+</p></strong>
+</center>
+-->
+<hr>
+<center>
+<p>Per commenti e segnalazioni,
+contatta il docente all'indirizzo<br>
+paolo<font color="red">QUIUNPUNTO</font>franciosa<font color="red">QUIUNACHIOCCIOLA</font>uniroma1<font color="red">QUIUNPUNTO</font>it
+</p>
+</center>
+
+
+
+<hr>
+<h3 align="center"><a name="ricevimento">Ricevimento studenti</a></h3>
+Il docente &egrave; disponibile il gioved&igrave; dalle 16:00 alle 18:00 presso il suo studio (edificio CU002, quarto piano, stanza 9). Si consiglia di comunicare via e-mail la richiesta di ricevimento.<br>
+Appuntamenti in altri orari possono essere concordati via e-mail.
+<p align="right">
+<a href="#inizio">torna all'inizio</a> </p>
+
+
+<hr>
+<h3 align="center"><a name="contenuti">Obiettivi e contenuti del corso</a></h3>
+Vengono illustrati i principi fondamentali del'informatica
+e della programmazione, utilizzando il linguaggio Python.
+<p>Vengono presentati alcuni algoritmi fondamentali per problemi di
+ordinamento, ricerca e selezione, alcuni problemi numerici,
+evidenziandone le caratteristiche di efficienza.
+</p>
+<p>Vengono descritti i principali metodi di codifica dell'informazione.
+</p>
+<p>Alla fine del corso lo studente sar&agrave; in grado di:
+</p>
+<ul>
+  <li>scrivere, compilare ed eseguire semplici programmi
+nel linguaggio Python; </li>
+  <li>utilizzare  ambienti di programmazione Python</li>
+  <li>progettare semplici algoritmi e valutarne in maniera informale la complessit&agrave;
+computazionale. </li>
+</ul>
+<p align="right">
+<a href="#inizio">torna all'inizio</a> </p>
+<hr>
+<h3 align="center"><a name="programma">Programma</a></h3>
+<p>
+Componenti di un sistema di elaborazione: hardware, software, principali unit&agrave; periferiche. 
+Interazione con un sistema operativo basato su finestre. 
+Il sistema operativo: funzioni principali, gestione dei processi, gestione della memoria, file system.
+Concetto di cartella, documento, applicazione/programma.<p>
+
+<p>Rappresentazione dell'informazione: codifica di informazioni numeriche - sistemi di numerazione posizionali,
+codifica binaria, ottale, esadecimale, conversioni di base. Rappresentazione di numeri interi negativi.
+Rappresentazione in virgola mobile. Codifica di caratteri.</p>
+
+<p>Concetto di algoritmo. 
+Esempi di algoritmi in linguaggio naturale. 
+Generalit&agrave; sui linguaggi di programmazione, compilatori.</p>
+
+<p>Programmazione in linguaggio Python: uso dell'interprete interattivo, ambienti di programmazione, preparazione di script in linguaggio Python.
+Costrutti essenziali del linguaggio: variabili, espressioni.
+Assegnazioni, metodi di input/output, istruzioni di selezione, ed iterazione.
+Sequenze, slicing di sequenze. Dizionari. Gestione delle eccezioni.
+Definizione di funzioni, parametri.
+Accesso a file e scrittura su file.
+Consultazione della documentazione Python.</p>
+
+<p>Algoritmi fondamentali: 
+Ricerca sequenziale, ricerca dicotomica su un vettore ordinato. 
+Ordinamento: insertion sort, merge sort.
+Algoritmo di Euclide per la ricerca del Massimo Comun Divisore (MCD). Algoritmi di base su matrici. 
+</p>
+
+<p>Introduzione alla complessit&agrave; computazionale: concetto di complessit&agrave; di un algoritmo, valutazione informale della complessit&agrave; computazionale degli algoritmi studiati.</p>
+
+<p align="right">
+<a href="#inizio">torna all'inizio</a> </p>
+<hr>
+<h3 align="center"><a name="materiale">Materiale didattico</a></h3>
+<h4>Testi consigliati</h4>
+      <dl>
+        <dt>Testo di riferimento per il linguaggio Python:</dt>
+        <dd>Allen Downey,
+            Pensare in Python - Come pensare da Informatico,
+			seconda edizione<br>
+			versione pdf (in italiano) disponibile gratuitamente su <a href="https://github.com/AllenDowney/ThinkPythonItalian/blob/master/thinkpython_italian.pdf" target="blank">github</a>
+			secondo la GNU Free Documentation License<br>
+			versione cartacea (in italiano) edita da Egea.<br>
+			Capitoli (rif. versione 2.2.23 del testo) 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12.1-12.3, 13.1-13.5, 14.1-14.5, 19.1-19.2, Appendice A, Appendice B<br>
+			Una versione aggiornata, solo in inglese, &egrave; disponibile su
+			 <a href="https://allendowney.github.io/ThinkPython/" target="blank">github</a></dt>
+        <dt>Per approfondimenti sulla programmazione in Python:</dt>
+        <dd> Cay S. Horstmann, Rance D. Necaise<br>
+            Concetti di informatica e fondamenti di Python<br>
+            Apogeo, 2019.
+        </dd>
+        <dt><a name="cheatsheet">Tavola sinottica Python3</a>:</dt>
+        <dd>pu&ograve; essere consultata durante la prova di esame di programmazione: <a href="mementopython3-english.pdf" target="_blank">versione PDF</a></dd>
+        <dt><a name="cormen">Per gli argomenti di algoritmi e complessit&agrave;:
+        		<ul>
+        		<li>Dispense a cura del prof. Massimo Lauria,
+        		<a href="https://www.massimolauria.net/informatica2026/docs/algoritmi.pdf" target="_blank">disponibili qui in formato PDF</a>.<br>
+        		Capitoli 1, 2, 3, 7, 8, 9, 11.</li>
+        		<li>Un testo che tratta gli argomenti delle dispense &egrave; il<br>
+        		Cormen, Leiserson, Rivest,  Stein: Introduzione
+agli algoritmi e strutture dati, McGraw-Hill.<br>
+         Le parti di interesse di questo testo sono indicate nelle dispense all'inizio di  ciascun capitolo.</li>
+        		</ul>
+        </dd>
+        <dt><a name="ceri">Materiale di riferimento per la codifica dell'informazione</a>:</dt>
+        <dd>Ceri, Mandrioli, Sbattella:
+        	Informatica arte e mestiere, McGraw-Hill.<br>Cap. 11, pagg. 243-255,
+        	<br>o in alternativa
+        	<br>Ceri, Mandrioli, Sbattella:
+        	Informatica istituzioni, McGraw-Hill.</a><br>Cap. 2 fino a 2.2.2 compreso e ad 2.3 alla fine del capitolo, pagg. 29-43</dd>
+</dl>
+
+
+<h4>Strumenti di programmazione</h4>
+      <ul>
+      	<li>ambiente Python interattivo, da installare sul proprio PC, disponibile per qualsiasi piattaforma <a href="https://www.python.org/downloads/" target="blank">www.python.org/downloads</a>:
+      	   </li>
+        <li><a target="blank" href="http://thonny.org">Thonny</a>: un ambiente gratuito multipiattaforma, da installare sul proprio PC, per la scrittura e il debugging di programmi Python</li>
+		<li><a href="https://www.pythonanywhere.com" target="blank">python anywhere</a>: un ambiente utilizzabile via web per la sperimentazione di programmi Python. Una volta creato un account permette di salvare  i propri script Python e osservarne l'esecuzione semplicemente disponendo di una connessione al Web</li>
+		<li><a href="http://pythontutor.com/" target="blank">pythontutor.com</a>: un  ambiente utilizzabile via web per la scrittura e l'esecuzione animata di programmi Python</li>
+</ul>
+      Gli studenti che hanno difficolt&agrave; nel reperire il software possono rivolgersi al docente.
+
+<h4><a name="ambiente">Ambiente di lavoro presso i laboratori di via Tiburtina</a></h4>
+Utilizzando il software di virtualizzazione VirtualBox &egrave; possibile replicare su qualunque PC
+lo stesso ambiente di lavoro disponibile sui PC dei laboratori "Paolo Ercoli" di via Tiburtina.
+<br>Una volta installato Virtual Box (si raccomanda la versione 6, disponibile su <a href="https://www.virtualbox.org" target=_blank">https://www.virtualbox.org</a>) si pu&ograve;
+eseguire la macchina virtuale del DSS, disponibile su 
+ <a href="https://www.massimolauria.net/informatica2024/vm.html" targte="_blank">https://www.massimolauria.net/informatica2021/vm.html</a>,
+ avendo cos&igrave; a disposizione esattamente lo stesso ambiente di lavoro che sar&agrave; utilizzato durante l'esame in presenza.
+ <br>Per informazioni pi&ugrave; dettagliate consultare la pagina
+ <a href="https://www.massimolauria.net/informatica2024/vm.html" targte="_blank">https://www.massimolauria.net/informatica2021/vm.html</a>
+
+
+
+<h4>Altri link rilevanti</h4>
+      <ul>
+        <li>Un tutorial approfondito sull'uso degli ambienti di programmazione Python (in inglese) <a
+ href="http://www.allendowney.com/wp/books/think-python-2e/" target="_blank">http://www.allendowney.com/wp/books/think-python-2e/</a>
+ </li>
+
+      </ul>
+<p align="right">
+<a href="#inizio">torna all'inizio</a> </p>
+<hr>
+<h3 align="center"><a name="modalita">Modalit&agrave; d'esame</a></h3>
+L'esame consiste in una prova pratica di programmazione in Python da svolgere al computer, secondo le modalit&agrave; utilizzate durante le esercitazioni di laboratorio, contenente
+anche domande di teoria a risposta chiusa e a risposta aperta.
+Alla prova seguir&agrave; un eventuale colloquio, a discrezione del docente. Si consiglia di esercitarsi alla prova con le stesse modalit&agrave; descritte nelle lezioni di laboratorio.
+<!--
+in <a href="esercitazioni/Esercitazione6/Esercitazione6.html"
+ target="_ blank">Esercitazione 6</a>, <a href="esercitazioni/Esercitazione7/Esercitazione7.html"
+ target="_ blank">Esercitazione 7</a>, <a href="esercitazioni/Esercitazione8/Esercitazione8.html"
+ target="_ blank">Esercitazione 8</a>, <a href="esercitazioni/Esercitazione9/Esercitazione9.html"
+ target="_ blank">Esercitazione 9</a> e <a href="esercitazioni/Esercitazione9/Esercitazione10.html"
+ target="_ blank">Esercitazione 10</a>.<br>
+-->
+La prova sar&agrave; sostenuta nei laboratori di via Tiburtina sulla macchina virtuale del DSS. Si raccomanda di esercitarsi all'uso di questa macchina scaricando la macchina virtuale come descritto <a href="#ambiente">in alto.</a>
+ Durante la prova di programmazione pu&ograve; essere consultata esclusivamente la tavola sinottica disponibile <a href="mementopython3-english.pdf" target="_blank">qui in versione PDF</a>.</li>
+<h4>Esempi di prove di esame</h4>
+<p>Esempi di prove di esame sul programma degli anni accademici precedenti sono disponibili su
+<a href="https://massimolauria.net/courses/informatica2019/docs/esempio_prova_programmazione.zip" target="_blank"">Prova di programmazione</a>
+<p align="right">
+<a href="#inizio">torna all'inizio</a> </p>
+<hr>
+<h2 align="center"><a name="elencolezioni">Diario delle lezioni a.a. 2026-2027</a>
+</h2>
+<center>
+<table class="lezione" width="70%">
+  <tbody>
+    <tr>
+      <th width="33%" align="center">luned&igrave; 12:00 - 14:00<br>aula II piano terra</th>
+      <th width="34%" align="center">marted&igrave; 12:00 - 14:00<br>aula III terzo piano</th>
+      <th width="33%" align="center">gioved&igrave; 14:00 - 16:00<br>aula 15 (lab via Tiburtina 205)</th>
+    </tr>
+    <tr>
+      <td width="33%" align="center"></td>
+      <td width="34%" align="center"></td>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#24-09-26">24 settembre 2026</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#28-09-26">28 settembre 2026</a></td>
+      <td width="34%" align="center" bgcolor="yellow"><a href="#29-09-26">29 settembre 2026</a></td>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#01-10-26">1 ottobre 2026</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#05-10-26">5 ottobre 2026</a></td>
+      <td width="34%" align="center" bgcolor="yellow"><a href="#06-10-26">6 ottobre 2026</a></td>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#08-10-26">8 ottobre 2026</a></td>
+    </tr>
+    
+    <tr>
+      <th width="33%" align="center">luned&igrave; 12:00 - 14:00<br>aula Tacciuoli (Urologia)</th>
+      <th width="34%" align="center">marted&igrave; 12:00 - 14:00<br>aula III terzo piano</th>
+      <th width="33%" align="center">gioved&igrave; 14:00 - 16:00<br>aula 15 (lab via Tiburtina 205)</th>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#12-10-26">12 ottobre 2026</a></td>
+      <td width="34%" align="center" bgcolor="yellow"><a href="#13-10-26">13 ottobre 2026</a></td>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#15-10-26">15 ottobre 2026</a></td>
+    </tr> 
+    <tr>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#19-10-26">19 ottobre 2026</a></td>
+      <td width="34%" align="center" bgcolor="yellow"><a href="#20-10-26">20 ottobre 2026</a></td>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#22-10-26">22 ottobre 2026</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#26-10-26">26 ottobre 2026</a></td>
+      <td width="34%" align="center" bgcolor="yellow"><a href="#27-10-26">27 ottobre 2026</a></td>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#29-10-26">29 ottobre 2026</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#02-11-26">2 novembre 2026</a></td>
+      <td width="34%" align="center" bgcolor="yellow"><a href="#03-11-26">3 novembre 2026</a></td>
+      <td width="33%" align="center" bgcolor="yellow"><a href="#05-11-26">5 novembre 2026</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center">cancellata per<br>esonero Matematica</td>
+      <td width="34%" align="center" bgcolor="yellow"><a href="#10-11-26">10 novembre 2026</a></td>
+      <td width="33%" align="center"><a href="#11-11-26">11 novembre 2026</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><a href="#16-11-26">16 novembre 2026</a></td>
+      <td width="34%" align="center"><a href="#17-11-26">17 novembre 2026</a></td>
+      <td width="33%" align="center"><a href="#19-11-26">19 novembre 2026</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><a href="#23-11-26">23 novembre 2026</a></td>
+      <td width="34%" align="center"><a href="#24-11-26">24 novembre 2026</a></td>
+      <td width="33%" align="center"><a href="#26-11-26">26 novembre 2026</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><a href="#30-11-26">30 novembre 2026</a></td>
+      <td width="34%" align="center"><a href="#01-12-26">1 dicembre 2026</a></td>
+      <td width="33%" align="center"><a href="#03-12-26">3 dicembre 2026</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><a href="#07-12-26">7 dicembre 2026</a></td>
+      <td width="34%" align="center"><a href="#08-12-26">8 dicembre 2026</a></td>
+      <td width="33%" align="center"><a href="#10-12-26">10 dicembre 2026</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><a href="#14-12-26">14 dicembre 2026</a></td>
+      <td width="34%" align="center"><a href="#15-12-26">15 dicembre 2026</a></td>
+      <td width="33%" align="center"><a href="#17-12-26">17 dicembre 2026</a></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><a href="#21-12-26">21 dicembre 2026</a></td>
+      <td width="34%" align="center"><a href="#22-12-26">22 dicembre 2026</a></td>
+    </tr>
+<!--
+    <tr>
+      <td width="33%" align="center">tutoring on-line<br>12 dicembre 2023<br><a href="https://meet.google.com/fmu-kfon-bxn" target="_blank">https://meet.google.com/fmu-kfon-bxn</a>
+      </td>
+    </tr>
+-->
+</tbody>
+</table>
+
+</center>
+
+
+<hr>
+<center>
+<p>Per commenti e segnalazioni,
+contatta il docente all'indirizzo<br>
+paolo<font color="red">QUIUNPUNTO</font>franciosa<font color="red">QUIUNACHIOCCIOLA</font>uniroma1<font color="red">QUIUNPUNTO</font>it
+</p>
+</center>
+
+<p align="right">
+<a href="#inizio">torna all'inizio</a> </p>
+<hr>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="24-09-26">24 settembre 2026 - lab</th>
+    </tr>
+	<tr>
+		<th>Argomenti </th>
+      <td>
+      	<li>Introduzione al corso</li>
+        <li>Cenni sulla struttura di un file system gerarchico: dischi logici, files, cartelle</li>
+        <li>Uso della shell in Linux (o Terminale in Mac OS, o Prompt dei comandi in Windows)</li>
+        <li>Navigazione nel file system: comandi <code>ls</code> e <code>pwd</code> (oppure <code>dir</code> in Windows)
+         il comando  <code>cd</code></li>
+        <li>Uso dell'interprete Python 3 dalla Shell/Terminale/Prompt dei comandi.</li>
+	</td>
+    </tr>
+	<tr>
+		<th>Esercitazione </th>
+      <td>
+		<li>Valutazione di espressioni aritmetiche</li>
+		<li>Uso degli operatori aritmetici <code>&nbsp;&nbsp;+&nbsp;&nbsp;-&nbsp;&nbsp;*&nbsp;&nbsp;/&nbsp;&nbsp;**&nbsp;&nbsp;(...)</code></li>
+		<li>Verificare, utilizzando l'interprete Python 3, qual &egrave; il massimo valore <code>float</code> rappresentabile</li>
+		<li>Sperimentare la differenza tra l'operatore <code>/</code> e l'operatore <code>//</code>, sia con operandi <code>int</code> che con operandi <code>float</code>.</li>
+		<li>Espressioni, precedenza tra operatori, valutazione di una espressione: albero sintattico</li>
+		<li>Istruzione di <em>assegnazione</em>, binding nome - valore</li>
+      	<li>Esempi di semplici problemi risolubili in modalit&agrave; interattiva</li>
+		<li>La funzione <code>type(...)</code></li>
+	</td>
+    </tr>
+    <tr>
+		<th>Avvisi </th>
+		<td>
+		<p>I tutor  hanno creato un gruppo Whatsapp
+		per le attivit&agrave; di tutoraggio.
+		Al gruppo NON partecipano i docenti. Si raccomanda a tutti gli studenti di Informatica
+		di entrare a far parte del gruppo per essere informati sulle attivit&agrave; del corso,
+		eventuali spostamenti/annullamenti di lezioni
+		e in particolare sulle iniziative di tutoraggio.</p>
+		<p>
+		Il link per iscriversi &egrave; <a href="https://chat.whatsapp.com/BlhqeLGymAh2Djv2fSGSv4?s=cl&p=a&mlu=4&ilr=" target = "_blank">
+    https://chat.whatsapp.com/BlhqeLGymAh2Djv2fSGSv4?s=cl&p=a&mlu=4&ilr=</a>
+    </p>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a>
+</p>
+
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="28-09-26">28 settembre 2026</th>
+    </tr>
+    <tr>
+		<th>Avvisi </th>
+		<td>
+		<p>I tutor  hanno creato un gruppo Whatsapp
+		per le attivit&agrave; di tutoraggio.
+		Al gruppo NON partecipano i docenti. Si raccomanda a tutti gli studenti di Informatica
+		di entrare a far parte del gruppo per essere informati sulle attivit&agrave; del corso,
+		eventuali spostamenti/annullamenti di lezioni
+		e in particolare sulle iniziative di tutoraggio.</p>
+		<p>
+		Il link per iscriversi &egrave; <a href="https://chat.whatsapp.com/BlhqeLGymAh2Djv2fSGSv4?s=cl&p=a&mlu=4&ilr=" target = "_blank">
+    https://chat.whatsapp.com/BlhqeLGymAh2Djv2fSGSv4?s=cl&p=a&mlu=4&ilr=</a>
+    </p>
+        </td>
+    </tr>
+    <tr>
+		<th>Argomenti </th>
+		<td>
+		<ul>
+      	<li>Concetto di problema e di algoritmo</li>
+      	<li>Linguaggi ed esecutori</li>
+      	<li>Esempi di algoritmi</li>
+		<li>Espressioni, precedenza tra operatori, valutazione di una espressione: albero sintattico</li>
+		<li>Chiamata  di funzioni. Significato in una espressione.</li>
+		<li>Istruzione di <em>assegnazione</em>, binding nome - valore</li>
+		<li>Regole per la definizione di identificatori, parole riservate</li>
+		<li>Funzioni di conversione</li>
+		<li>Uso del modulo <code>math</code></li>
+      	<li>Esempi di semplici problemi risolubili in modalit&agrave; interattiva</li>
+		</ul>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="29-09-26">29 settembre 2026</th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+	  <td>
+	     <p>Script vs. modalit&agrave; interattiva, uso dell'ambiente <strong>Thonny</strong>, uso del debugger</p>
+         <p>Funzione <code>print(...)</code></p>
+		<p>Stringhe, operatori su stringhe</p>
+		<p>Errori sintattici, errori semantici, eccezioni</p>
+		<p>Istruzione <code>if ... :  else: ...</code></p>
+		<p>Indentazione del codice</p>
+		<p>Espressioni boolean, le costanti <code>True</code> e <code>False</code></p>
+		</td>
+    </tr>
+    <tr>
+      <th>Materiale</th>
+      <td>
+			<p>Un tutorial per l'installazione di Python3 in ambiente Windows &egrave; disponibile su <a href="https://www.youtube.com/watch?v=ij1HTDpVTBI"
+ target="_blank">https://www.youtube.com/watch?v=ij1HTDpVTBI</a> (a cura del prof. Massimo Lauria)</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Esercizi proposti </th>
+      <td>
+          <ol>
+			<li>Esprimere 8430 secondi in ore, minuti e secondi (usare l'operatore <code>//</code>).</li>
+			<li>Generalizzare il problema precedente immettendo da tastiera il numero di  secondi.</li>
+			<li>Calcolare quanti secondi sono 3 ore, 5 minuti e 18 secondi</li>
+			<li>Generalizzare il problema precedente immettendo da tastiera il numero di ore, minuti e secondi.</li>
+			<li>Trovare la lunghezza dell'ipotenusa di un triangolo rettangolo i cui cateti misurano
+			   rispettivamente 18.6 metri e 15 metri</li>
+			<li>Come sopra, immettendo le lunghezze dei cateti da tastiera</li>
+ 			<li>Dato capitale iniziale (inserire a piacere) e interesse annuo (ad esempio 4.5 se l'interesse &egrave; del 4,5% annuo), calcolare il capitale dopo un anno e
+ 			dopo 3 anni.</li>
+          </ol>
+          Uso dell'istruzione <code>if</code>
+          <ol>
+          <li>dati tre interi (che assumiamo distinti), stamparli in ordine crescente</li>
+          
+          </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>
+<a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="01-10-26">1 ottobre 2026 (lab)</th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+		<p>Invocazione di metodi e uso del valore restituito</p>
+        <p>Funzione <code>input(...)</code></p>
+		<p>Generazione di numeri pseudocasuali con <code>random.random()</code> e <code>random.randint(a, b)</code></p>
+		<p>Semplici programmi con l'istruzione <code>if</code></p>
+	</td>
+    </tr>
+    <tr>
+      <th>Esercizi proposti </th>
+      <td>
+          <p><a href="esercitazioni/Esercitazione2.html"
+ target="_blank">Esercitazione 2</a></p>
+          <p>Soluzioni:
+              <ul>
+                  <li><a href="esercitazioni/Esercitazione2Soluzioni/es_1.py"
+ target="_blank">esercizio 1</a></li>
+                  <li><a href="esercitazioni/Esercitazione2Soluzioni/es_2.py"
+ target="_blank">esercizio 2</a></li>
+                  <li><a href="esercitazioni/Esercitazione2Soluzioni/es_4.py"
+ target="_blank">esercizio 4</a></li>
+                  <li><a href="esercitazioni/Esercitazione2Soluzioni/es_if_1.py"
+ target="_blank">esercizio if 1</a></li>
+                  <li><a href="esercitazioni/Esercitazione2Soluzioni/es_if_2.py"
+ target="_blank">esercizio if 2</a></li>
+                  <li><a href="esercitazioni/Esercitazione2Soluzioni/es_if_3.py"
+ target="_blank">esercizio if 3</a></li>
+                  <li><a href="esercitazioni/Esercitazione2Soluzioni/es_if_4.py"
+ target="_blank">esercizio if 4</a></li>
+                  <li><a href="esercitazioni/Esercitazione2Soluzioni/es_if_5.py"
+ target="_blank">esercizio if 5</a></li>
+                  <li><a href="esercitazioni/Esercitazione2Soluzioni/es_if_6.py"
+ target="_blank">esercizio if 6</a></li>
+              </ul>
+          </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>
+<a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="05-10-26">5 ottobre 2026</th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+		<p>Stringhe, operatori su stringhe</p>
+		<p>Varianti dell'istruzione <code>if ... :</code>,<br>
+		  <code>if ... : ... elif ...: elif ....: else:</code><br>
+		  <code>if ... : </code> senza <code>else:</code></p>
+		<p>Espressioni boolean</p>
+		<p>Operatori logici <code>and</code>, <code>or</code> e  <code>not</code></p>
+		<p>Definizione di funzioni con  <code>def .... :</code>, chiamata di funzioni</p>
+       </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+      <ol>
+        <li>Dati tre valori <code>float</code> distinti a
+        	piacere, che rappresentano i coefficienti di una equazione di secondo grado in una variabile, trovare le soluzioni (se reali) oppure stampare un messaggio (se complesse). Il programma
+			deve funzionare correttamente per qualsiasi terna di coefficienti.</li>
+		<li>Ordina tre numeri. Dati tre numeri interi distinti stamparli in ordine crescente. Si pu&ograve; decidere di eseguire i confronti e stampare i tre valori nell'ordine richiesto oppure di usare altre tre variabili alle quali assegnare rispettivamente il valore minimo, mediano e massimo e poi stampare le tre variabili.</li>
+            <li>Verifica se tre interi possono essere le misure dei lati di un triangolo e individua il tipo di triangolo.
+            Per esempio, 3, 2 e 8 non possono esserlo perch&eacute; ... non si riesce a "chiudere" il triangolo!
+ </li>
+ 			<li>Come al punto precedente, ma in caso affermativo decidere se il triangolo &egrave; rettangolo, acutangolo
+ 			od ottusangolo (suggerimento: se vale il teorema di Pitagora &egrave; rettangolo, altrimenti ...)</li>
+		<li>Date (inserire  a piacere questi valori) le coordinate di tre punti a=(xa, ya), b=(xb, yb), c=(xc, yc), calcolare la lunghezza dei lati del triangolo definito  dai tre punti</li>
+ 			<li>Siano x1, y1, x2, y2, x3, y3, x4, y4 le coordinate (inserire  a piacere questi valori) di quattro punti.
+ 			Calcolare e stampare le pendenze (coefficiente angolare) della retta passante per (x1, y1) e (x2, y2) e
+ 			della retta passante per (x3, y3) e (x4, y4).</li>
+      </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p>
+<a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="06-10-26">6 ottobre 2026</th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+        <p>Funzioni che restituiscono più valori</p>
+		<p>Stack di attivazione delle funzioni. Variabili locali.<p>
+		<p>Passaggio  dei  parametri. Assenza di effetti collaterali su parametri semplici</p>
+		<p>Funzioni vuote,  funzioni che restituiscono valori. Parametri ed argomenti.</p>
+	</td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+      	<ol>
+      	<li>dati tre reali maggiori di zero, stampare la media aritmetica e la media geometrica</li>
+      	<li>generare casualmente 5 numeri interi in [1, 6] e stampare:
+      	    <ul>
+      	    <li>il massimo</li>
+      	    <li>la molteplicit&agrave; del massimo
+      	    (quanti valori sono uguali al massimo)</li>
+      	    </ul>
+      	</li>
+      	<li>dato l'orario di inizio di un evento (espresso da tre interi: ore, minuti, secondi, con ore compreso in [0,23], minuti compreso in [0, 59] e secondi compreso in [0, 59]) e data la durata dell'evento (espressa in ore, minuti e secondi con gli stessi vincoli definiti sopra), calcola e stampa l'istante di fine dell'evento (espressa nello stesso modo), indicando se l'istante di fine &egrave; nello stesso giorno dell'inizio o nel giorno successivo</li>
+     	<li>Funzione che restituisce la <a href="listatiPython/funzioneSomma.py"
+ target="_blank">somma di due numeri</a>, con esempio di uso</li>
+      	<li>Funzione che date le misure di due cateti di un triangolo rettangolo restituisce la <a href="listatiPython/funzioneIpotenusa.py"
+ target="_blank">misura dell'ipotenusa</a>, con esempio di uso</li>
+      	<li>Funzione che verifica se tre numeri costituiscono una <a href="listatiPython/ternePitagoriche.py"
+ target="_blank">terna pitagorica</a>, cio&egrave; se il quadrato di uno dei tre &egrave; uguale alla somma dei quadrati degli altri due, con esempi di uso. Questa funzione deve restituire <code>True</code> o <code>False</code></li>
+      </ol>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+<!--
+
+		<p>Stringhe, operatori su stringhe</p>
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="23-09-26">23 settembre 2026</th>
+    </tr>
+    <tr>
+		<th>Argomenti </th>
+		<td>
+		<ul>
+      	<li>Architettura di Von Neumann</li>
+      	<li>Architettura di un calcolatore: CPU, RAM, ROM, unit&agrave; periferiche</li>
+      	<li>Esecuzione di programmi, fetch, execute. Il Bootstrap</li>
+      	<li>Il Sistema Operativo: gestione memoria, gestione processi, gestione utenti</li>
+		<li>Linguaggi di programmazione
+		<ul>
+			<li>dall'algoritmo al programma eseguibile</li>
+			<li>compilazione/interpretazione</li>
+			<li>il caso del linguaggio Python</li>
+		</ul></li>
+		</li>Errori sintattici, errori semantici</li>
+		</ul>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a></p>
+
+-->
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="08-10-26">8 ottobre 2026 (lab)</th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+        <p>Assegnazione con modifica: <code>+=  -=  *=  /=  //=</code>
+      	<p>Esercizi sulla definizione di funzioni</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Esercizi proposti </th>
+      <td><p><a href="esercitazioni/Esercitazione3/Esercitazione3.html"
+ target="_blank">Esercitazione 3</a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="12-10-26">12 ottobre 2026</th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>L'istruzione di ciclo <code>while</code></p>
+      	<p>Esercizi sull'uso di cicli e istruzioni condizionali</p>
+      	</td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+      <ul>
+        <li>Scrivere un programma che stampa il seno e il coseno degli angoli di ampiezza 0, 10, 20, ..., 90 gradi.</li>
+        <li>Scrivere un programma che legge da tastiera un intero <code>n</code> e stampa una riga contenente <code>n</code> asterischi. La stampa deve essere ottenuta chiamando una apposita funzione, e senza usare l'operatore di moltiplicazione su stringhe.<br>
+            Se nella <code>print(...)</code> si aggiunge il parametro <code>end=""</code> si evita che la stampa vada automaticamente a capo. Ad esempio, <code>print("aaa", end="")</code> seguita da <code>print("bbb", end="")</code> e <code>print("ccc")</code> produce in output <code>aaabbbccc</code></li>
+        <li>Scrivere un programma che mostra quante volte bisogna ripiegare in due un foglio dello spessore di 0,1 millimetri affinch&eacute; si raggiunga lo spessore di 500 mm.. Stampare lo spessore ottenuto dopo ciascun ripiegamento.</li>
+        <li>Modificare il programma precedente, stampando solo il numero di ripiegamenti necessari. Deve essere stampato un solo numero. Provare poi a raggiungere la distanza Terra-Luna, circa 380000 km (380.000.000.000 mm, 3.8e+11 mm).</li>
+        <li>Modificare il programma precedente, definendo una funzione che prende come parametri lo spessore del foglio e la distanza che si intende raggiungere, e restituisce il numero di ripiegamenti necessari. Scrivere un programma che chiama la funzione appena definita con vari valori dei parametri.</li>
+        <li>Scoprire cosa fa il programma
+           <a href="listatiPython/ignoto.py"
+ target="_blank">ignoto.py</a></li>
+		<li>Fare in modo che il programma <a href="listatiPython/ignoto.py"
+ target="_blank">ignoto.py</a> funzioni anche quando <code>a</code> e/o <code>b</code> contengono valori negativi </li>
+ 		<li>Scrivere un programma che, dati due numeri naturali <code>a</code> e <code>b</code>, stampa il valore di <code>a<sup>b</sup></code>, senza utilizzare l'operatore <code>**</code></li>
+		<li>Definire una funzione che, dati il capitale iniziale, il tasso di interesse annuo e il numero di anni, restituisce il capitale finale. Alla fine di ciascun anno gli interessi maturati vengono aggiunti al capitale, in modo che nell'anno successivo anche gli interessi aggiunti al capitale diano luogo ad interessi.
+        </li>
+		<li>Definire una funzione che restituisce il numero di anni necessari per raggiungere un dato importo
+        a partire da un capitale iniziale e un tasso di interesse annuo. Alla fine di ciascun anno gli interessi maturati vengono aggiunti al capitale, in modo che nell'anno successivo anche gli interessi aggiunti al capitale diano luogo ad interessi.
+        </li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="13-10-26">13 ottobre 2026</th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+		<p>Istruzioni <code>break</code> e <code>continue</code></p>
+		<p>Esempi di definizione di funzioni con cicli.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+      <ul>
+        <li>Verifica se un naturale &egrave; primo. La funzione ha come parametro il numero naturale e restituisce <code>True</code> o <code>False</code>. Per verificare se un numero <code>a</code> &egrave; divisibile per <code>b</code> basta verificare se il valore <code>a % b</code> &egrave; zero.</li>
+        </li>
+        <li>Considerazioni sull'efficienza degli algoritmi per il test di primalit&agrave;.</li>
+        <li>Stampa il numero di divisori di un naturale (si possono
+utilizzare alcune delle idee a proposito del test di primalit&agrave;)</li>
+
+ 		<li>Scrivere una funzione che stampa i numeri della <a href="http://it.wikipedia.org/wiki/Successione_di_Fibonacci" target="_blank">successione di Fibonacci</a> minori o uguali a un parametro dato.</li>
+ 		<li>Scrivere una funzione che, dato un naturale <code>n</code>, restituisce un numero primo maggiore di <code>n</code>. (sugg.: provare con <code>n+1</code>, <code>n+2</code>, ..., finch&eacute; non si incontra un primo)</li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="15-10-26">15 ottobre 2026 (lab)</th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+		<p>Uso di variabili boolean per il controllo di cicli</p>
+      	<p>Esercizi sull'uso di cicli e istruzioni condizionali</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Esercizi proposti </th>
+      <td><p><a href="esercitazioni/Esercitazione4.html"
+ target="_blank">Esercitazione 4</a></p>
+          <p><a href="esercitazioni/sol_eserc4.py"
+ target="_blank">soluzione dei primi 6 punti</a></p>
+          <p><a href="esercitazioni/sol_eserc4bis.py"
+ target="_blank">soluzione del punto 7</a></p>
+          <p><a href="esercitazioni/sol_eserc4ter.py"
+ target="_blank">soluzione del punto 8</a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="19-10-26">19 ottobre 2026</th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+		<p>Introduzione alle stringhe. Indicizzazione, funzione <code>len</code>,  operatore <code>in</code></p>
+      	<p>Slicing (introduzione)</p>
+      	<p>Semplici programmi con cicli</p>
+		<p>Esempi di programmi con cicli e istruzioni di selezione</p>
+	</td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+      Funzioni su stringhe:
+      <ul>
+        <li>funzione che verifica se una stringa &egrave; palindroma</li>
+        <li>funzione che conta gli spazi in una stringa</li>
+        <li>funzione che conta le vocali in una stringa</li>
+        <li>funzione che, data una stringa, stampa una parola della stringa su ciascuna riga</li>
+        <li>migliorare la funzione precedente facendo s&igrave; che NON vengano stampati a capo multipli in presenza di spazi adiacenti nella stringa</li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="20-10-26">20 ottobre 2026</th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Istruzione <code>for ... in ...</code></p>
+      	<p>Uso del <code>range(...)</code></p>
+      	<p>Differenza tra:
+      	    <ul>
+      	    <li>scansione delle posizioni <code>for i in range(len(sequenza)):</code></li>
+      	    <li>scansione degli elementi  <code>for valore in sequenza:</code></li>
+      	    </ul>
+      	    di una sequenza</p>
+      	<p>Semplici programmi con cicli</p>
+		<p>Esempi di programmi con cicli e istruzioni di selezione</p>
+		<p>Algoritmo per approssimare uno zero di una funzione continua
+		   <a href="listatiPython/ricercaZero.py"
+ target="_blank">ricercaZero.py</a></p>
+	</td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+      Risolvere i problemi proposti nella lezione precedente usando il ciclo <code>for</code>, se utile.
+      <hr>
+Funzioni con <code>for</code>:
+      <ul>
+        <li>Dato un numero naturale <code>n</code>, stampare un quadrato (pieno) di asterischi di lato <code>n</code>.
+        	Il quadrato sar&agrave; formato da <code>n</code> righe, ciascuna contenente <code>n</code> asterischi.
+          <pre>
+  **********
+  **********
+  **********
+  **********
+  **********
+  **********
+  **********
+  **********
+  **********
+  **********
+
+</pre>
+        </li>
+        <li>Dato un numero naturale <code>n</code>, stampare un quadrato (solo il bordo) di asterischi di lato <code>n</code>.
+        	Il quadrato dovr&agrave; avere l'aspetto seguente:
+          <pre>
+  ********** . . . ****
+  *                   *
+  *                   *
+  *                   *
+    . . . . . . . .
+    
+  *                   *
+  ********** . . . ****
+
+</pre>
+        </li>
+        <li>Dati due numeri naturali <code>n</code> e <code>b</code>, con <code>b < n/2</code>, stampare un quadrato di asterischi di lato <code>n</code> con il bordo di spessore <code>b</code>.
+        	Ad esempio, se il valore di <code>b</code> fosse 3, il quadrato dovrebbe avere l'aspetto seguente:
+          <pre>
+  ********** . . . ****
+  ********** . . . ****
+  ********** . . . ****
+  ***               ***
+  ***               ***
+  ***               ***
+    . . . . . . . .
+    
+  ***               ***
+  ********** . . . ****
+  ********** . . . ****
+  ********** . . . ****
+
+</pre>
+        </li>
+        <li>Dato un numero naturale <code>n</code>, stampare un triangolo rettangolo (pieno) di asterischi di lato <code>n</code>.
+        	Il triangolo sar&agrave; formato da <code>n</code> righe di lunghezza crescente.
+          <pre>
+  *
+  **
+  ***
+  ****
+   . . .
+  
+  *********
+  **********
+
+</pre>
+        </li>
+        <li>Dato un numero naturale <code>n</code>, stampare un triangolo rettangolo (solo il bordo) di asterischi di lato <code>n</code>.
+        	Il triangolo dovr&agrave; avere l'aspetto seguente:
+          <pre>
+  *
+  **
+  * *
+  *  *
+   . . .
+  
+  *      *
+  *       *
+  **********
+
+</pre>
+        </li>
+        <li>Stampare la somma dei primi <code>n</code> termini della serie armonica:
+            1/1 + 1/2 + 1/3 + ... + 1/<code>n</code>
+		</li>
+        <li>Come sopra, mostrando la differenza tra il risultato ottenuto eseguendo la somma in un senso o in senso opposto:
+            1/1 + 1/2 + 1/3 + ... + 1/<code>n</code> 
+        	rispetto a 1/<code>n</code> + 1/(<code>n</code>-1) + 1/(<code>n</code>-2) + ... + 1/2 + 1/1
+		</li>
+	</ul>
+<hr>
+	<ul>
+        <li>Mostrare l'andamento della somma della serie armonica, visualizzandone il valore ogni 100 termini aggiunti fino a un massimo numero di termini immesso da tastiera.
+        	<br>Mostrare che la differenza tra la somma dei primi <code>n</code> termini e il logaritmo naturale (<code>Math.log</code>) di <code>n</code>, al crescere di <code>n</code>, tende a una costante.
+		</li>
+	    <li>Stampa della tavola pitagorica <i>n</i> &times; <i>n</i>
+	     assumendo che l'input (<i>n</i>) sia
+compreso nell'intervallo [1,18] (<em>Suggerimento: per ottenere la tabella ben incolonnata usare le f-string</em>)</li>
+      </ul>
+<hr>
+<h2>Somme di quadrati</h2>
+	<p>Scrivere un programma che, dato in input un numero naturale n, stampa tutte le coppie di naturali
+	x, y tali che x^2 + y^2 = z^2, con x, y, z &leq; n.</p>
+	
+	<p>Per n = 20 le soluzioni dovrebbero essere le seguenti:</p>
+	<pre>
+3^2 + 4^2 = 5^2
+5^2 + 12^2 = 13^2
+6^2 + 8^2 = 10^2
+8^2 + 15^2 = 17^2
+9^2 + 12^2 = 15^2
+12^2 + 16^2 = 20^2
+	</pre>
+<!--
+<p>
+<span style="color:red">Soluzione: <a href="listatiPython/cercaTernePitagoriche.py" target="_blank">cercaTernePitagoriche.py</a></span>
+</p>
+-->
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="22-10-26">22 ottobre 2026 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercizi su stringhe, cicli.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><p><a href="esercitazioni/Esercitazione5/Esercitazione5.html"
+ target="_ blank">Esercitazione 5</a></p>
+      <ul>
+          <li>soluzione <a href="esercitazioni/Esercitazione5/conteggiovocali.py" target="_ blank">conteggiovocali</a></li>
+          <li>soluzione <a href="esercitazioni/Esercitazione5/spaziacapo.py" target="_ blank">spaziacapo</a></li>
+          <li>soluzione <a href="esercitazioni/Esercitazione5/moltiplicacaratteri.py" target="_ blank">moltiplicacaratteri</a></li>
+          <li>soluzione <a href="esercitazioni/Esercitazione5/scambia_caratteri.py" target="_ blank">scambia_caratteri</a></li>
+          <li>soluzione <a href="esercitazioni/Esercitazione5/rimuoviDoppie.py" target="_ blank">rimuoviDoppie</a></li>
+          <li>soluzione <a href="esercitazioni/Esercitazione5/rimuoviripetizioni.py" target="_ blank">rimuoviripetizioni</a></li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+<tbody>
+    <tr>
+      <th colspan="2"><a name="26-10-26">26 ottobre 2026</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Liste</p>
+		<p>Accesso a elementi di una lista. Modifica di elementi di una lista attraverso assegnazione.</p>
+      	<p>Costruzione di liste: 
+      	<ul>
+      	    <li><code>[ ... , ... ,  ... ]</code></li>
+      	    <li><code>list()</code></li>
+      	</ul></p>
+		<p>Invocazione di metodi di oggetti, dot notation: <code>OGGETTO.METODO(...)</code></p>
+		<p>I metodi <code>append(...)</code> ed <code>extend(...)</code> delle liste</p>
+      	<p>Slicing</p>
+      	<p>Controllo dei parametri: funzione <code>isinstance(...)</code></p>
+      </td>
+    </tr>
+    <tr>
+     <th>Listati ed esercizi proposti </th>
+      <td>
+      <ul>
+        <li>funzione che restituisce la somma degli elementi di una lista</li>
+        <li>funzione che restituisce la media degli elementi di una lista</li>
+        <li>funzione che restituisce minimo e massimo di una lista</li>
+        <li>funzione che restituisce le posizioni del minimo e del massimo di una lista</li>
+        <li>funzione che, data una lista di numeri <code>L</code> e una soglia <code>s</code>, restituisce il numero di elementi di <code>L</code> maggiori di <code>s</code></li>
+        <li>funzione che crea e restituisce una lista di <code>float</code> random</li>      
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="27-10-26">27 ottobre 2026</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Controllo dei parametri: sollevare eccezioni con <code>raise</code></p>
+      	<p>Esercizi su liste</p>   
+		<p>I metodi <code>index(...)</code>, <code>pop(...)</code>, <code>remove(...)</code> e <code>insert(...)</code> delle liste</p>
+      	<p>Assegnazione vs. copia: riferimenti multipli a liste</p>
+      	<p>Funzioni che modificano liste</p>
+      	<p>Funzioni che restituiscono liste</p>
+      	<p>Ricerca sequenziale</p>
+      	<p>Implementazione della ricerca sequenziale su lista</p>
+      </td>
+    </tr>
+    <tr>
+     <th>Listati ed esercizi proposti </th>
+      <td>
+        	<p>Esercizi di base su liste:</p>
+      <ul>
+        <li>Leggi da tastiera una sequenza di numeri,
+memorizzala in una lista, stampa la somma degli elementi
+<a
+ href="listatiPython/sommaSequenzaInLista.py" target="_blank">sommaSequenzaInLista.py</a>
+ </li>
+        <li>Leggi da tastiera una sequenza di <code>float</code>,
+memorizzala in una lista, crea un lista che contiene una copia degli elementi della prima lista,
+ma in ordine inverso
+<a href="listatiPython/copiaOrdineInverso.py" target="_blank">copiaOrdineInverso.py</a>
+</li>
+        <li>Leggi da tastiera una sequenza di interi che rappresentano delle frequenze,
+memorizzala in una lista, crea una lista che contiene le frequenze cumulate e stampa, in due colonne,
+la sequenza delle frequenze (sulla sinistra) e la sequenza delle frequenze cumulate (sulla destra)
+<a href="listatiPython/cumula.py" target="_blank">cumula.py</a>
+</li>
+      	<li>Ricerca sequenziale in una lista
+      	    <a href="listatiPython/ricercaSequenziale.py" target="_blank">ricercaSequenziale.py</a>
+         </li>
+      </ul>
+      </p>
+      <hr>
+	<p>Data in input una sequenza di interi che rappresentano frequenze:
+	<ul>
+		<li>stampare la frequenza massima e la frequenza minima;</li>
+		<li>calcolare la lista delle frequenze relative e stamparlo;</li>
+		<li>calcolare la lista delle frequenze relative cumulate e stamparlo;</li>
+	</ul>
+	</p>
+
+<!--
+<p>
+<span style="color:red">Soluzione: <a href="listatiPython/frequenze.py" target="_blank">frequenze.py</a></span>
+</p>
+      <hr>
+-->
+	<ul>
+		<li>funzione che riceve come parametro una lista di numeri e sostituisce gli elementi negativi con il loro valore assoluto;</li>
+		<li>funzione che riceve come parametro una lista di numeri e restituisce una nuova lista
+		contenente gli stessi valori ma con segno positivo;</li>
+		<li>funzione che data una lista di numeri non negativi restituisce una nuova lista contenente i valori normalizzati
+		in modo che la loro somma sia 1.</li>
+	</ul>
+	</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="29-10-26">29 ottobre 2026 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercizi su liste.</p>
+      </td>
+    </tr>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+          <p>Questa esercitazione si svolge secondo le modalit&agrave; descritte nel video del prof. Massimo Lauria <a href="https://youtu.be/-HBeJ4-kyZ4"
+ target="_blank">disponibile a questo link</a></p>
+
+<p><a href="esercitazioni/Esercitazione6/Esercitazione6.html"
+ target="_ blank">Esercitazione 6</a></p>
+<!--
+  <p>(soluzioni in <a href="esercitazioni/Esercitazione6/soluzioni6.zip"
+ target="_ blank">soluzioni6.zip</a>)</p>
+-->
+    </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="02-11-26">2 novembre 2026</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Ricerca sequenziale in sequenze <a
+ href="listatiPython/ricercaSequenziale.py" target="_blank">ricercaSequenziale.py</a></p>
+          <p>Complessit&agrave; computazionale della ricerca sequenziale</p>
+      	<p>Ricerca binaria in sequenze ordinate <a
+ href="listatiPython/ricercaBinaria.py" target="_blank">ricercaBinaria.py</a></p>
+          <p>Complessit&agrave; computazionale della ricerca binaria</p>
+ 		  <p>Una versione animata della ricerca binaria è disponibile
+		   <a href="listatiPython/ricercaBinariaAnimata.py" target="_blank">qui</a>.</p>
+      </td>
+    </tr>
+    <tr>
+     <th>Listati ed esercizi proposti </th>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="03-11-26">3 novembre 2026</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+		   <p>Algoritmo di ordinamento <em>insertion sort</em>
+		      <a href="listatiPython/insertionSort.py" target="_blank"><code>insertionSort.py</code></a></p>
+		   <p>Complessit&agrave; computazionale dell'insertion sort</p> 
+		   <p>Una versione animata dell'insertion sort è disponibile
+		   <a href="listatiPython/insertion_animato.py" target="_blank">qui</a>.</p>
+<hr>
+        <p>Output formattato con <code>f"..."</code></p>
+        <p>Definizione e uso di funzioni con parametri opzionali</p>
+      </td>
+    </tr>
+    <tr>
+     <th>Listati ed esercizi proposti </th>
+      <td>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr> 
+      <th colspan="2"><a name="05-11-26">5 novembre 2026 (laboratorio)</a> 
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+        <p>
+      	<p>Altri esercizi su liste.</p>
+      	<p></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><a href="esercitazioni/Esercitazione7/esercitazione7.html"
+ target="_ blank">Esercitazione 7</a>
+  (soluzioni in <a href="esercitazioni/Esercitazione7/soluzioni7.zip"
+ target="_ blank">soluzioni7.zip</a>) 
+     </td>
+    </tr>
+    </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="10-11-26">10 novembre 2026</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+           <p>Liste di liste per la rappresentazione di matrici. Esercizi su liste di liste:
+                <ul>
+                <li>Scansione di matrici: per elementi o per posizioni.
+                <li>Creazione di una matrice <code>n</code> per <code>m</code> con elementi 0 <a href="listatiPython/creaMatrice.py" target="_blank"><code>creaMatrice.py</code></a>.</li>
+                <li>Creazione della matrice identit&agrave; <code>n &times; n</code>.</li>
+                <li>Somma degli elementi di una matrice <a href="listatiPython/sommaMatrice.py" target="_blank"><code>sommaMatrice.py</code></a>.</li>
+                <li>Conta elementi uguali a <code>x</code> in una matrice,</li>
+                <li>Verifica di matrice ben formata (lista di liste, tutte della stessa lunghezza),</li>
+                <li>Funzione che, data una matrice, la stampa sotto forma di tabella.</li>
+                </ul>
+           </p>
+    </tr>
+    <tr>
+      <th>Link utili</th>
+      <td> Animazione di algoritmi di ordinamento <a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">https://www.toptal.com/developers/sorting-algorithms</a></td>
+    </tr>
+    </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<!--
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="18-11-26">18 novembre 2026</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+           <p>Creazione di matrici</p>
+           <p>Soluzione di alcuni esercizi su matrici.</p>
+           <p>Copia profonda vs. copia superficiale di liste.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati proposti </th>
+      <td>
+      <ul>
+		<li>funzione che, data una matrice, crea la matrice trasposta e la restituisce,</li>
+		<li>funzione che, data una matrice <code>m</code>  e un valore numerico <code>c</code>,
+		modifica <code>m</code> moltiplicando ciascun elemento per <code>x</code>,</li>
+		<li>funzione che verifica se una matrice data &egrave; simmetrica.</li>
+		<li>funzione che restituisce la somma degli elementi di bordo di una matrice numerica.
+		La funzione deve restituire il risultato corretto qualunque sia il numero di righe e
+		colonne,</li>
+		<li>funzione che verifica se una matrice &egrave; triangolare superiore,</li>
+		<li>funzione che, data una matrice quadrata di 0/1 in cui 1 rappresenta la presenza di una regina sulla scacchiera, verifica se tale disposizione &egrave;
+		una soluzione valida del <a href="https://it.wikipedia.org/wiki/Rompicapo_delle_otto_regine#:~:text=Il%20rompicapo%20(o%20problema)%20delle,i%20movimenti%20standard%20della%20regina." target="_blank">problema delle otto regine</a>,</li>
+		<li>come sopra per le torri invece delle regine. In questo caso si tratta semplicemente di verificare se non esistono due elementi 1 sulla stessa riga o colonna.</li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="20-11-26">20 novembre 2026 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercizi su liste bidimensionali.</p>
+		<hr>
+		<p>Calcolo dei numeri primi con il crivello di Eratostene:
+            <ul>
+              <li>Crivello di Eratostene <a href="https://it.wikipedia.org/wiki/Crivello_di_Eratostene" target="_blank">https://it.wikipedia.org/wiki/Crivello_di_Eratostene</a></li>
+              <li>implementazione in Python <a href="listatiPython/eratostene.py" target="_blank">eratostene.py</a></li>
+            </ul>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><a href="esercitazioni/Esercitazione8/esercitazione8.html"
+ target="_ blank">Esercitazione 8</a>
+(soluzioni in <a href="esercitazioni/Esercitazione8/soluzioni8.zip"
+ target="_ blank">soluzioni8.zip</a>)
+     </td>
+    </tr>
+    </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+        <p>Creazione di liste con <em>list comprehension</em>: <code>[ ESPRESSIONE for ... in ...]</code><br>e <code>[ ESPRESSIONE for ... in ... if ...]</code></p>
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="24-11-26">24 novembre 2026</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti</th>
+      <td>
+ 			<p>Dizionari: definizione, indicizzazione, scansione con ciclo <code>for</code>, metodi <code>keys()</code>, <code>values()</code>, <code>items()</code>.</p>
+ 			<p>Condizione <code>in</code> su dizionari.</p>
+ 			<p>Il metodo <code>get</code></p>
+    </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+      <ul>
+        <li>Funzione che a partire da una lista di valori, restituisce un dizionario in cui ciascun valore presente nella lista &egrave; associato al numero di occorrenze (frequenza)
+        <a href="listatiPython/frequenza.py" target="_blank">frequenza.py</a>.</li>
+      	<li>Funzione che a partire da un dizionario che contiene frequenze assolute delle chiavi, restituisce il dizionario contenente le frequenze relative
+      	delle chiavi <a href="listatiPython/frequenzeRelative.py" target="_blank">frequenzeRelative.py</a></li>
+    </ul>
+    
+    <p>Scrivere le seguenti funzioni, che hanno tutte come parametri un dizionario <em>esami</em> in cui ogni chiave &egrave; il titolo di un insegnamento e il corrispondente valore &egrave; il voto riportato (<code>None</code> nel caso di una idoneit&agrave;), un secondo dizionario <em>crediti</em> in cui ogni chiave &egrave; il titolo di un insegnamento e il corrispondente valore &egrave; il numero di crediti, e un terzo dizionario in cui le chiavi sono i titoli degli insegnamenti che rilasciano solo idoneit&agrave; (i valori di questo dizionario sono tutti <code>None</code>). Nel file <a href="esempio.py" target="_blank">esempio.py</a> sono disponibili tre dizionari che possono essere usati per verificare la correttezza delle funzioni realizzate.
+    <ol>
+    <li>Restituire il numero di esami sostenuti.</li>
+    <li>Restituire il numero di esami sostenuti, escluse le idoneit&agrave;.</li>
+    <li>Restituire la media (non pesata) dei voti conseguiti, escluse le idoneit&agrave;.</li>
+    <li>Restituire il numero di crediti conseguiti, incluse le idoneit&agrave;.</li>
+    <li>Restituire una coppia formata dal numero totale di crediti conseguiti e il numero di crediti conseguiti come idoneit&agrave;.</li>
+    <li>Restituire la media dei voti conseguiti, escluse le idoneit&agrave;, pesata in base ai crediti.</li>
+    <li>Restituire il voto pi&ugrave; alto e il voto pi&ugrave; basso.</li>
+    <li>Come il punto precedente, includendo anche i titoli di uno qualsiasi degli esami con voto massimo e uno di quelli con voto minimo. La funzione deve restituire una stringa composta dai due titoli e i rispettivi voti.</li>
+    <li>Come il punto precedente, includendo tutti gli esami con voto massimo e tutti quelli con voto minimo.</li>
+    <li>Restituire il dizionario contenente solo gli esami, con i relativi voti, nel cui titolo compare la stringa "Statistic". La stringa da cercare nel titolo pu&ograve; essere un parametro opzionale della funzione.</li>
+    <li>Come il punto precedente, ma la ricerca della stringa non deve tener conto della differenza tra lettere maiuscole e minuscole.</li>
+    </ol>
+        Per il test, costruire dizionari sufficientemente ricchi.
+</p>
+    </tr>
+
+</tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="25-11-26">25 novembre 2026</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+			<p>Introduzione alla ricorsione.</p>
+      		<p>Esempio di algoritmo ricorsivo per il calcolo del fattoriale
+ <a href="listatiPython/fattorialeRicorsivo.py" target="_blank"><code>fattorialeRicorsivo.py</code></a></p>
+      		<p>Esempio di algoritmo iterativo per il calcolo del fattoriale
+ <a href="listatiPython/fattorialeIterativo.py" target="_blank"><code>fattorialeIterativo.py</code></a></p>
+      		<p>Esempio di algoritmo ricorsivo per il calcolo di un elemento della sequenza di Fibonacci
+ <a href="listatiPython/fibonacciRicorsivo.py" target="_blank"><code>fibonacciRicorsivo.py</code></a></p>
+      		<p>Somma dei numeri contenuti in una lista attraverso bipartizione
+ <a href="listatiPython/sommaListaBipartizione.py" target="_blank"><code>sommaListaBipartizione.py</code></a></p>
+     </tr>
+    <tr>
+      <th>Riferimenti al testo </th>
+      <td><a href="#cormen">Cormen, Leiserson, Rivest</a> oppure
+        		<a href="https://www.massimolauria.net/informatica2024/docs/algoritmi.pdf" target="_blank">dispense a cura del prof. Massimo Lauria</a></td>
+    </tr>
+    <tr>
+      <th>Listati proposti </th>
+      <td>
+      <ul>
+		<li>scrivere un metodo ricorsivo che data una lista di numeri restituisce il massimo elemento nella lista</li>
+		<li>scrivere un metodo ricorsivo che data una lista di numeri restituisce il numero di elementi negativi contenuti nella lista</li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="27-11-26">27 novembre 2026 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+        <p>Creazione di dizionari con <em>list comprehension</em>: <code>[ ESPRESSIONE: ESPRESSIONE for ... in ...]</code><br>e <code>[ ESPRESSIONE: ESPRESSIONE for ... in ... if ...]</code></p>
+      	<p>Esercizi su dizionari.</p>
+      	<p></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><a href="esercitazioni/Esercitazione9/esercitazione9.html"
+ target="_ blank">Esercitazione 9</a>
+(soluzioni in <a href="esercitazioni/Esercitazione9/soluzioni9.zip"
+ target="_ blank">soluzioni9.zip</a>)
+     </td>
+    </tr>
+    </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="01-12-26">1 dicembre 2024</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti</th>
+      <td>
+		<p>Algoritmo di ordinamento per fusione - Merge Sort (<a href="listatiPython/mergeSort.py" target="_blank">codice merge sort</a>)</p>
+		<p>Analisi della prestazioni del merge sort</p>
+    </td>
+    </tr>
+    <tr>
+      <th>Link utili</th>
+      <td> Animazione di algoritmi di ordinamento <a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">https://www.toptal.com/developers/sorting-algorithms</a></td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="02-12-26">2 dicembre 2026</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti</th>
+      <td>
+         <p>Codifica di caratteri: codice ASCII, codici ASCII estesi, codice Unicode, rappresentazione UTF-8</p>
+      		<p>Lettura e scrittura di file di testo.</p>
+      		<p>Funzione <code>open</code></p>
+      		<p>Metodi <code>read</code>, <code>readline</code> e <code>readlines</code></p>
+      		<p>Funzione <code>print</code> con parametro <code>file = </code>.</p>
+      		<p>Metodi <code>write</code>, <code>close</code>. Uso di metodi di <code>str</code> su righe di testo: <code>strip</code>, <code>split</code>, <code>join</code>.</p>
+      		<p>Ciclo <code>for</code> su file in lettura</p>
+    </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+      	<ul>
+      	<li>Funzione che mostra la scrittura di un file di testo
+      	<a href="listatiPython/interiSuFile.py" target="_blank">interiSuFile.py</a></li>
+      	<li>Lettura di un file di testo 
+      	<a href="listatiPython/leggiFile.py" target="_blank">leggiFile.py</a>. Assume che esista un file <code>pippo.txt</code> contente un intero per riga nella stessa cartella.</li>
+      	<li>Funzione che, dati due nomi di file di testo, copia il contenuto del primo file nel secondo file</li>
+      	<li>Funzione che, dato il nome di un file di testo contenente un numero <code>float</code> su ciascuna riga, restituisce il numero di valori maggiori di 10</li>
+      	<li>Funzione che, dato un intero n e il nome di un file, genera un file di testo
+      	contenente n valori random nell'intervallo [0,1)</li>
+      	<li>Funzione che, dati tre nomi di file di testo, legge le righe del primo file
+      	e le copia negli altri due file, separando le righe più lunghe di 10 caratteri (nel secondo file) da quelle più corte (nel terzo file)</li>
+      		</ul>
+      </td>
+    </tr>
+</tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="04-12-26">4 dicembre 2026 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Uso dell'istruzione <code>with</code></p>
+      	<p>Istruzione <code>try</code> ... <code>except</code> ...</p>
+      	<p>Esercizi su file di testo.</p>
+      	<p></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><a href="esercitazioni/Esercitazione10/esercitazione10.html"
+ target="_ blank">Esercitazione 10</a>
+ (soluzioni in <a href="esercitazioni/Esercitazione10/soluzioni10.zip"
+ target="_ blank">soluzioni10.zip</a>)
+     </td>
+    </tr>
+    </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="09-12-26">9 dicembre 2026</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	 <p>Algoritmo per il Massimo Comune Divisore di Euclide:
+      	     <ul>
+      	     <li>versione ricorsiva
+      		<a href="listatiPython/MCDEuclideRicorsivo.py" target="_blank"><code>MCDEuclideRicorsivo.py</code></a></li>
+            <li>versione iterativa
+      		<a href="listatiPython/MCDEuclideIterativo.py" target="_blank"><code>MCDEuclideIterativo.py</code></a></li>
+      		</ul>
+      		</p>
+         <p>Esercizi di programmazione</p>
+      	  <ul>
+      	     <li>Prodotto righe per colonne di matrici</li>
+      	     <li>Matrice trasposta</li>
+      	     <li>Calcolo frequenze cumulate</li>
+      		<li>Somma dei numeri contenuti in una lista di liste di liste ...<br>
+      	           P.es.: <code>[12, [4, 3], [1], 45, [[2, 4], 1]]</code>
+ <a href="listatiPython/sommaListaRicorsiva.py" target="_blank"><code>sommaListaRicorsiva.py</code></a></li>
+      		</ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Riferimenti al testo </th>
+      <td><a href="https://www.massimolauria.net/informatica2024/docs/algoritmi.pdf" target="_blank">dispense a cura del prof. Massimo Lauria</a></td>
+    </tr>
+ </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="11-12-26">11 dicembre 2026 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercizi su stringhe e matrici.</p>
+      	<p><a href="mementopython3-english.pdf" target="_ blank">Tavola sinottica Python3</a></p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+      <p><a href="esercitazioni/Esercitazione10bis/Esercitazione10bis.html"
+ target="_ blank">Esercitazione 11a</a></p>
+      <p><a href="esercitazioni/Esercitazione11/Esercitazione11.html"
+ target="_ blank">Esercitazione 11b</a></p>
+     </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="15a-12-26">15 dicembre 2026 (12:00-14:00)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+ 		    <p>Codifica di numeri interi:
+ 		    <ul>
+          		<li>generalit&agrave; sulla notazione posizionale per numeri 
+      		naturali, interpretazione di numeri espressi in base <i>b</i></li>
+         		<li>conversione da base <i>b</i> a base 10 e da base 10 a base 2</li>
+      		<li>codifica esadecimale, conversione dalla base 2 alla base 16</li>
+ 		    </ul>
+ 		    </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="15b-12-26">15 dicembre 2026 (14:00-16:00)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      		<p>Cenni sulla rappresentazione in complemento a 2<p>
+ 		    <p>Rappresentazione di numeri in virgola mobile (floating point), errori di troncamento</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td>
+
+		<p>Esempio di calcolo delle medie mobili di ordine <code>k</code> di una sequenza di lunghezza <code>n</code>
+		in tempo <i>O(nk)</i> o in tempo <i>O(n)</i>
+		<a href="listatiPython/mediaMobile.py" target="_blank">mediaMobile.py</a>.<p>
+	</td>
+	</tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="16-12-26">16 dicembre 2026</a> </th>
+    </tr>
+    <tr>
+      <th>Argomenti</th>
+      <td>
+		<p>Uso della libreria <code>matplotlib</code> per la visualizzazione.
+		<br>Per l'installazione utilizzare dal prompt dei comandi (Terminale in Mac OS X o Linux) il comando <code>pip install matplotlib</code>, oppure, in Thonny, andare sul menu' Tools -> Manage packages</p>
+		<p>Codice disponibile in <a href="listatiPython/medieMobiliGrafico.py" target="_blank">medieMobiliGrafico.py</a></p>
+     </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="18-12-26">18 dicembre 2026 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+          <p>Simulazione prova d'esame.</p>
+      <p>Scaricare e decomprimere il <a href="simulazioneEsame/Archivio-Da-Distribuire.zip"
+ target="_ blank">materiale d'esame</a>, che contiene anche i file di test pubblici</p>
+       <p>Sono disponibili i <a href="simulazioneEsame/risultatiSimulazione.pdf"
+ target="_ blank">risultati della simulazione d'esame del 18 dicembre 2026</a></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+<!--
+          <p>Uso dei metodi <code>.split()</code> e <code>.splitlines()</code> nella lettura di file di testo.</p>
+
+          <p>Esercizi su <a href="eserciziFile/index.html"
+ target="_ blank">file e dizionari</a><p>
+
+espressione condizionale
+
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2"><a name="15-12-22">15 dicembre 2022 (laboratorio)</a>
+      </th>
+    </tr>
+    <tr>
+      <th>Argomenti </th>
+      <td>
+      	<p>Esercitazione su files e dizionari.</p>
+      </td>
+    </tr>
+    <tr>
+      <th>Listati ed esercizi proposti </th>
+      <td><ul>
+          <li><a href="esercitazioni/Esercitazione12.html"
+ target="_ blank">Esercitazione 12</a></li>
+          <li>Simulazione esame di programmazione: scaricare e decomprimere il <a href="esercitazioni/simulazione/materialeEsame.zip"
+ target="_ blank">materiale d'esame</a>, che contiene anche i file di test pubblici, e scaricare anche i <a href="esercitazioni/simulazione/test_segreti.zip"
+ target="_ blank">test segreti</a></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">torna all'elenco delle lezioni</a> </p>
+
+
+<!-- Inizio Codice ShinyStat -->
+<script type="text/javascript" src="http://codice.shinystat.com/cgi-bin/getcod.cgi?USER=pgfInf"></script>
+<noscript>
+<h6><a href="http://www.shinystat.com/it/">
+<img src="http://www.shinystat.com/cgi-bin/shinystat.cgi?USER=pgfInf" alt="Statistiche gratis" style="border:0px" /></a></h6>
+</noscript>
+<!-- Fine Codice ShinyStat -->
+
+
+
+</body>
+</html>

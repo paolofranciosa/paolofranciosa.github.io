@@ -1,0 +1,4 @@
+matching50_edges.txt;yyyB;yyyB;5.0586
+matching50_edges.txt;yyyB;yyyR;-5.0586
+matching50_edges.txt;yyyR;yyyB;-0.9274
+matching50_edges.txt;yyyR;yyyR;0.9274

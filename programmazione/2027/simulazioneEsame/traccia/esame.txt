@@ -1,0 +1,10 @@
+descrizione: Simulazione Esame
+sommavalorigrandi 7
+seq_compresi 7
+teoriaforbase 4 manuale
+riga_max_file 5
+bordo_zero_mat 5
+coppia_differenza_minima 6
+complessità_ricerca_binaria 6 manuale
+
+allegati: riga_max_file1.txt riga_max_file2.txt riga_max_file3_secret.txt riga_max_file4_secret.txt riga_max_file5_secret.txt riga_max_file6_secret.txt riga_max_file7_secret.txt riga_max_file8_secret.txt

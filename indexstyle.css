@@ -1,0 +1,94 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+a:link, a:visited{
+	color: #812433;
+}
+a:hover{
+	color: white;
+	background: #812433;
+}
+a:active{
+	background: red;
+	border: red;
+	color: white;
+}
+#menu{
+	position: fixed ! important;
+	position: absolute;
+	top: 72px;
+	left: 3px;
+	width: 24em;
+	height: 10em;
+	font-weight: bold;
+	text-align: left;
+}
+#validation{
+	position: fixed ! important;
+	position: absolute;
+	top: 27em;
+	left: 30px;
+}
+#menu p{
+	padding: 0.5em 0.5em; 
+	width: 24em;
+}
+#menu a{
+	margin: 3px;
+	padding: 0.5em 0.5em; 
+	text-decoration: none;
+}
+#menu a:link, #menu a:visited{
+	border: 3px solid #812433;
+	background: #812433;
+	color: white;
+}
+#menu a:hover{
+	color: #812433;
+	background: white;
+}
+.bibitem{
+	padding: 0em 0px 1em 0.5em;
+}
+.titolosezione{
+	width: 15em;
+	border: 5px outset #812433;
+	padding-left: 0.5em;
+	padding-top: 0.5em;
+	margin-top: 1em;
+}
+li{
+	margin:0.5em;
+}
+dt{
+	font-weight:bold;
+	margin-top: 0.5em;
+}
+h3{
+	width: 22em;
+	border-left: 2px solid #812433;
+	border-bottom: 2px solid #812433;
+	padding-left: 1em;
+	margin-top: 1em;
+}
+h1, h2, h3{
+	font-family: Arial, Helvetica, sans-serif;
+	color: #812433;
+}
+.goback{
+	margin-top: -10px;
+	text-align: right;
+	width: 15em;
+}
+.titolopapero{
+	font-weight: bold;
+}
+#contenuto{
+	position: fixed ! important;
+	position: absolute;
+	top: 72px;
+	left: 17em;
+	height: 90%;
+	width: auto;
+	overflow: auto;
+}

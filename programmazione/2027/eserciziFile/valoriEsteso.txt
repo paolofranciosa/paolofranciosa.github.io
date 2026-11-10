@@ -1,0 +1,6 @@
+Italia;12;33;245
+Francia;11;45;387;23
+Spagna;40;3;22;576;0;30
+Germania;44;2;12;456;81;38
+Grecia;22;33;44;87
+Finlandia;22;34;7

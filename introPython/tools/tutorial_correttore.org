@@ -1,0 +1,134 @@
+
+
+* TUTORIAL
+
+** Uso di base
+
+   Di base il correttore si usa con il comando
+
+   : correttore.py <cartella esame> <cartella studenti>
+
+   ed entrambi gli argomenti, se omessi, di default corrispondono alla
+   cartella corrente.  Se il  file =correttore.py=  è eseguibile  e il
+   vostro python di  default è il 3, allora potete  usare il programma
+   direttamente, come faccio io nei  miei esempi. Altrimenti invece di
+   =correttore.py= dovete usuare il comando =python3 correttore.py=
+
+
+   Il programma  legge le  specifiche dell'esame dalla  prima cartella
+   e valuta i  compiti contenuti nella seconda  cartella. Il programma
+   lavora   in   due   modalità   a  seconda   del   contenuto   della
+   cartella studenti.
+
+   - modalità studente singolo
+   - modalità studenti multipli
+
+   Se la cartella  studente contiene un file  =studente.txt= allora il
+   programma  mostra a  terminale  l'esito della  valutazione di  quel
+   singolo   studente,  o   dà  errore   se  il   file  =studente.txt=
+   è mal compilato.
+
+   Se la cartella  studente non contiene un  file =studente.txt= viene
+   assunto  che tutte  le sue  sottocartelle  (ad un  solo livello  di
+   annidamento) siano potenziali cartelle studente. Il programma testa
+   e valuta  gli esercizi  in quelle  sottocartelle che  contengono un
+   file  =studente.txt= ben  compilato, ignorando  le altre,  e fa  il
+   report finale.
+
+   *Riassumendo*  o  =<cartella   studente>=  contiene  =studente.txt=
+   oppure  deve contenere  le  sottocartelle  delle varie  postazioni,
+   ognuna  col  file  =studente.txt=.  Le  cartelle  con  compiti  non
+   consegnati   o   con   il   file   =studente.txt=   non   compilato
+   vengono ignorate. Il comando
+
+   : correttore.py -h 
+
+   mostra l'help della linea di comando.
+
+** Cartella esami
+
+   La cartella esami deve contenere un file =esame.txt= e tutti i file
+   di test,  pubblici e segreti. Se  =esame.txt= non ci sta  allora la
+   correzione non ha  luogo. Se un file di test  manca, allora il test
+   in questione avrà esito ~broken~  per tutti gli studenti. Il fomato
+   di =esame.txt= è il seguente
+
+\tiny
+#+BEGIN_EXAMPLE
+#    soluzione            test pubblico                test segreto                        punteggio
+lab11inversione.py        test_lab11inversione.py      test_lab11inversioneSECRET.py       6
+lab11compresi.py          test_lab11compresi.py        test_lab11compresiSECRET.py         9
+lab11ordinata.py          test_lab11ordinata.py        test_lab11ordinataSECRET.py         5
+lab11bordo.py             test_lab11bordo.py           test_lab11bordoSECRET.py            4
+lab11distanzaminima.py    test_lab11distanzaminima.py  test_lab11distanzaminimaSECRET.py   5
+lab11righeuguali.py       test_lab11righeuguali.py     test_lab11righeugualiSECRET.py      6
+lab11frequenzaparole.py   test_lab11frequenzaparole.py test_lab11frequenzaparoleSECRET.py  5
+#+END_EXAMPLE
+\normalsize
+
+   Ogni linea contiene quattro campi separati da spazio
+
+   1. nome del file delle soluzioni
+   2. file di test pubblico
+   3. file di test privato
+   4. punteggio
+      
+   Linee composte da whitespace o  che iniziano con # sono considerate
+   commenti e ignorate.
+
+** Cartella studente
+
+   Ogni  cartella  di  ogni  singolo   studente  deve  avere  il  file
+   =studente.txt= che contenga dati come 
+
+
+#+BEGIN_EXAMPLE
+nome: Massimo
+cognome: Lauria
+matricola: 01234567
+#+END_EXAMPLE
+
+   In  questo caso  il correttore  riconosce la  consegna e  valuta le
+   soluzioni calcolando il punteggio finale.
+
+
+
+
+    
+** Formato dell' output
+
+   Se  il programma  viene eseguito  in modalità  studente singolo  la
+   valutazione è  mostrata a  terminale, altrimenti viene  prodotto un
+   report con tutte le consegne trovate. Il report può essere prodotto
+   nei  formati  =pdf=, =org=,  =csv=,  =tex=.  Per il  formato  =pdf=
+   è   necessario   avere   =pdflatex=  installato   e   nel   =PATH=.
+   Potete specificare il  formato o i formati di  output con l'opzione
+   =-f= che accetta anche più di  un formato , in questo modo se volete
+   l'output,  ad esempio,  in =pdf=  e =csv=  lo potete  fare con  una
+   sola correzione. Ad esempio
+
+   : correttore.py <esame> <studenti> -f pdf csv
+
+   Che produce (di default) i file =out.pdf= e =out.csv= con il report
+   dei  risultati.  Se =out=  non  vi  piace  lo potete  cambiare  con
+   l'opzione =-o=. Ad esempio
+  
+   : correttore.py <esame> <studenti> -f tex csv -o pippo
+
+   Produce, quando le  due cartelle hanno la giusta  struttura, i file
+   =pippo.tex=  e  =pippo.csv=.  I  file di  output  non  vengono  mai
+   sovrascritti,  e  il  programma eventualmente  aggiunge  un  numero
+   progressivo (e.g. =pippo1.tex=, =pippo2.tex=, ecc...)
+
+   
+
+   
+** Debug
+
+   Se  usate l'opzione  =-s= non  viene prodotto  nessun report  e non
+   viene valutato nessun esercizio, ma  viene fatta la scansione della
+   cartella  esame  e  della   cartella  studente  (o  delle  cartelle
+   studenti). Utile per fare debug.
+
+   *Salvate  sempre i  compiti degli  studenti prima  di usare  il mio
+    script*

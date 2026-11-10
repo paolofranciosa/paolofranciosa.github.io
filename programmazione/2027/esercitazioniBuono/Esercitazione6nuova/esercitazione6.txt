@@ -1,0 +1,5 @@
+sommaliste
+prodottoscalare
+separaelementi
+intersezione
+unione

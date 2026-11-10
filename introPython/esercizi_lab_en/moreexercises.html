@@ -1,0 +1,367 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Introduction to computer programming, 3 CFU (2023-2024)</title>
+<style type="text/css">
+	* {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table.lezione {
+		border: 3px solid #822433
+	}
+	 table.lezione td, table.lezione th {
+		border: 1px solid #822433;
+		padding: 10px
+	}
+	pre {
+	    font-family: monospace, monospace;
+	}
+	hr {
+		border: 1px solid #822433
+	}
+
+	td p {
+		margin: 3 0
+	}
+</style>
+
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+<hr>
+<h1>Lab activity</h1>
+<p><strong>Recommendations</strong>: Read the text of the exercises
+carefully.</p>
+<p><strong>Using test files</strong>: To help you complete this exercise
+you have test programs available to test your solution. These are
+similar to those you will have on the exam, so I recommend that you
+learn how to use them. To complete the exercise you will need to</p>
+<ul>
+<li>write a solution file <strong>with the specified name</strong>;</li>
+<li>have inside the function <strong>with the specified
+name</strong>;</li>
+<li>place the corresponding test file <strong>in the same
+folder</strong>;</li>
+<li>run the <code>python3 &lt;fileditest&gt;</code> command in that
+folder;</li>
+</ul>
+<p>where <code>&lt;fileditest&gt;</code> should obviously be replaced by
+the name of the test appropriate for the exercise you are working on.
+For each exercise there is an independent test file, so that you can
+easily work on the exercises one at a time.</p>
+<p>The result of each test is a screen(s) in which it is shown:</p>
+<ul>
+<li>whether the file with the correct name was found,</li>
+<li>whether the file contains the function with the correct name,</li>
+<li>whether calls to the function with different parameter values return
+correct results.</li>
+</ul>
+<p>For each function written, calls are made with different values of
+the parameters. The outcome of the tests is reported with the
+character</p>
+<ul>
+<li><code>E</code> if the call cannot be executed,</li>
+<li><code>F</code> if the function does not return the correct
+result,</li>
+<li><code>.</code> if the function returns the correct result.</li>
+</ul>
+<hr>
+<h1 id="discount-price">Discount price</h1>
+<p>Write a function <code>discount_price(p, s)</code> that:</p>
+<ul>
+<li>takes as arguments a price <code>p</code> and a discount percentage
+<code>s</code>, which are two numbers.</li>
+<li>returns the discounted price, rounded to the first decimal
+place;</li>
+<li>if <code>p</code> or <code>s</code> are negative, return
+<code>None</code>.</li>
+</ul>
+<p>See the documentation for the <code>round</code> function</p>
+<p>Examples: - <code>discount_price(100, 10)</code> returns
+<code>90</code>. - <code>discount_price(-100, 10)</code> returns the
+value <code>None</code>.</p>
+<p>The function must be saved in a file called
+<code>discount_price.py</code>.</p>
+<p>Python code must be saved in file: <code>discount_price.py</code></p>
+<p>Test file (download by right click): <a href="test_discount_price.py" target="_blank"><code>test_discount_price.py</code></a></p><p>
+<hr>
+<h1 id="factorial">Factorial</h1>
+<p>Write a function <code>factorial(x)</code> that:</p>
+<ul>
+<li>takes as argument a non-negative integer <code>x</code>;</li>
+<li>returns the factorial of <code>x</code>, i.e., the product of the
+first <code>x</code> natural numbers.</li>
+</ul>
+<p>Esempi: - <code>factorial(3)</code> returns <code>6</code> -
+<code>factorial(5)</code> returns <code>120</code>.</p>
+<p>The function must be saved in a file named
+<code>factorial.py</code></p>
+<p>Python code must be saved in file: <code>factorial.py</code></p>
+<p>Test file (download by right click): <a href="test_factorial.py" target="_blank"><code>test_factorial.py</code></a></p><p>
+<hr>
+<h1 id="sort-three-values">Sort three values</h1>
+<p>Write a program that prints three values passed as arguments in order
+from smallest to largest. For example, if the three values are
+<code>5.2, 1.4, 2.2</code> should print out in order
+<code>1.4, 2.2, 5.2</code>.</p>
+<p>The program must read three values <span
+class="math inline"><em>A</em></span>, <span
+class="math inline"><em>B</em></span>, <span
+class="math inline"><em>C</em></span> from the keyboard, and then print
+them out in ascending order.</p>
+<h1 id="nested-cycles">Nested cycles</h1>
+<p>Write a function that prints the following characters.</p>
+<pre><code>         *
+        **
+       ***
+      ****
+     *****
+    ******
+   *******
+  ********
+ *********
+**********</code></pre>
+<p>Generalize the function so that the triangle height is a parameter.
+If the parameter value is 4, you should print</p>
+<pre><code>   *
+  **
+ ***
+****</code></pre>
+<p><em>Suggestion</em>: try printing:</p>
+<pre><code>XXX*
+XX**
+X***
+****</code></pre>
+<p>then change <code>X</code> to a blank space <code></code></p>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+<h1 id="tree">Tree</h1>
+<p>Write a function <code>tree(x)</code> that:</p>
+<ul>
+<li>takes as argument a non-negative integer <code>x</code>;</li>
+<li>returns a string representing a tree of stars as the figure
+below.</li>
+</ul>
+<p>You can insert the special character <code>\n</code> in the string to
+cause newline.</p>
+<p>Examples: - <code>tree(3)</code> returns
+<code>'  *\n ***\n*****\n'</code></p>
+<p>Function must be saved in file <code>tree.py</code></p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(tree(<span class="dv">7</span>))</span></code></pre></div>
+<pre><code>      *
+     ***
+    *****
+   *******
+  *********
+ ***********
+*************
+
+</code></pre>
+<p>Python code must be saved in file: <code>tree.py</code></p>
+<p>Test file (download by right click): <a href="test_tree.py" target="_blank"><code>test_tree.py</code></a></p><p>
+<hr>
+<h1 id="word-count">Word count</h1>
+<p>Write a function <code>word_count(text)</code> that returns the
+number of words in string <code>text</code>. E.g.:</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(word_count(<span class="st">&quot;Python4Dummy? Is the worst book on Python.&quot;</span>))</span></code></pre></div>
+<pre><code>7
+</code></pre>
+<p>Note that <code>Python4Dummy</code> is a single word. We consider as
+a word any sequence of uppercase or lowercase letters and digits. Spaces
+and punctuation are considered as separators between words.</p>
+<p>You may use methods</p>
+<ul>
+<li><code>str.isalpha()</code> that returns <code>True</code> when a
+string is not empty and contains only letters;</li>
+<li><code>str.isdigit()</code> that returns <code>True</code> when a
+string is not empty and contains only digits.</li>
+</ul>
+<p>In oparticular, you may use these methods to check wheter a single
+character is a letter or a digit.</p>
+<p>For example:</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&#39;B&#39;</span>.isalpha())</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;3&quot;</span>.isdigit())</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;a,b&quot;</span>.isalpha())</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Paul&quot;</span>.isalpha())</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;342&quot;</span>.isdigit())</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Paul!&quot;</span>.isalpha())</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;3 42&quot;</span>.isdigit())</span></code></pre></div>
+<pre><code>True
+True
+False
+True
+True
+False
+False
+</code></pre>
+<p>Python code must be saved in file: <code>word_count.py</code></p>
+<p>Test file (download by right click): <a href="test_word_count.py" target="_blank"><code>test_word_count.py</code></a></p><p>
+<hr>
+<h1 id="symmetric-matrix">Symmetric matrix</h1>
+<p>Write a function <code>symmetric(M)</code> that,</p>
+<ul>
+<li>takes as argument a <em>SQUARED</em> matrix <code>M</code>,
+represented as a list of lists;</li>
+<li>returns <code>True</code> if <code>M</code> is a symmetric matrix,
+<code>False</code> otherwise.</li>
+</ul>
+<p>A matrix is symmetric if and only if <code>M[i][j] == M[j][i]</code>
+for all <code>i, j</code>.</p>
+<p>For example:</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>M <span class="op">=</span> [[<span class="dv">3</span>, <span class="dv">2</span>, <span class="dv">1</span>], [<span class="dv">2</span>, <span class="dv">0</span>, <span class="dv">5</span>], [<span class="dv">3</span>, <span class="dv">5</span>, <span class="dv">6</span>]] </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(symmetric(M))</span></code></pre></div>
+<pre><code>False
+</code></pre>
+<p>Python code must be saved in file: <code>symmetric.py</code></p>
+<p>Test file (download by right click): <a href="test_symmetric.py" target="_blank"><code>test_symmetric.py</code></a></p><p>
+<hr>
+<h1 id="remove-max-frequent-element">Remove max frequent element</h1>
+<p>Write a <code>remove_max_frequent_element(L)</code> function
+which:</p>
+<ul>
+<li>expects a list <code>L</code> as a parameter,</li>
+<li>directly modifies the list <code>L</code> by removing all
+occurrences of the element that appears with the maximum frequency. If
+the list is empty, modify nothing.</li>
+</ul>
+<p>Assume that there are no equalities, i.e. that the most frequent
+element is unique in the list.</p>
+<p>Python code must be saved in file:
+<code>remove_max_frequent_element.py</code></p>
+<p>Test file (download by right click): <a href="test_remove_max_frequent_element.py" target="_blank"><code>test_remove_max_frequent_element.py</code></a></p><p>
+<hr>
+<h1 id="compute-moving-averages">Compute moving averages</h1>
+<p>Write a function <code>moving_average(seq, k)</code> that:</p>
+<ul>
+<li>takes as arguments a list of numbers <code>seq</code> and an integer
+<code>k</code>;</li>
+<li>raises an exception <code>ValueError</code> if the list has zero
+length;</li>
+<li>raises an exception <code>ValueError</code> if
+<code>0&lt;k&lt;=len(seq)</code> does not hold;</li>
+<li>builds and returns the list of <code>len(seq)-k+1</code> <a
+href="https://en.wikipedia.org/wiki/Moving_average">moving averages</a>
+of order <code>k</code>.</li>
+</ul>
+<p>A moving average of order <code>k</code> is the arithmetic average of
+<code>k</code> consecutive elements in the sequence. If the sequence has
+lenght <code>n</code> we can compute <code>n-k+1</code> moving averages:
+from the subsequence <code>[0:k]</code> to the subsequence
+<code>[n-k:n]</code> (left element included, right element not
+included). Note that the number of moving averages depends both on
+<code>n</code> and on <code>k</code>.</p>
+<p>For example, if function <code>moving_average(seq, k)</code> is
+called with parameters <code>seq = [2, 4,  3, 6, 8, 9,  10, 12]</code>
+and <code>k = 4</code>, the function must return
+<code>[3.75, 5.25,  6.5, 8.25,  9.75]</code>, that is the averages
+computed on the 5 subsequences <code>[2, 4, 3, 6]</code>,
+<code>[4, 3, 6, 8]</code>, <code>[3, 6, 8, 9]</code>,
+<code>[6, 8, 9, 10]</code>, <code>[8, 9, 10, 12]</code>.</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>moving_average([<span class="dv">2</span>, <span class="dv">4</span>,  <span class="dv">3</span>, <span class="dv">6</span>, <span class="dv">8</span>, <span class="dv">9</span>,  <span class="dv">10</span>, <span class="dv">12</span>],<span class="dv">4</span>)</span></code></pre></div>
+<pre><code>[3.75, 5.25, 6.5, 8.25, 9.75]</code></pre>
+<p>Python code must be saved in file: <code>moving_average.py</code></p>
+<p>Test file (download by right click): <a href="test_moving_average.py" target="_blank"><code>test_moving_average.py</code></a></p><p>
+<hr>
+<h1 id="verifica-che-le-chiavi-di-un-dizionario-siano-brevi">Verifica
+che le chiavi di un dizionario siano brevi</h1>
+<p>Write a function <code>dict_check_short_keys(d, threshold)</code>
+that:</p>
+<ul>
+<li>takes as arguments a dictionary <code>d</code> with keys of type
+<code>str</code> and an integer <code>threshold</code>;</li>
+<li>returns <code>True</code> if all keys have length smaller or equal
+to <code>threshold</code>, and returns <code>False</code>
+otherwise.</li>
+</ul>
+<p>You may assume that alle keys are strings.</p>
+<p>For example:</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> {<span class="st">&quot;Mario&quot;</span>: <span class="dv">1000</span>, <span class="st">&quot;Gianna&quot;</span> : <span class="dv">8000</span>, <span class="st">&quot;Alberto&quot;</span>: <span class="dv">4000</span>}</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dict_check_short_keys(d, <span class="dv">6</span>))</span></code></pre></div>
+<pre><code>False
+</code></pre>
+<p>Python code must be saved in file:
+<code>dict_check_short_keys.py</code></p>
+<p>Test file (download by right click): <a href="test_dict_check_short_keys.py" target="_blank"><code>test_dict_check_short_keys.py</code></a></p><p>
+<hr>
+<h1 id="sum-values-associate-to-keys-smaller-than-k">Sum values
+associate to keys smaller than k</h1>
+<p>Write a function <code>dict_sum_small_keys(d, threshold)</code>
+that:</p>
+<ul>
+<li>takes as argument a dictionary <code>d</code> with numeric values
+and a key <code>threshold</code>;</li>
+<li>returns the sum of all values associated to keys smaller than
+<code>threshold</code>.</li>
+</ul>
+<p>You may assume that all values in the dictionary are numeric. If the
+dictionary is empty or it does not contain any key smaller than
+<code>threshold</code>, the functin must return 0.</p>
+<p>For example:</p>
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> {<span class="st">&quot;Mario&quot;</span>: <span class="dv">1000</span>, <span class="st">&quot;Gianna&quot;</span> : <span class="dv">8000</span>, <span class="st">&quot;Alberto&quot;</span>: <span class="dv">4000</span>}</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dict_sum_small_keys(d, <span class="st">&quot;Lucia&quot;</span>))</span></code></pre></div>
+<pre><code>12000
+</code></pre>
+<p>Because keys <code>Alberto</code> and <code>Gianna</code> are smaller
+than <code>Lucia</code> in lexicografic order, while key
+<code>Mario</code> is larger.</p>
+<p>Python code must be saved in file:
+<code>dict_sum_small_keys.py</code></p>
+<p>Test file (download by right click): <a href="test_dict_sum_small_keys.py" target="_blank"><code>test_dict_sum_small_keys.py</code></a></p><p>
+<hr>
+<h1 id="union-of-dictionaries">Union of dictionaries</h1>
+<p>Write a function <code>dict_union(d1, d2)</code> that:</p>
+<ul>
+<li>takes two dictionaries <code>d1</code> e <code>d2</code> as
+arguments, with numeric values;</li>
+<li>returns a <code>dict</code> where keys are taken from keys in
+<code>d1</code> and keys in <code>d2</code>. If a key is only in
+<code>d1</code> or only in <code>d2</code> the associated value will be
+set in the returned dictionary. If a key is both in <code>d1</code> and
+in <code>d2</code> the value in teh returned dictionary will be the sum
+of the two values in <code>d1</code> and <code>d2</code>.</li>
+</ul>
+<p>For example:</p>
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="op">=</span> {<span class="st">&quot;January&quot;</span>: <span class="dv">10000</span>, <span class="st">&quot;February&quot;</span> : <span class="dv">8000</span>, <span class="st">&quot;March&quot;</span>: <span class="dv">4000</span>}</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>d2 <span class="op">=</span> {<span class="st">&quot;January&quot;</span>: <span class="dv">3000</span>, <span class="st">&quot;April&quot;</span> : <span class="dv">2000</span>, <span class="st">&quot;May&quot;</span>: <span class="dv">1000</span>}</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dict_union(d1, d2))</span></code></pre></div>
+<pre><code>{&#39;January&#39;: 13000, &#39;February&#39;: 8000, &#39;March&#39;: 4000, &#39;April&#39;: 2000, &#39;May&#39;: 1000}
+</code></pre>
+<p>Python code must be saved in file: <code>dict_union.py</code></p>
+<p>Test file (download by right click): <a href="test_dict_union.py" target="_blank"><code>test_dict_union.py</code></a></p><p>
+<hr>
+<h1 id="add-union">Add union</h1>
+<p>Write a function <code>add_union(a, b)</code> that:</p>
+<ul>
+<li>takes two lists <code>a</code>, <code>b</code> as arguments;</li>
+<li>modifies list <code>a</code> adding all elements that appear in
+<code>b</code> and do not appear in <code>a</code>, so that
+<code>a</code> is the union of <code>a</code> and <code>b</code>.</li>
+</ul>
+<p>You can assume that <code>a</code> and <code>b</code> do not contain
+duplicates. Anyway, some elemnts may appear both in <code>a</code> and
+in <code>b</code>. The function does not return any value, but leaves
+list <code>a</code> modified.</p>
+<p>Elements must be added at the end of <code>a</code> in the same order
+n which they appear in <code>b</code>.</p>
+<p>Python code must be saved in file: <code>add_union.py</code></p>
+
+</body>
+</html>

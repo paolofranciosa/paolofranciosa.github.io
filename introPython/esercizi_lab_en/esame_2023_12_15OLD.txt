@@ -1,0 +1,7 @@
+descrizione: Exam December 15, 2023
+circle_area 4
+average 4
+scalar_product 4
+dict_check_small_values 4
+mat_count_large 4
+change_mins_in_zero 4

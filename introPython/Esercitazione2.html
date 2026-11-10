@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Lab activity</title>
+</head>
+
+<body>
+<h1>Lab activity</h1>
+<h2>Using Thonny</h2>
+	<p>Start the "Statistica Laboratorio" virtual machine (or start you PC)</p>
+<!--	<p>Aprire uno shell (finestra dei comandi del sistema operativo) da <code>Strumenti di sistema -> LXTerminal</code>. Oppure, sul proprio PC: avviare il prompt dei comandi (Windows) o il programma Terminale (Mac OS X)</p>
+	<p>Spostarsi, con i comandi <code>cd</code>, in una cartella in cui &egrave; possibile scrivere, ad esempio nella cartella <code>Desktop</code> (Scrivania)</p>
+-->
+    <p>Create a new folder on Desktop, name it by your surname (e.g. "Rossi")</p>
+<!--	<p>Open a shell window to execute Operating System commands: from <code>Strumenti di sistema -> LXTerminal</code>. Alternatively, on your PC: start the command prompt (Windows) o Terminal Utility (Mac OS X)</p>
+-->
+	<p>Start Thonny (one of the lower left icons, named "Th")<p>
+<!--	<p>In the shell window, use command <code>cd</code> until you reach teh created folder.</p>
+-->
+<p>Write a simple Python program, containing just two lines as <code>print("Ciao")</code> and <code>print(18, 23)</code>, and save it as <code>firstprogram.py</code> in the created folder</p>
+	<p>Run the program</p>
+	<p>Modify as you like the program using Thonny editor, save and run again the program.</p>
+
+<h2>Generating pseudo-random numbers</h2>
+	Method <code>random.random()</code>, that can be used after executing <code>import random</code>, returns a <code>float</code> random value in interval [0, 1), 0 included and 1 excluded.</br>
+	Thus, it is possible to assign a random value to a variable <code>v</code>
+	by executing <code>v = random.random()</code>.<br>
+	It is also possible to use <code>random.random()</code> in a more complex expression.</br>
+	Analogously, method <code>random.randint(a, b)</code>, where <code>a</code> and
+	<code>b</code> are integer values (given by literals, variables, or more complex expressions) returns a random value <code>int</code> in interval [a, b], including the extremes.</p>
+	<p>Any time <code>random.random()</code> is called, a different (with very high probability) value is returned. Variability of the result of  <code>random.randint(..., ...)</code> depends upon the interval defined by parameters.</p>
+	
+	<ol>
+		<li>Write a program that prints a random <code>float</code> value in 
+		interval [0, 100) (<em>hint: multiply the result of <code>random.random()</code> ...</em>).</li>
+	
+		<li>Write a program that prints a random <code>int</code>
+		value generated in set {0, 1, 2, 3, 4, 5}.</li>
+		
+		<li>Repeat running the above programs to check their behaviour</li>
+		
+		<li>Write a program that reads two integers  <code>a</code> and <code>b</code> from the keyboard and prints 4 random numbers in interval <code>[a, b]</code>.</li>
+	</ol>
+
+<h2>Conditional statement</h2>
+	
+	<p>Write programs to solve the following problems.
+	<br>Start solving only point 1;<br>then add one point at a time running again the program.</p>
+	<ol>
+	    <li>Generate two random numbers in interval [0, 1), print both numbers and print the maximum.
+		<li>Generate four random numbers in interval [0, 1), store them into four variables, and print the generated values.</li>
+
+		<li>Count how many of the four generated numbers are greater or equal to 0.6 and print the result.<br>
+		For example, the program could print: <code>There are 3 numbers larger than 0.6</code><br>
+		(<i>Hint: define a variable used for counting.
+		The variable initially contains 0, and will be incremented by 1 any time ... </i>)</li>
+
+		<li>Compute and print the average of the 4 numbers.</li>
+	
+		<li>Print all  values smaller that the average.</li>
+	
+		<li>Print the maximum among the four values.</li>
+	</ol>
+</body>
+</html>
+

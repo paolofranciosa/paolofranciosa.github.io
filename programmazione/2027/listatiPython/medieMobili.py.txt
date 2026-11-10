@@ -1,0 +1,24 @@
+def calcola_media(s, da, a): # CALCOLA E RESTITUISCE LA MEDIA DI UNA PORZIONE DI seq
+                             # [da] incluso   [a] escluso
+    somma = 0
+    for ....
+    
+    divido
+    return ...
+
+
+def media(s):  # CALCOLA E RESTITUISCE LA MEDIA DI TUTTO s
+    
+
+def medie_mobili(seq, k):
+    ...
+    n = len(seq)
+    medie = []
+#   FACENDO VARIARE IL PUNTO DI INIZIO (inizio) DA 0 A n-k compreso
+    for inizio in range(n-k+1)
+        # CALCOLARE LA MEDIA DEGLI ELEMENTI DA inizio A inizio+k (escluso)
+        # APPENDERLA A medie
+        medie.append(calcola_media(seq, inizio, inizio+k))
+OPPURE
+        medie.append(media(seq[inizio:inizio+k]))
+    return medie

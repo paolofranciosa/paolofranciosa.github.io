@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Informatica 2025-2026, Esercitazione 7</title>
+   <link rel="stylesheet" href="http://www.statistica.uniroma1.it/users/pfrancio/styles/sapienzaStyle.css">
+
+</head>
+<body link="#0000ff" vlink="#800080">
+  <h1>Informatica 2025-2026, Esercitazione 7</h1>
+
+<p>Lo scopo del laboratorio è di esercitarsi e misurare la propria
+preparazione: gli esercizi non sono troppo difficili, se si sono seguite
+le lezioni. Non vi viene comunque messo alcun voto.</p>
+<p><strong>Modalità di lavoro</strong>: gli studenti devono lavorare in
+autonomia o in piccoli gruppi, senza disturbare i colleghi. Il lavoro di
+gruppo è fruttuoso solo se tutti partecipano e se ognuno scrive una
+propria soluzione per tutti gli esercizi.</p>
+<p>Il docente cercherà per quanto possibile di non occupare il tempo del
+laboratorio per introdurre materiale nuovo, anche se a volte questo sarà
+necessario. Il docente è a disposizione per aiutare gli studenti, che
+possono iniziare a lavorare anche prima che il docente arrivi in aula,
+se lo desiderano</p>
+<p><strong>Raccomandazioni</strong>: leggete bene il testo degli
+esercizi prima di chiedere chiarimenti. In ogni caso sarò in aula con
+voi.</p>
+<p><strong>Uso dei file di test</strong>: per aiutarvi a completare
+questa esercitazione avete a disposizione dei programmi di test per
+testare la vostra soluzione. Questi sono simili a quelli che avrete in
+sede di esame, pertanto vi consiglio di imparate ad usarli. Per portare
+a termine l’esercizio è necessario</p>
+<ul>
+<li>scrivere un file di soluzione <strong>col nome
+specificato</strong>;</li>
+<li>avere dentro la funzione <strong>col nome specificato</strong>;</li>
+<li>porre il file di test corrispondente <strong>nella stessa
+cartella</strong>;</li>
+<li>eseguire in quella cartella il comando
+<code>python3 &lt;fileditest&gt;</code></li>
+</ul>
+<p>dove <code>&lt;fileditest&gt;</code> va ovviamente sostituito con il
+nome del file di test appropriato per l’esercizio su cui state
+lavorando. Per ogni esercizio ci sta un file di test indipendente, così
+da poter lavorare sugli esercizi uno alla volta con più agio.</p>
+<p>Il risultato di ogni test è una schermata (o più schermate) nella
+quale si mostra:</p>
+<ul>
+<li>se è stato trovato il file con il nome corretto,</li>
+<li>se il file contiene la funzione con il nome corretto,</li>
+<li>se chiamate alla funzione con diversi valori dei parametri terminano
+restituendo risultati corretti.</li>
+</ul>
+<p>Per ogni funzione scritta vengono eseguite chiamate con diversi
+valori dei parametri. L’esito dei test viene riportato con il
+carattere</p>
+<ul>
+<li><code>E</code> se la chiamata non può essere eseguita,</li>
+<li><code>F</code> se la funzione non restituisce il risultato
+corretto,</li>
+<li><code>.</code> se la funzione restituisce il risultato
+corretto.</li>
+</ul>
+<hr>
+<h1 id="lista-di-numeri">Lista di numeri</h1>
+<p>Scrivete una funzione <code>crealista1(a, b)</code> che:</p>
+<ul>
+<li>si aspetti come argomenti due numeri <code>a</code> e
+<code>b</code>, con <code>b</code> che deve essere un numero
+naturale;</li>
+<li>sollevi un'eccezione <code>ValueError</code> se il secondo parametro
+è un intero negativo;</li>
+<li>crei e restituisca una lista contenente i primi <code>b</code>
+interi a partire da <code>a</code>.</li>
+</ul>
+<p>Ad esempio, l’istruzione <code>s = crealista1(14.3, 5)</code> deve
+assegnare a <code>s</code> la lista
+<code>[15, 16, 17, 18, 19]</code>.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> crealista1(<span class="fl">14.3</span>, <span class="dv">5</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> crealista1(<span class="dv">14</span>, <span class="dv">7</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
+<pre><code>[15, 16, 17, 18, 19]
+[14, 15, 16, 17, 18, 19, 20]
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>crealista1.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_crealista1.py" target="_blank"><code>test_crealista1.py</code></p></a><p>
+<hr>
+<h1 id="azzerare-elementi-negativi">Azzerare elementi negativi</h1>
+<p>Scrivere una funzione <code>azzeranegativi(valori)</code> che:</p>
+<ul>
+<li>si aspetti come argomento una lista valori numerici
+(<code>int</code> o <code>float</code>)</li>
+<li>modifichi la lista ricevuta, azzerando tutti gli elementi
+negativi.</li>
+</ul>
+<p>La funzione deve restituire nulla, ma deve modificare la lista
+passata come argomento. In particolare è possibile scrivere questa
+funzione senza utilizzare l’istruzione <code>return</code>. Guardate
+nell’esempio successivo come si deve comportare la funzione</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> [<span class="fl">1.2</span>, <span class="op">-</span><span class="fl">0.4</span>, <span class="dv">5</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">12</span> ]</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>azzeranegativi(L)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L)</span></code></pre></div>
+<pre><code>[1.2, 0, 5, 0, 12]
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>azzeranegativi.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_azzeranegativi.py" target="_blank"><code>test_azzeranegativi.py</code></p></a><p>
+<hr>
+<h1 id="posizione-del-minimo">Posizione del minimo</h1>
+<p>Scrivere una funzione <code>minimo(valori, start=0)</code> che:</p>
+<ul>
+<li>si aspetti come argomento una lista di valori ed eventualmente un
+intero che specifica la posizione iniziale;</li>
+<li>sollevi un'eccezione <code>ValueError</code> se il parametro
+ricevuto è una lista vuota;</li>
+<li>sollevi un' eccezione <code>ValueError</code> se il parametro
+<code>start</code> non è un indice corretto per la sequenza di
+valori;</li>
+<li>restituisca la posizione del valore minimo tra gli elementi della
+lista che compaiono a partire dalla posizione <code>start</code>. Il
+parametro <code>start</code> è opzionale, e vale 0 se non viene
+specificato.</li>
+</ul>
+<p>Il programma Python deve essere salvato nel file:
+<code>minimo.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_minimo.py" target="_blank"><code>test_minimo.py</code></p></a><p>
+<hr>
+<h1 id="massimi-locali">Massimi locali</h1>
+<p>Scrivere una funzione <code>massimilocali(L)</code> che:</p>
+<ul>
+<li>si aspetti come argomento una lista <code>L</code>;</li>
+<li>crei e restituisca una lista contenente i massimi locali presenti in
+sequenza.</li>
+</ul>
+<p>Un elemento di una sequenza è un massimo locale se:</p>
+<ul>
+<li>non si trova ad un estremo della lista;</li>
+<li>è preceduto e seguito da elementi strettamente minori dell'elemento
+stesso.</li>
+</ul>
+<p>Una lista contenente meno di tre elementi non contiene alcun massimo
+locale, quindi in questo caso deve essere restituita una lista
+vuota.</p>
+<p>Il programma Python deve essere salvato nel file:
+<code>massimilocali.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_massimilocali.py" target="_blank"><code>test_massimilocali.py</code></p></a><p>
+<hr>
+<h1 id="verificare-se-una-sequenza-è-bitonica">Verificare se una
+sequenza è bitonica</h1>
+<p>Scrivere una funzione <code>bitonica(L)</code> che:</p>
+<ul>
+<li>si aspetti come argomento una lista <code>L</code>;</li>
+<li>restituisca <code>True</code> se la sequenza è
+<strong>bitonica</strong>, e <code>False</code> altrimenti.</li>
+</ul>
+<p>Per quanto riguarda il nostro esercizio, una sequenza è considerata
+bitonica se è composta da una prima parte <strong>strettamente</strong>
+crescente con almeno due elementi, seguita da una parte
+<strong>strettamente</strong> decrescente, anche questa composta da
+almeno due elementi. Ad esempio sono bitoniche le seguenti sequenze:</p>
+<ul>
+<li><code>2 4 13 34 23</code></li>
+<li><code>3 4 1</code></li>
+<li><code>27 48 113 134 23 12</code></li>
+</ul>
+<p>Osservate che, come negli esempi, l’ultimo elemento della parte
+crescente è anche il primo della parte decrescente. Nessuna sequenza
+bitonica può avere meno di tre elementi. Infatti la lista</p>
+<ul>
+<li><code>2 4 6 6 3 -2</code></li>
+</ul>
+<p>non è bitonica perché il segmento <code>6 6</code> non è strettamente
+né crescente né decrescente.</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bitonica([<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">13</span>,<span class="dv">34</span>,<span class="dv">23</span>]))</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bitonica([<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>]))</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bitonica([<span class="dv">27</span>,<span class="dv">48</span>,<span class="dv">113</span>,<span class="dv">134</span>,<span class="dv">23</span>,<span class="dv">12</span>]))</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bitonica([<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">6</span>,<span class="dv">3</span>,<span class="op">-</span><span class="dv">2</span>]))</span></code></pre></div>
+<pre><code>True
+True
+True
+False
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>bitonica.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_bitonica.py" target="_blank"><code>test_bitonica.py</code></p></a><p>
+</body>
+</html>

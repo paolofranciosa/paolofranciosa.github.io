@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guida esercitazione 2</title>
+   <link rel="stylesheet" href="http://www.statistica.uniroma1.it/users/pfrancio/styles/sapienzaStyle.css">
+</head>
+
+<body>
+<h1>Esercitazione 2</h1>
+<p>Un tutorial in inglese su come esercitarsi in Python &egrave; disponibile su <a href="http://www.allendowney.com/wp/books/think-python-2e/" target="_blank">http://www.allendowney.com/wp/books/think-python-2e/</a>. In particolare descrive come installare Python sul proprio PC</p>
+<hr>
+<h2>Uso di Thonny in laboratorio (o sul proprio PC)</h2>
+	<p>Avviare la macchina virtuale del Dipartimento di Scienze Statistiche. Oppure, sul proprio PC: accendere il PC</p>
+<!--	<p>Aprire uno shell (finestra dei comandi del sistema operativo) da <code>Strumenti di sistema -> LXTerminal</code>. Oppure, sul proprio PC: avviare il prompt dei comandi (Windows) o il programma Terminale (Mac OS X)</p>
+	<p>Spostarsi, con i comandi <code>cd</code>, in una cartella in cui &egrave; possibile scrivere, ad esempio nella cartella <code>Desktop</code> (Scrivania)</p>
+-->
+    <p>Creare una cartella sul Desktop, utilizzando il proprio cognome come nome della cartella (p.es. Rossi)</p>
+	<p>Aprire uno shell (finestra dei comandi del sistema operativo) da <code>Strumenti di sistema -> LXTerminal</code>. Oppure, sul proprio PC: avviare il prompt dei comandi (Windows) o il programma Terminale (Mac OS X)</p>
+	<p>Avviare Thonny (tra le icone in basso a sinistra nella macchina virtuale)<p>
+	<p>Spostarsi con il comando <code>cd</code> fino a raggiungere la cartella creata</p>
+	<p>Scrivere un semplice programma Python, ad esempio contenente due righe del tipo <code>print("Ciao")</code> e <code>print(18, 23)</code> e  salvarlo in un file di nome <code>primoprogramma.py</code> nella cartella precedentemente creata</p>
+	<p>Eseguire il programma (run)</p>
+	<p>Modificare il programma utilizzando l'editor, eseguire di nuovo il programma</p>
+
+<h2>Generazione di valori pseudocasuali</h2>
+	La funzione <code>random.random()</code>, utilizzabile dopo aver eseguito almeno una volta il comando <code>import random</code>, restituisce un valore <code>float</code> casuale compreso
+	nell'intervallo [0, 1), incluso il valore 0 ed escluso il valore 1.</br>
+	E' possibile assegnare un valore casuale a una variabile <code>v</code>
+	attraverso l'assegnazione <code>v = random.random()</code>.<br>
+	oppure usare <code>random.random()</code> all'interno di una espressione pi&ugrave;
+	complessa.</br>
+	Analogamente, la funzione <code>random.randint(a, b)</code>, dove <code>a</code> e
+	<code>b</code> sono due valori interi (costanti, variabili, o espressioni complesse) restituisce un valore <code>int</code> casuale nell'intervallo [a, b], estremi inclusi.</p>
+	<p>Ogni volta che verra chiamato il metodo <code>random.random()</code> sar&agrave; restituito,
+	con altissima probabilit&agrave;, un valore differente. La variabilit&agrave; del risultato di <code>random.randint(..., ...)</code> dipende naturalmente dall'intervallo indicato come parametri.</p>
+	
+	<ol>
+		<li>Scrivere un programma che visualizza un valore casuale <code>float</code>
+		compreso nell'intervallo [0, 100) (<em>suggerimento: moltiplicare ...</em>).</li>
+	
+		<li>Scrivere un programma che visualizza un valore casuale <strong>intero</strong>
+		compreso nell'insieme {0, 1, 2, 3, 4, 5}.</li>
+		
+		<li>Eseguire ripetutamente i programmi scritti per verificarne il corretto
+		funzionamento.</li>
+		
+		<li>Scrivere un programma che legge da tastiera due numeri interi <code>a</code> e <code>b</code> e stampa 4 numeri interi casuali nell'intervallo <code>[a, b]</code>.</li>
+	</ol>
+
+<h2>Istruzione condizionale</h2>
+	
+	<p>Scrivere un programma che esegue le seguenti operazioni.
+	<br>Iniziare realizzando
+	solo il punto 1;<br>una volta corretto ed eseguito correttamente aggiungere il punto
+	successivo, ricompilando ed eseguendo il programma fino a quando non funzioner&agrave; correttamente.<br>
+	Aggiungere via via i punti successivi.</p>
+	<ol>
+	    <li>Generare due numeri casuali nell'intervallo [0, 1), stamparli entrambi e stampare poi il massimo tra i due valori
+		<li>Generare quattro numeri casuali nell'intervallo [0, 1), memorizzandoli in quattro variabili con nomi a piacere,
+		e visualizzare i quattro valori generati.</li>
+
+		<li>Contare quanti dei quattro numeri sono maggiori o uguali a 0.6 e visualizzare il risultato.<br>
+		Per esempio, il programma stamper&agrave;: <code>Ci sono 3 numeri maggiori di 0.6</code><br>
+		(<i>Suggerimento: per risolvere questo punto &egrave; utile definire una variabile che useremo per contare.
+		La variabile sar&agrave; inizializzata con il valore 0 e sar&agrave; poi incrementata di una unit&agrave; ogni volta che ... </i>)</li>
+
+		<li>Calcolare la media dei quattro valori e visualizzarla.</li>
+	
+		<li>Visualizzare tutti i valori minori della media.</li>
+	
+		<li>Visualizzare il massimo tra i quattro valori.</li>
+	</ol>
+</body>
+</html>
+

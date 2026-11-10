@@ -1,0 +1,946 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Algorithms and Data Structures, 2025-2026</title>
+<style type="text/css">
+	table.lezione {
+		border: 3px solid #822433
+	}
+	 table.lezione td, table.lezione th {
+		border: 1px solid #822433;
+		padding: 10px
+	}
+	
+	hr {
+		border: 1px solid #822433
+	}
+
+	td p {
+		margin: 3 0
+	}
+</style>
+
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+<table summary="logo e intestazione"><tr><td width="150" align="center" valign="middle">
+<img src="../../loghi/logo.jpg" alt="logo sapienza"></td><td valign="middle">
+<h1 align="center">Algorithms and Data Structures
+<br>Master degree in Statistical Methods and Applications<br>
+academic year 2025-2026</h1>
+<h2>Teacher: Paolo Franciosa
+<br>6 CFU 
+</h2></td></tr></table>
+<hr><a name="inizio">
+</a>
+<p><strong><font size=5>Please fill-in
+<a href="https://forms.gle/yYFZfVBRFodry85r9" target="_blank">this form</a>
+in order to be in touch for news about the course. You must access using your Sapienza account.
+</font></strong></p>
+<hr>
+
+<center>
+<table class="lezione" cellspacing="4">
+  <tbody>
+    <tr>
+	<td valign="middle" align="center"><a href="#contenuti"><span
+ style="letter-spacing: 1pt;">Contents</span></a> </td>
+      <td valign="middle" align="center"><a href="#programma"><span
+ style="letter-spacing: 1pt;">Program</span></a> </td>
+      <td valign="middle" align="center"><a href="#materiale"><span
+ style="letter-spacing: 1pt;">Teaching material</span></a> </td>
+ </tr>
+ <tr>
+      <td valign="middle" align="center"><a
+ href="http://www.dss.uniroma1.it/"
+ target="_blank"><span style="letter-spacing: 1pt;">Lessons timetable</span></a>
+      </td>
+      <td valign="middle" align="center"><a
+ href="#elencolezioni"><span style="letter-spacing: 1pt;">Lessons topics and resources</span></a> </td>
+<!--      <td valign="middle" align="center"><span
+ style="letter-spacing: 1pt;"><a href="../../didattica.html#ricevimento" target="_blank">Ricevimento
+studenti</a></span> </td>
+ -->
+      <td valign="middle" align="center"><a href="#modalita"><span
+ style="letter-spacing: 1pt;">Exams and sample tests</span></a> </td>
+	    </tr>
+</tbody>
+</table>
+</center>
+
+<!--
+<hr>
+<p><strong><font size=5>Lessons will be in presence and will start on Monday, February 26th 2024,<br>
+with the following calendar:<br>Monday 10:00-12:00 in room V (building CU002, fourth floor), <br>Wednesday 10:00-12:00 in room 12 (building CU007, ground floor).</font></strong></p>
+<p><strong><font size=5>Please fill in <a href="https://tinyurl.com/37n7xd5q" target="_blank">this form</a>, to collect address and information about the students.</font></strong></p>
+-->
+<hr>
+<h3 align="center"><a name="contenuti">Contents</a></h3>
+<p>The course covers algorithmic programming techniques. The primary goal is to study algorithms and data structures that efficiently solve problems that would require very high computational resources (time or space) using trivial approaches.</p>
+<p>We will address problems frequently arising in practical applications and real-world situations, such as sorting, searching, and graph traversal, as well as general design techniques including divide and conquer, greedy algorithms, and dynamic programming.</p> 
+<p>The course will cover the entire algorithm engineering cycle, addressing the design, theoretical analysis, implementation, and experimental evaluation of algorithms and data structures. The students will practice solving computational problems, designing new algorithms, and implementing efficient solutions in Python.
+</p>
+<p align="right">
+<a href="#inizio">top</a> </p>
+<hr>
+<h3 align="center"><a name="programma">Program</a></h3>
+<p>Definition of algorithm, examples of algorithms.</p>
+<p>Introduction to complexity. Computation models: Random Access Machine, Pointer Machine, Turing Machine.</p>
+<p>Analisys of algorithm's complexity, Landau notations.
+Intrinsic complexity, lower bound for sorting by comparisons.</p>
+
+<p>Divide and conquer, master theorem. Merge sort, Quick sort, k-selection.
+K-selection in linear time.</p>
+<p>The concept of data structure and its definition as Abstract Data Type.
+Elementary data structures (lists, stacks, queues, trees).</p>
+
+
+<p>The dictionary problem,
+Binary search trees, red-black trees, B-Trees, hash tables.</p>
+
+<p>Priority queues, union-find structures.
+The heap Abstract Data Type, heap sort algorithm.</p>
+
+<p>Graph algorithms.
+Depth first and breadth first visits, minimum spanning tree, single source shortest path tree (SSSP), minimum distances between all vertex pairs (APSP). Algorithms for maximum flow problems.</p>
+
+<p>Implementation in Python language of the data structures and algorithms studied.</p>
+
+
+
+<p align="right">
+<a href="#inizio">top</a> </p>
+<hr>
+<h3 align="center"><a name="materiale">Texts</a></h3>
+
+<p>Introduction to the Design and Analysis of Algorithms<br>
+Anany Levitin, Pearson</p>
+<p>resources are available on the web, an alternative textbook is<br>
+Algorithms Design, by
+Goodrich and Tamassia</p>
+
+<p>A more comprehensive text is:<br>
+Introduction to Algorithms<br>
+T. Cormen, C. Leiserson, R. Rivest, and C. Stein, McGraw-Hill.</p>
+<p align="right">
+<a href="#inizio">top</a> </p>
+
+<p>An introductory textbook on Python is:<br>
+Allen Downey,<br>
+            Thinking in Python - How to Think Like a Computer Scientist,<br>
+			second edition<br>
+			pdf available at <a href="https://greenteapress.com/thinkpython2/thinkpython2.pdf" target="blank">github</a>
+			under the GNU Free Documentation License</p>
+			
+<p>A more advanced textbook on Python, including implementation of algorithms on lists, trees, graphs is:<br>
+Basant Agarwal and Benjamin Baka,<br>
+            Hands-On Data Structures and Algorithms with Python,<br>
+			second edition<br>
+			Packt Editor</p>
+
+<p>Hand-written slides on some parts of the course (not covering all topics) can be found <a target="_blank" href="slides.zip">here</a></p>
+
+<p>A portable version of Thonny (a simple and free Python IDE) for Windows, Mac or Linux, including a Python 3 interpreter, can be downloaded
+     <a href="https://thonny.org" target="_blank">here</a>.<p>
+
+<hr>
+<h3 align="center"><a name="modalita">Exams</a></h3>
+<p>The exam consists of a written test and an oral exam.</p>
+<p>The written test will include questions on the course topics. You will not be asked to write Python code.</p>
+<p>The oral exam covers both theoretical topics and the implementation of algorithms in Python.</p>
+</p>
+<p>The exam results are NOT carried over to subsequent exam sessions, hence, the written exam and the oral exam must be taken during the same exam session.
+As an exception, students who take the written exam during the May pre-session may also take the oral exam during the June and July exam sessions.
+<br>
+<strong>Fill in this form within May 22, 2026 to participate in the pre-exam on May 25, 2026: 
+    <a href="https://forms.gle/823hYoKXa9gbxxzb9" target="_blank">registration form for pre-exam</a></strong>
+</p>
+<p>Samples of exam tests are available in <a target="_blank" href="examTests.zip">this zipped folder</a>
+
+https://forms.gle/823hYoKXa9gbxxzb9
+<p align="right">
+<a href="#inizio">top</a> </p>
+<hr>
+<h2 align="center"><a name="elencolezioni">Lessons 2025-2026</a>
+</h2>
+<p><strong><font size=5>Please fill-in
+<a href="https://forms.gle/yYFZfVBRFodry85r9" target="_blank">this form</a>
+in order to be in touch for news about the course. You must access using your Sapienza account.
+</font></strong></p>
+
+<center>
+<table class="lezione" width="70%">
+  <tbody>
+    <tr>
+      <th>Monday</th>
+      <th>Wednesday</th>
+      <th>Friday</th>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#23-02-26">February 23, 2026</a>
+                                     <br>room 6 10:00-12:00</td>
+      <td width="34%" align="center" bgcolor = "yellow"><a href="#25-02-26">February 25, 2026</a>
+                                     <br>room 12 10:00-12:00</td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#02-03-26">March 2, 2026</a>
+                                     <br>room 6 10:00-12:00</td>
+      <td width="34%" align="center" bgcolor = "yellow"><a href="#04-03-26">March 4, 2026</a>
+                                     <br>room 12 10:00-12:00</td>	
+<!--
+      <td width="33%" align="center"><a href="#06-03-26">March 6, 2026</a>
+                                     <br>room 5 8:00-10:00</td>
+-->
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#09-03-26">March 9, 2026</a>
+                                     <br>room 6 10:00-12:00</td>
+      <td width="34%" align="center" bgcolor = "yellow"><a href="#11-03-26">March 11, 2026</a>
+                                     <br>room 12 10:00-12:00</td>
+    </tr>
+    <tr>
+      <td width="33%" align="center">March 16, 2026
+                                     <br>cancelled</td>
+      <td width="34%" align="center">March 18, 2026
+                                     <br>cancelled</td>
+    </tr>
+    <tr>
+      <td width="33%" align="center">March 23, 2026
+                                     <br>cancelled - referendum</td>
+      <td width="34%" align="center" bgcolor = "yellow"><a href="#25-03-26">March 25, 2026</a>
+                                     <br>room 12 10:00-12:00</td>
+<!--
+      <td width="33%" align="center"><a href="#27-03-26">March 27, 2026</a>
+                                     <br>room 5 8:00-10:00</td>
+--> 
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#30-03-26">March 30, 2025</a>
+                                     <br>room 6 10:00-12:00</td>
+      <td width="34%" align="center" bgcolor = "yellow"><a href="#01-04-26">April 1, 2026</a>
+                                     <br>room 12 10:00-12:00</td>
+    </tr>
+    <tr>
+      <td width="33%" align="center">April 6<br>Easter holyday</td>
+      <td width="34%" align="center" bgcolor = "yellow"><a href="#08-04-26">April 8, 2026</a>
+                                     <br>room 12 10:00-12:00</td>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#10-04-26">April 10, 2026</a>
+                                     <br>room 5 8:00-10:00</td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#13-04-26">April 13, 2025</a>
+                                     <br>room 6 10:00-12:00</td>
+      <td width="34%" align="center" bgcolor = "yellow"><a href="#15-04-26">April 15, 2026</a>
+                                     <br>room 12 10:00-12:00</td>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#17-04-26">April 17, 2026</a>
+                                     <br>room 5 8:00-10:00</td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#20-04-26">April 20, 2025</a>
+                                     <br>room 6 10:00-12:00</td>
+      <td width="34%" align="center" bgcolor = "yellow"><a href="#22-04-26">April 22, 2026</a>
+                                     <br>room 12 10:00-12:00</td>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#24-04-26">April 24, 2026</a>
+                                     <br>online 8:00-10:00</td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#27-04-26">April 27, 2025</a>
+                                     <br>room 2 10:00-12:00</td>
+      <td width="34%" align="center" bgcolor = "yellow"><a href="#29-04-26">April 29, 2026</a>
+                                     <br>room 12 10:00-12:00</td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#04-05-26">May 4, 2025</a>
+                                     <br>room 2 10:00-12:00</td>
+      <td width="34%" align="center" bgcolor = "yellow"><a href="#06-05-26">May 6, 2026</a>
+                                     <br>room 12 10:00-12:00</td>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#08-05-26">May 8, 2026</a>
+                                     <br>room LID (fourth floor) 8:00-10:00</td>
+    </tr>
+    <tr>
+      <td width="33%" align="center" bgcolor = "yellow"><a href="#11-05-26">May 11, 2025</a>
+                                     <br>room 2 10:00-12:00</td>
+      <td width="34%" align="center" bgcolor = "yellow"><a href="#13-05-26">May 13, 2026</a>
+                                     <br>room 12 10:00-12:00</td>
+    </tr>
+</tbody>
+</table>
+</center>
+
+
+<hr>
+<center>
+<p>For any need, contact me at<br>
+paolo<font color="red">A_DOT_HERE</font>franciosa<font color="red">AN_"at"_HERE</font>uniroma1<font color="red">A_DOT_HERE</font>it
+</p>
+</center>
+
+<p align="right">
+<a href="#inizio">top</a> </p>
+<hr>
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="23-02-26">February 23, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+<p><strong><font color="red">Please fill-in
+<a href="https://forms.gle/yYFZfVBRFodry85r9" target="_blank">this form</a>
+in order to be in touch for news about the course. You must access using your Sapienza account.
+</font></strong></p>
+		<ul>
+      	<li>Introduction, material -- book, software -- exams</li>
+      	<li>Definitions: problem, instance, algorithm</li>
+      	<li>The concepts of "resource", "executor", "operation"</li>
+		<li>Examples: find max, check duplicates, subset sum, route finding</li>
+		<li>The Russian Peasant multiplication algorithm</li>
+		</ul>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="25-02-26">February 25, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+<p><strong><font color="red">Please fill-in
+<a href="https://forms.gle/yYFZfVBRFodry85r9" target="_blank">this form</a>
+in order to be in touch for news about the course. You must access using your Sapienza account.
+</font></strong></p>
+		<ul>
+        	<li>Models of computation: RAM vs Pointer Machine</li>
+        	<li>Example: sorting on RAM vs. sorting on Pointer Machine</li>
+        	<li>The Turing machine, computability</li>
+            <li>Deriving the complexity of an algorithm: exact evaluation, best case, worst case</li>
+            <li>Examples: find maximum, check duplicates</li>
+            <li>How to derive complexity: code inspection.</li>
+		</ul>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="02-03-26">March 2, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+		<ul>
+            <li>Landau notations (O, &Omega;, &Theta;) to express complexity.</li>
+            <li>Complexity of an algorithm: upper bound, lower bound, exact bounds.
+            <li>Containment among simple classes of functions.</li>
+		</ul>
+		Slides for this and next lecture can be found <a href="slides/1_Landau_and_intrinsic_complexity.pdf" target="_blank">here</a>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="04-03-26">March 4, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+		   <ul>
+            <li>Complexity of algorithms vs. (intrinsic) complexity of problems.</li>
+            <li>Sorting without comparing: examples for sorting n elements in a universe U in &Theta;(n+|U|) time and &Theta;(|U|) space</li>
+            <li>Lower bound for minimum/maximum selection, lower bound for comparison-based sorting algorithms</li>
+            <li>Primality testing in O(n) and in O(&radic;n).</li>
+            <li>Listing prime numbers: Eratostene's sieve (here is a <a href="code/eratostene_simple.py" target="_blank">a solution</a>)</li>
+        </ul>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="09-03-26">March 9, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+		<ul>
+            <li>Divide and Conquer. Recursive implementation of Divide and Conquer algorithms.
+               Identify base cases, build subinstances, recursive calls,
+              combine subsolutions.</li>
+            <li>Complexity of Divide and Conquer algorithms: recurrence equations.</li>
+            <li>Master Theorem</li>
+            <li>Sorting via Divide &amp; Conquer: <em>merge sort</em>.</li>
+            <li>Complexity analysis of <em>merge sort</em> (find the <a href="code/mergeSort.py" target="_blank">code of Merge Sort here</a>)</li>
+            <li>Integer multiplication, Karatsuba's algorithm</li>
+        </ul>
+		</td>
+    </tr>
+    <tr>
+		<th>Code</th>
+		<td>
+		<ul>
+            <li><a href="code/KaratsubaProduct.py" target="_blank">KaratsubaProduct.py</a></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="11-03-26">March 11, 2025</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+		<ul>
+            <li>Quick sort, analysis of <em>quick sort</em>: best case, worst case (find the <a href="code/quickSort.py" target="_blank">code of <em>quick sort</em> here</a>).</li>
+            <li><em>Quick sort</em> vs. <em>merge sort</em>:
+            <ul>
+                 <li>worst-case vs. best case</li>
+                 <li>stability</li>
+                 <li>additional memory space</li>
+           </ul>
+           <li>When recursion is harmful: computing Fibonacci numbers by recursive calls</li>
+         </ul>
+         <p>Sorting algorithms animation <a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">https://www.toptal.com/developers/sorting-algorithms</a></p>
+		</td>
+    </tr>
+    <tr>
+		<th>Code</th>
+		<td>
+		<ul>
+            <li><a href="code/mergeSort.py" target="_blank">mergeSort.py</a></li>
+            <li><a href="code/quickSort.py" target="_blank">quickSort.py</a></li>
+            <li><a href="code/quickSortAnimation.py" target="_blank">code showing quick sort behaviour</a></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="25-03-26">March 25, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>The concept of Abstract Data Type. Information hiding.</p>
+           <p>Introduction to OO programming in Python.</p>
+           <p>Implementation of a simple class <code>Number_set</code>
+                (find it in <a href="code/numModule.py" target="_blank">numModule.py</a>), with an example of use
+                (find it in <a href="code/useNumberSet.py" target="_blank">useNumberSet.py</a>).</p>
+            <hr>
+<!--
+            <p>A solution to the extension proposed today is in
+               <a href="code/numModuleExtended.py" target="_blank">numModuleExtended.py</a>,
+               and a sample of use is in
+               <a href="code/useNumberSetExtended.py" target="_blank">useNumberSetExtended.py</a>
+               </p>
+-->
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="30-03-26">March 30, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+            <p>Strassen algorithm (outline). Complexity of matrix multiplication.</p>
+            <p>Randomized <em>quick sort</em>: analysis of average case.</p>
+		    <p>Find here a <a href="code/quickSortAnimation.py" target="_blank">code showing quick sort behaviour</a>.</p>
+            <p></i>k</i>-th element selection algorithm, complexity analysis (find the <a href="code/selection.py" target="_blank">code of k-selection here</a>).</p>
+           <p>Worst case linear time </i>k</i>-th element selection algorithm, <em>Median of Medians</em> (Blum et al., 1973)</p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="01-04-26">April 1, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>The <em>dictionary</em> problem: time vs. space tradeoffs, trivial mapping from key to integers.</p>
+           <p>Implementation using linked lists, sorted linked lists, arrays, sorted arrays.</p>
+           <p>Efficiency of the <code>in</code> (search) operator for searching in Python <code>list</code> and  <code>dict</code></p>
+           <p>Comparing search performances on Python <code>list</code>, Python sorted <code>list</code>, Python <code>dict</code>.
+           Find code <a href="code/dictionaries.py" target="_blank">here</a></p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="08-04-26">April 8, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Hash tables: definition, INSERT/SEARCH/DELETE operations. Hash functions, collisions. External chaining</p>
+           <p>Resizing the hash table, doubling and halving the table. Amortized analysis</p>
+        </td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="10-04-26">April 10, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Hash tables: external chaining vs open probing. Sequential/linear probing, quadratic probing, double hashing.</p>
+           <p>Managing deletions in open probing.</p>
+           <p>Cryptographic hash functions.</p>
+           <hr>
+           <p>Last In First Out (LIFO) and First In First Out (FIFO) policies: Stacks and Queues</p>
+           <p>Implementation of a stack or a queue by a linked list.</p>
+           <p>Implementation of a stack or a queue by an array (Python list) list.</p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="13-04-26">April 13, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Pointer based structures: linked lists vs. Python lists (arrays)</p>
+           <p>Primitives on pointer based lists: insertion, deletion, search</p>
+
+           <p>Python implementation of linked lists
+            <a href="code/linkedListClass.py" target="_blank">linkedListClass.py</a>.
+           Use of linked lists in <a href="code/useLinkedList.py" target="_blank">useLinkedList.py</a></p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="15-04-26">April 15, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Implementation of a stack (LIFO) by a linked list
+            <a href="code/StackModule.py" target="_blank">StackModule.py</a>.</p>
+           <p>Implementation of a queue (FIFO) by a linked list
+            <a href="code/QueueModule.py" target="_blank">QueueModule.py</a>,
+<!--
+            uses module <a href="code/headTailLinkedListClass.py" target="_blank">headTailLinkedListClass.py</a>.</p>
+-->
+            <em>uses module <strong>headTailLinkedListClass.py (to be written)</strong>, in which the list contains both a
+            link to the first element in the list and a link to the last element in the list.</em></p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="17-04-26">April 17, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Removing an element in a linked list:
+               <a href="code/linkedListClass.py" target="_blank">linkedListClass.py</a></p>
+           <p>Rooted trees: basic definitions. Binary trees.</p>
+           <p>Height of a binary tree: worst case and best case. Complete binary trees.</p>
+           <p>Binary tree visits: pre-order, in-order, post-order visits.</p>
+           <p>Binary search trees: definition, searching in a binary search tree.</p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="20-04-26">April 20, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+		   <p>Insertion and deletion in a binary search tree<p>
+           <p>Max, min, predecessor and successor search in binary search trees.</p>
+		   <p>Range search in a binary search tree<p>
+           <p>Balanced trees with respect to size or height. Fibonacci trees</p>
+           <p>Rotations in binary search trees</p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="22-04-26">April 22, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Balanced trees: red-black trees. Definitions, insertions. Worst case performances.</p>
+           <p>Python implementation of Binary Search Tree.<br>
+           Code available in <a href="code/bstFirst.py" target="_blank">bstFirst.py</a>
+           (some methods must be written).</p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<!--
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="24-04-26">April 24</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+		   <p>Maintaining red-black trees under insertion (outline)</p>
+           <p>Python implementation of Binary Search Tree with dummy leaves.<br>
+           Code available in <a href="code/bstCompleteWithoutRank.py" target="_blank">bstCompleteWithoutRank.py</a><p>
+           <p>Improving BST implementation in order to efficiently compute rank and k-th element
+<!--           <br>Code available in <a href="code/bstComplete.py" target="_blank">bstComplete.py</a>
+
+           </p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+-->
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="24-04-26">April 24, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Priority queues. Primitives.</p>
+           <p>Complexity of priority queues primitives on linked lists or balanced search trees.</p>
+           <p>Heaps: definition. Get_min and Insert operation.</p>
+           <p>Heaps: Pop_min operation, complexity of delete_min.</p>
+           <p>Implementation of heaps by lists.</p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="27-04-26">April 27, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Implementation of heapify operation.</p>
+           <p>Building a heap in O(n) time: <code>make_heap</code></p>
+           <p>An implementation is available in
+               <a href="code/priority.py" target="_blank">priority.py</a></p>
+           <p>An example of use is in 
+               <a href="code/UsePriority.py" target="_blank">UsePriority.py</a></p>
+           <p>Algorithm heap sort. Complexity analysis of heap sort. Implementation available in 
+               <a href="code/heapSort.py" target="_blank">heapSort.py</a></p>
+           <p>Animation of several sorting algorithms can be seen at <a href="https://www.toptal.com/developers/sorting-algorithms" target="_blank">https://www.toptal.com/developers/sorting-algorithms</a></p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="29-04-26">April 29, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Introduction to <em>dynamic programming</em></p>
+           <ul>
+               <li>reusing instance solutions</li>
+               <li>an example using memoization for computing Fibonacci numbers:
+                  <a href="code/fibonacciMemo.py" target="_blank">fibonacciMemo.py</a></li>
+               <li>computing the number of <em>full binary trees</em></li>
+               <li>an example using memoization for computing the number of full binary trees with <code>m</code> leaves:
+                  <a href="code/num_full_binary_trees.py" target="_blank">num_full_binary_trees.py</a></li>
+               <li>Matric Chain Multiplication</li>
+               <li>a code draft using memoization for computing the cost of the best multiplication strategy for <code>n</code> matrices:
+                  <a href="code/matrix_mult_only_cost_memo.py" target="_blank">matrix_mult_only_cost_memo.py</a></li>
+           </ul>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="04-05-26">May 4, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Graphs: definitions and basic properties</p>
+           <ul>
+               <li>directed, undirected graphs</li>
+               <li>subgraph, induced subgraph</li>
+               <li>path, cycle, complete graph (clique), bipartite, complete bipartite (bi-clique)</li>
+               <li>connected graph, connected components</li>
+               <li>trees, forests</li>
+               <li>number of edges in a tree/forest</li>
+               <li>spanning trees</li>
+               <li>Planar graph, embedding, faces</li>
+               <li>Characterization of planar graphs (Kuratowsky theorem)</li>
+               <li>Relation among the number of vertices, edges and faces of a (connected) planar graph: Euler relation.</li>
+               <li>Transitive closure of a relation: reachability (directed, undirected) as transitive closure of edges</li>
+<!--
+               <li>directed graphs: strongly connected components</li>
+               <li>acyclic graphs, DAGs, DAG of strongly connected components</li>
+-->
+           </ul>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="06-05-26">May 6, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Representing graphs: adjacency matrix vs. adjacency lists.</p>
+           <p>A Python class implementing graphs by dictionaries: basic version in
+           <a href="code/basicGraph.py" target="_blank">basicGraph.py</a></p>
+           <p>Exercise: add methods for deleting vertices or edges</p>
+           <p>Graphs traversals: Depth First Search (DFS) and Breadth First Search (BFS)</p>
+           <p>Pseudocode of BFS and DFS</p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="08-05-26">May 8, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Minimum spanning tree and minimum spanning forest.</p>
+           <p>Definition of cut. The <em>cut rule</em> for minimum spanning trees.</p>
+           <p>Outline of Kruskal's algorithm. Complexity of Kruskal's algorithm: O(m log n) variant.</p>
+           <p>Prim's algorithm for minimum spanning tree.</p>
+           <p>Python implementations of BFS and DFS visit:
+                <a href="code/Graph.py" target="_blank">Graph.py</a>.
+                Requires classes implementing stacks, queues, and priority queues. All files are available in <a href="code/graphCode.zip" target="_blank">graphCode.zip</a></p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="11-05-26">May 11, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Single source shortest path trees for non-negative weighted graphs:
+                Dijkstra algorithm.</p>
+           <p>Python implementation of Dijkstra's algorithm: <a href="code/Graph.py" target="_blank">Graph.py</a>
+           using a min priority queue that implements primitive decrease_priority
+           <a href="code/PriorityQueue.py" target="_blank">PriorityQueue.py</a>.<br>
+           All files are available in <a href="code/graphCode.zip" target="_blank">graphCode.zip</a></p>
+           <p>The All Pairs Distance problem: relation to matrix multiplication.</p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="13-05-26">May 13, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+		<p>The convex hull problem in 2 dimensions:
+           <ul>
+               <li>checking relative position of three points id the plane.</li>
+               <li>Jarvis march (gift wrapping) algorithm</li>
+               <li>Graham scan algorithm</li>
+           </ul>
+        </p>
+        <p>The closest pair problem. Divide and conquer algorithm in 2 dimensions</p>
+        <p>Drawing points and segments in Python: <a href = "code/drawing.py" target = "_blank">sample code here</a></p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<!--
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="30b-04-26">April 30, 2026, 12:00 - 14:00</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Subclasses in Python. Inheritance and overwriting</p>
+           <p>Python implementations of BFS and DFS visit:
+                <a href="code/Graph.py" target="_blank">Graph.py</a>.
+                Requires classes implementing stacks, queues, and priority queues. All files are available in <a href="code/graphCode.zip" target="_blank">graphCode.zip</a></p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="05-05-26">May 05, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+           <p>Minimum spanning tree and minimum spanning forest.</p>
+           <p>Definition of cut. The <em>cut rule</em> for minimum spanning trees.</p>
+           <p>Outline of Kruskal's algorithm. Complexity of Kruskal's algorithm: O(m log n) variant.</p>
+           <p>Python implementation of Kruskal's algorithm for minimum spanning forest:
+           <a href="code/Graph.py" target="_blank">Graph.py</a>. Requires all files in <a href="code/graphCode.zip" target="_blank">graphCode.zip</a></p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="07a-05-26">May 7, 2026, 10:00-12:00</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<p>Please fill in <a href="https://docs.google.com/forms/d/1KP2vUGENoRcgDiIeapc8--KHN8v7T_4aDu5tMAs1mxw/preview" target="_blank">this form</a> if interested if giving the exam in May. You must access with uniroma1 credentials</p>
+		<td>
+		<p><strong>Please fill in <a href="https://docs.google.com/forms/d/1KP2vUGENoRcgDiIeapc8--KHN8v7T_4aDu5tMAs1mxw/preview" target="_blank">this form</a> if interested if giving the exam in May. You must access with uniroma1 credentials</strong></p>
+           <p>Code is available in <a href="code/Graph.py" target="_blank">Graph.py</a></p>
+           <p>Boruvka's algorithm for minimum spanning forest (without implementation)</p>
+ 		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+<!--
+
+           <p>Complexity of Dijkstra's algorithm</p>
+           
+
+DEVO SPIEGARE LA RICERCA BINARIA
+<p>The external memory model of computation: block transfer, I/O efficiency</p>
+
+
+<table class="lezione">
+  <tbody>
+    <tr>
+      <th colspan="2" id="13-05-26">May 13, 2026</th>
+    </tr>
+    <tr>
+		<th>Topics</th>
+		<td>
+		   <p>B-trees and B*-trees: definition, height bound, searching in a B*-tree<p>
+		   <p>Insertion and deletion in a B*-tree</p>
+		</td>
+    </tr>
+  </tbody>
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+</table>
+<p><a href="#elencolezioni">back to lessons list</a></p>
+
+
+-->
+</body>
+</html>

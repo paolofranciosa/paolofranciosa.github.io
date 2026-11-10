@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guida esercitazione 4</title>
+<style type="text/css">
+	* {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+</head>
+
+<body>
+<h1>Lab activity</h1>
+<h2>Pseudorandom sequence analysis</h2>
+	<p>The following code generates and print 10 random values:</p>
+	<pre>
+    conta = 0
+    while conta<10:
+        x = random.random();
+        print(x);
+        conta = conta + 1
+	</pre>
+	
+	<p>
+	Write a program that:</p>
+	<ul>
+		<li>takes in input a natural number <code>n</code>,</li>
+		<li>prints <code>n</code> random values.</li>
+	</ul>
+	<p>Modify the program to achieve, one at a time, the following objectives (only one sequence should be generated):</p>
+	<ul>
+	    <li>print the sum of the generated values (the sum should be printed only once)</li>
+	    <li>print the maximum of the generated values (the maximum should be printed only once)</li>
+	    <li>print the minimum of the generated values (the minimum should be printed only once)</li>
+		<li>decide whether the generated sequence contains at least one element greater than 0.9, (<em>use a boolean variable ...</em>)</li>
+		<li>decide whether the generated sequence consists exclusively of elements greater than 0.11, (<em>use a boolean variable to look for violations of the required condition ..</em>)</li>
+		<li>decide whether the generated sequence is increasing (<em>to solve this point it is necessary to keep both the current value and the value generated in the previous iteration; at each iteration the current value is copied into the variable containing the value of the previous iteration ...</em>)</li>
+		<li>count the number of maximal increasing sequences. For example, the sequence<br>
+		0.23 - 0.15 - 0.01 - 0.48 - 0.68 - 0.27 - 0.83<br>
+		consists in 4 maximal increasing sequences:<br> 0.23;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.15;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.01 - 0.48 - 0.68;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0.27 - 0.83;<br>
+		(<em>an increasing sequence ends as soon as some kind of violation is encountered, or at the end of the sequence ...</em>),</li>
+		<li>find the length of the maximum increasing portion of the sequence (<em>this point is particularly challenging</em>): for example, if the generated sequence were 0.23 - 0.15 - 0.01 - 0.48 - 0.68 - 0.27 - 0.83, the maximum increasing portion would have length 3 (0.01 - 0.48 - 0.68)</li>
+      	<li>count the number of local maxima (a <em>local maximum</em> is an element that  is preceded by a lower element and followed by a lower element. The first and last elements cannot be local maxima)</li>
+	</ul>
+
+</body>
+
+</html>

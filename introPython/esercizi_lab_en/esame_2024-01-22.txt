@@ -1,0 +1,7 @@
+descrizione: Exam January 22, 2024
+rectangle_area 1
+sum_negatives 1
+almost_equal 1
+dict_double 1
+mat_count_zero_rows 1
+change_small_to_zero 1

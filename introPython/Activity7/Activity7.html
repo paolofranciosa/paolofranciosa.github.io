@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Introduction to computer programming, 3 CFU (2023-2024)</title>
+<style type="text/css">
+	* {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table.lezione {
+		border: 3px solid #822433
+	}
+	 table.lezione td, table.lezione th {
+		border: 1px solid #822433;
+		padding: 10px
+	}
+	pre {
+	    font-family: monospace, monospace;
+	}
+	hr {
+		border: 1px solid #822433
+	}
+
+	td p {
+		margin: 3 0
+	}
+</style>
+
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+<hr>
+<h1>Lab activity</h1>
+<p>The purpose of the lab is to practice and measure one’s preparation:
+the exercises are not too difficult, if you have followed the lectures.
+However, no score is put on them.</p>
+<p><strong>Working mode</strong>: students should work independently or
+in small groups, without disturbing colleagues. Group work is fruitful
+only if everyone participates and if everyone writes their own solution
+for all exercises.</p>
+<p>The teacher will try as much as possible not to occupy the time of
+the laboratory to introduce new material, although sometimes this will
+be necessary. The lecturer is available to help students, who can start
+working even before the lecturer arrives in the classroom, if they
+wish.</p>
+<p><strong>Recommendations</strong>: Read the text of the exercises
+carefully before ask for clarification. In any case, I will be in the
+classroom with you.</p>
+<p><strong>Using test files</strong>: To help you complete this exercise
+you have test programs available to test your solution. These are
+similar to those you will have on the exam, so I recommend that you
+learn how to use them. To complete the exercise you will need to</p>
+<ul>
+<li>write a solution file <strong>with the specified name</strong>;</li>
+<li>have inside the function <strong>with the specified
+name</strong>;</li>
+<li>place the corresponding test file <strong>in the same
+folder</strong>;</li>
+<li>run the <code>python3 &lt;fileditest&gt;</code> command in that
+folder;</li>
+</ul>
+<p>where <code>&lt;fileditest&gt;</code> should obviously be replaced by
+the name of the test appropriate for the exercise you are working on.
+For each exercise there is an independent test file, so that you can
+easily work on the exercises one at a time.</p>
+<p>The result of each test is a screen(s) in which it is shown:</p>
+<ul>
+<li>whether the file with the correct name was found,</li>
+<li>whether the file contains the function with the correct name,</li>
+<li>whether calls to the function with different parameter values return
+correct results.</li>
+</ul>
+<p>For each function written, calls are made with different values of
+the parameters. The outcome of the tests is reported with the
+character</p>
+<ul>
+<li><code>E</code> if the call cannot be executed,</li>
+<li><code>F</code> if the function does not return the correct
+result,</li>
+<li><code>.</code> if the function returns the correct result.</li>
+</ul>
+<hr>
+<h1
+id="create-a-dictionary-associating-integers-to-their-squares">Create a
+dictionary associating integers to their squares</h1>
+<p>Write a function <code>create_square_dict(n)</code> that:</p>
+<ul>
+<li>takes as argument a positive integer <code>n</code>;</li>
+<li>returns a <code>dict</code> whose keys are nambers 1, 2, 3, …, n-1,
+where each key <span class="math inline"><em>i</em></span> is associated
+to value <span class="math inline"><em>i</em> * <em>i</em></span>. You
+may assume <span class="math inline"><em>n</em></span> is larger than
+1.</li>
+</ul>
+
+<p>For example:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(create_square_dict(5)</span></code></pre></div>
+<pre><code>{1: 1, 2: 4, 3: 9, 4: 16}
+</code></pre>
+
+<p>Python code must be saved in file:
+<code>create_square_dict.py</code></p>
+<p>Test file (download by right click): <a href="test_create_square_dict.py" target="_blank"><code>test_create_square_dict.py</code></a></p><p>
+<hr>
+<h1 id="create-a-dictionary-form-a-key-list-and-a-value-list">Create a
+dictionary from a key list and a value list</h1>
+<p>Write a function <code>create_dict_from_lists(n)</code> that:</p>
+<ul>
+<li>takes as argument two lists <code>k_list</code> and
+<code>v_list</code> with equal lengths;</li>
+<li>returns a <code>dict</code> whose keys are taken from elements in
+<code>k_list</code> and values are taken from <code>v_list</code>.
+Element <code>v_list[0]</code> will be associated to
+<code>k_list[0]</code>, element <code>v_list[1]</code> will be
+associated to <code>k_list[1]</code> and so on.</li>
+</ul>
+<p>For example:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(create_dict_from_lists([<span class="st">&quot;cat&quot;</span>, <span class="st">&quot;dog&quot;</span>, <span class="st">&quot;mouse&quot;</span>],</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>                             [<span class="st">&quot;gatto&quot;</span>, <span class="st">&quot;cane&quot;</span>, <span class="st">&quot;topo&quot;</span>]))</span></code></pre></div>
+<pre><code>{&#39;cat&#39;: &#39;gatto&#39;, &#39;dog&#39;: &#39;cane&#39;, &#39;mouse&#39;: &#39;topo&#39;}
+</code></pre>
+<p>Python code must be saved in file:
+<code>create_dict_from_lists.py</code></p>
+<p>Test file (download by right click): <a href="test_create_dict_from_lists.py" target="_blank"><code>test_create_dict_from_lists.py</code></a></p><p>
+
+</body>
+</html>

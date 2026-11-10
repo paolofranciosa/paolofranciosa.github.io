@@ -1,0 +1,10 @@
+"""La ricerca binaria è un algoritmo che, data una sequenza ordinata in modo crescente di valori,
+ricerca un certo valore x confrontandolo con il valore n nella posizione centrale della sequenza.
+Se x è maggiore di tale valore si scarta la metà sinistra della sequenza compreso il valore centrale n e si continua nello stesso
+modo sulla sotto-sequenza così ottenuta. L'algoritmo termina quando il valore centrale ottenuto è
+uguale a x o quando la sotto-sequenza rimanente è vuota.
+Il caso peggiore è quello in cui x non è presente nella lista.
+La complessità computazionale è logaritmo in base 2 di len(lista).
+Dimostrazione: data una lista lunga m e supponendo che x non vi appartenga, quindi il caso peggiore,
+l'algoritmo continuerà fino a che m/(2^numero_iterazioni) =1
+Quindi m=2^numero_iterazioni -> numero_iterazioni=log in base 2 di m"""

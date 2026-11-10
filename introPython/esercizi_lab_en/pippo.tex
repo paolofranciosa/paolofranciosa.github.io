@@ -1,0 +1,254 @@
+\textbf{Working methods}: The exam text, the test files of the exercises
+and a synoptic table on Python syntax can be found in the \texttt{exam}
+folder on your desk, in the ``Statistica-Laboratorio'' virtual machine.
+The solutions to the exercises must be placed in the same folder
+\texttt{exam}. \textbf{First compile the file} \texttt{studente.txt}
+with the first name, surname and matriculation information
+
+\begin{verbatim}
+nome: Giacomo
+cognome: Leopardi
+matricola: 123456789
+\end{verbatim}
+
+Not completing the \texttt{student.txt} file is like not handing in the
+assignment. For the exam, you can only have
+
+\begin{itemize}
+\tightlist
+\item
+  your ID or passport;
+\item
+  beverages and snacks;
+\end{itemize}
+
+and you must leave your bags and backpacks in the corner of the room,
+with mobile phones and electronic devices switched off inside.
+
+\textbf{The grade is the sum of the points of the exercises}, so it is
+possible to get 30 even without completing them all.
+
+\textbf{Use of test files}: tests check very briefly the setting of the
+solutions and passing the tests does not at all imply that the solution
+is correct. Read the text of the exercises before starting to solve
+them. To complete each exercise exercise you must
+
+\begin{itemize}
+\tightlist
+\item
+  write a solution file \textbf{with the specified name};
+\item
+  have the function \textbf{with the specified name} inside;
+\item
+  place the solution file in the \texttt{exam} folder;
+\item
+  run the \texttt{python3\ \textless{}testfile\textgreater{}} command in
+  that folder
+\end{itemize}
+
+where \texttt{\textless{}testfile\textgreater{}} should of course be
+replaced with the name of the appropriate test file for the exercise you
+are working on.
+
+There is an independent test file for each exercise, so you can work on
+the exercises one at a time with more ease. The result of each test is a
+screen (or several screens) showing
+
+\begin{itemize}
+\tightlist
+\item
+  whether the file with the correct name was found,
+\item
+  whether the file contains the function with the correct name,
+\item
+  whether calls to the function with different parameter values end by
+  returning correct results.
+\end{itemize}
+
+For each function written, calls are made with different values of the
+parameters. The result of the tests is returned with the character
+
+\begin{itemize}
+\tightlist
+\item
+  \texttt{E} if the call cannot be executed,
+\item
+  \texttt{F} if the function does not return the correct result,
+\item
+  \texttt{.} if the function returns the correct result.
+\end{itemize}
+
+\pagebreak
+
+\section{Circle area}\label{circle-area}
+
+Write a function \texttt{circle\_area(x)} that:
+
+\begin{itemize}
+\tightlist
+\item
+  takes a non-negative number \texttt{x} as parameter;
+\item
+  returns the area of a circle with radius \texttt{x}.
+\end{itemize}
+
+After importing \texttt{math} package, a good approximation of Pi is
+available as \texttt{math.pi}
+
+The function must be saved in a file named \texttt{circle\_area.py}
+
+The Python function must be saved in file: \texttt{circle\_area.py}
+\Test file: \texttt{test\_circle\_area.py}
+
+\pagebreak
+
+\section{Average}\label{average}
+
+Write a function \texttt{average(L)} that,
+
+\begin{itemize}
+\tightlist
+\item
+  takes a list \texttt{L} as parameter, in which each element is a
+  number (\texttt{int} or \texttt{float});
+\item
+  returns the average of asll numbers in the list \texttt{L}. You can
+  assume that \texttt{L} is a list of numbers (each element is
+  \texttt{int} oppure \texttt{float}).
+\end{itemize}
+
+The function must be saved in a file named \texttt{average.py}
+
+The Python function must be saved in file: \texttt{average.py}
+\Test file: \texttt{test\_average.py}
+
+\pagebreak
+
+\section{Scalar product between two
+vectors}\label{scalar-product-between-two-vectors}
+
+The scalar product between two vectors
+\(\langle a_0, a_1,\ldots, a_{n-1}  \rangle\) and
+\(\langle b_0,b_1,\ldots, b_{n-1} \rangle\) is defined as
+
+\begin{equation*}
+      \sum_{i=0}^{n-1} a_i b_i
+\end{equation*}
+
+We represent vectors as lists of numbers.
+
+Write a function \texttt{scalar\_product} that:
+
+\begin{itemize}
+\item
+  takes two non-empty lists \texttt{a}, \texttt{b} with the same length
+  as parameters, where each element is a number (\texttt{int} or
+  \texttt{float});
+\item
+  returns the scalar product of the two lists.
+\end{itemize}
+
+The scalar product between two lists is therefore the sum of the
+products of the homologous elements. For example, the scalar product
+between the vectors \texttt{{[}1,\ 4,\ 3{]}} and
+\texttt{{[}5,\ 5,\ 1{]}} is
+\(1 \times 5 + 4 \times 5 + 3 \times 1 = 28\). The scalar product of two
+vectors is a numerical value.
+
+You can \textbf{assume} that the lists are not empty, that they contain
+only numbers and that they have the same length.
+
+The function must be saved in a file named \texttt{scalar\_product.py}
+
+The Python function must be saved in file: \texttt{scalar\_product.py}
+\Test file: \texttt{test\_scalar\_product.py}
+
+\pagebreak
+
+\section{Check that all values in a dictionary are
+small}\label{check-that-all-values-in-a-dictionary-are-small}
+
+Write a function \texttt{dict\_check\_small\_values(d,\ threshold)}
+that:
+
+\begin{itemize}
+\tightlist
+\item
+  takes as arguments a dictionary \texttt{d} with values of type
+  \texttt{int} or \texttt{float} and an number \texttt{threshold};
+\item
+  returns \texttt{True} if all values are strictly smaller than
+  \texttt{threshold}, and returns \texttt{False} otherwise.
+\end{itemize}
+
+You may assume that alle values are numeric.
+
+The function must be saved in a file named \texttt{scalar\_product}.
+
+For example:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{d }\OperatorTok{=}\NormalTok{ \{}\StringTok{"Mario"}\NormalTok{: }\DecValTok{1000}\NormalTok{, }\StringTok{"Gianna"}\NormalTok{ : }\DecValTok{8000}\NormalTok{, }\StringTok{"Alberto"}\NormalTok{: }\DecValTok{4000}\NormalTok{\}}
+
+\BuiltInTok{print}\NormalTok{(dict\_check\_small\_values(d, }\DecValTok{7000}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+False
+\end{verbatim}
+
+The Python function must be saved in file:
+\texttt{dict\_check\_small\_values.py} \Test file:
+\texttt{test\_dict\_check\_small\_values.py}
+
+\pagebreak
+
+\section{Count large elements in a
+matrix}\label{count-large-elements-in-a-matrix}
+
+Write a function \texttt{mat\_count\_large(m,\ threshold)} that:
+
+\begin{itemize}
+\tightlist
+\item
+  takes as argument a matrix \texttt{m}, represented as a list of lists;
+\item
+  returns the number of elements in \texttt{m} that are strictly larger
+  than \texttt{threshold}.
+\end{itemize}
+
+We represent an \(r \times c\) matrix in Python as a list with length
+\(r\), where each element is a list of length \(c\). You may assume that
+the argument is well formed, with \(r \geq 1\), \(c \geq 1\), and all
+the lists representing rows contain \texttt{c}~numeric elements.
+
+The function must be saved in a file named \texttt{mat\_count\_large}.
+
+The Python function must be saved in file: \texttt{mat\_count\_large.py}
+\Test file: \texttt{test\_mat\_count\_large.py}
+
+\pagebreak
+
+\section{Change minima to zero}\label{change-minima-to-zero}
+
+Write a function \texttt{change\_mins\_in\_zero(values)} that:
+
+\begin{itemize}
+\tightlist
+\item
+  expects a non-empty list of comparable values as an argument;
+\item
+  directly modifies the \texttt{values} list by replacing the minimum
+  values with zero.
+\end{itemize}
+
+If the minimum appears several times in the list, the function must
+replace all occurrences of the minimum value with zero.
+
+The function must be saved in a file named \texttt{mat\_count\_large}.
+
+The Python function must be saved in file:
+\texttt{change\_mins\_in\_zero.py} \Test file:
+\texttt{test\_change\_mins\_in\_zero.py}

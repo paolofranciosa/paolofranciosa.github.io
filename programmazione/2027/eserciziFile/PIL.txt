@@ -1,0 +1,4 @@
+Francia;2388
+Grecia;111
+Italia;1879
+Germania;6555

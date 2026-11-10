@@ -1,0 +1,13 @@
+discount_price
+factorial
+sort_three_values
+nested_cycles
+tree
+word_count
+symmetric
+remove_max_frequent_element
+moving_average
+dict_check_short_keys
+dict_sum_small_keys
+dict_union
+add_union

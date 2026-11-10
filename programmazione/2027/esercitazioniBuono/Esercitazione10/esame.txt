@@ -1,0 +1,5 @@
+conta_righe_file
+conta_righe_nonvuote_file
+carica_dizionario
+ricerca_linee
+lista_somme_da_fileallegati: conta_righe_file1.txt conta_righe_file2.txt conta_righe_file3.txt conta_righe_nonvuote_file1.txt conta_righe_nonvuote_file2.txt conta_righe_nonvuote_file3.txt carica_dizionario1.txt carica_dizionario2.txt ricerca_linee1.txt ricerca_linee2.txt lista_somme_da_file1.txt lista_somme_da_file2.txt lista_somme_da_file3.txt

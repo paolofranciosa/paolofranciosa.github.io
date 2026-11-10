@@ -1,0 +1,7 @@
+mat_sum
+mat_min
+mat_posmax
+mat_sumdiagonal
+mat_row_sums
+mat_col_sums
+mat_posmaxrow

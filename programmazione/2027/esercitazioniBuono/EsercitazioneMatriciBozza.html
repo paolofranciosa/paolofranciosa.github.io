@@ -1,0 +1,91 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Esercitazione 6</title>
+</head>
+
+<body>
+<h1>Liste bidimensionali (liste di liste)</h1>
+<p>Si pu&ograve; memorizzare una matrice utilizzando una lista in cui ciascun elemento &egrave; a sua volta una lista.
+Ad esempio, la matrice
+<pre>10  20  30
+22  45   3
+</pre>
+potrebbe essere rappresentata come<br>
+<code>mat = [[10, 20, 30], [22, 45, 3]]</code></p>
+
+<p>Ciascun elemento della lista <code>mat</code> &egrave; una lista, quindi
+<code>mat[0]</code> &egrave; la lista  <code>[10, 20, 30]</code>. L'elemento di posto 2 in tale lista sarà individuato dall'espressione <code>mat[0][2]</code>. In generale, l'espressione <code>mat[esp1][esp2]</code> indicher&agrave; l'elemento di posto <code>v_2</code> nella lista di posto <code>v_1</code>, dove <code>v_1</code> e <code>v_2</code> sono i valori delle espressioni <code>esp1</code> e <code>esp2</code>.</p>
+
+In quanto liste pu&ograve; essere utilizzata la funzione <code>len(.)</code>, ad esempio
+<code>len(mat)</code> sar&agrave; il valore 2, mentre <code>len(mat[1])</code> sar&agrave; il valore 3.
+
+
+<p>Possiamo immaginare che la prima dimensione indichi il numero di righe e la seconda il numero di colonne.
+Il valore di <code>len[mat]</code> sar&agrave; interpretato come il numero di righe, mentre 
+<code>len(mat[i])</code>, dove <code>i</code> &egrave; un qualsiasi valore lecito per il primo indice, sarà interpretato come il numero di colonne. Da notare che in realt&agrave; ciascuna elemento di <code>mat</code> (ciascuna riga) potrebbe avere lunghezza diversa.</p>
+
+La scansione dell'intera matrice pu&ograve; essere realizzata in almeno due modi:
+<pre>for riga in mat:
+    for elem in riga:
+        print(elem)
+</pre>
+oppure
+<pre>for i in range(len(mat)):
+    for j in range(len(mat[i])):
+        print(mat[i][j])
+</pre>
+nel secondo modo si hanno nelle variabili <code>i</code> e  <code>j</code>
+le posizioni correnti di riga e colonna.
+
+<p>Nell'esempio riportato sopra, <code>p.length</code> sar&agrave; pari a 10,
+mentre <code>p[0].length</code> sar&agrave; pari a 20.</p>
+
+<p>Il seguente frammento di codice crea una matrice di con 4 righe e 7 colonne,
+contenente valori casuali nell'intervallo [0,1).</p>
+
+tabella = []
+<pre>for i in range(4):
+    tabella.append([])
+    for j in range(7):
+        tabella[i].append(random.random())
+</pre>
+
+<h2>Inizializzazione di un array bidimensionale</h2>
+<p>Analogamente a quanto visto per gli array monodimensionali, un array bidimensionale pu&ograve; essere
+inizializzato contestualmente alla sua definizione come segue:<p>
+
+<pre>
+    // in questo esempio l'array mat avr&agrave; 3 righe e 4 colonne
+    
+    int[][] mat = {{5, 3, 6, 12}, {1, 3, 3, 2}, {0, 0, 3, 14}};
+</pre>
+
+<h1>Primi esercizi su arrays bidimensionali</h1>
+<p>Data una matrice rappresentata da un array bidimensionale di <code>int</code> (preferibilmente inizializzato nel codice), risolvere i problemi seguenti.
+Dove specificato, si assume che la matrice sia quadrata.</p>
+<ol>
+<li>stampare la matrice in forma di tabella (questo punto &egrave; risolto in StampaMatrice.java)</li>
+<li>stampare la somma di tutti gli elementi della matrice</li>
+<li>trovare il massimo elemento della matrice</li>
+<li>trovare il massimo elemento della diagonale principale (assumendo che la matrice sia quadrata)</li>
+<li>separatamente per ciascuna riga, stampare la somma degli elementi della riga</li>
+<li>separatamente per ciascuna colonna, stampare la somma degli elementi della colonna</li>
+<li>stampare la somma di tutti gli elementi sulla diagonale principale (assumendo che la matrice sia quadrata)</li>
+<li>stampare la somma di tutti gli elementi sulla diagonale secondaria (assumendo che la matrice sia quadrata)</li>
+<li>stampare la posizione (riga e colonna) dell'elemento massimo</li>
+<li>verificare se la matrice (che si assume quadrata) &egrave; simmetrica</li>
+<li>contare il numero di elementi pari a 0 nel triangolo inferiore (elementi al di sotto della diagonale principale), assumendo che la matrice sia quadrata</li>
+</ol>
+
+<hr>
+<p>
+<span style="color:red">Soluzione: <a href="../soluzioni/MatriceVarie.java" target="_blank">MatriceVarie.java</a></span>
+</p>
+</body>
+
+</html>
+

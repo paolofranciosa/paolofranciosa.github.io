@@ -1,0 +1,5 @@
+print("la somma di {:4d} e {:4d} è {:6.2f}".format(12,3,15))
+print("la somma di {:4d} e {:4d} è {:6d}".format(354,23,10778))
+print("la somma di {:4d} e {:4d} è {:6d}".format(1,367,15))
+print("la somma di {:4d} e {:4d} è {:6d}".format(12,3,15))
+print("la somma di {1:4d} e {0:4d} è {2:6d}".format(12,3,15))

@@ -1,0 +1,168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Informatica 2026-2027, Esercitazione 5</title>
+   <link rel="stylesheet" href="http://www.statistica.uniroma1.it/users/pfrancio/styles/sapienzaStyle.css">
+</head>
+<body link="#0000ff" vlink="#800080">
+  <h1>Informatica 2026-2027, Esercitazione 5</h1>
+
+<p>Lo scopo del laboratorio è di esercitarsi e misurare la propria
+preparazione: gli esercizi non sono troppo difficili, se si sono seguite
+le lezioni. Non vi viene comunque messo alcun voto.</p>
+<p><strong>Modalità di lavoro</strong>: gli studenti devono lavorare in
+autonomia o in piccoli gruppi, senza disturbare i colleghi. Il lavoro di
+gruppo è fruttuoso solo se tutti partecipano e se ognuno scrive una
+propria soluzione per tutti gli esercizi.</p>
+<p>Il docente cercherà per quanto possibile di non occupare il tempo del
+laboratorio per introdurre materiale nuovo, anche se a volte questo sarà
+necessario. Il docente è a disposizione per aiutare gli studenti, che
+possono iniziare a lavorare anche prima che il docente arrivi in aula,
+se lo desiderano</p>
+<p><strong>Raccomandazioni</strong>: leggete bene il testo degli
+esercizi prima di chiedere chiarimenti. In ogni caso sarò in aula con
+voi.</p>
+<p><strong>Uso dei file di test</strong>: per aiutarvi a completare
+questa esercitazione avete a disposizione dei programmi di test per
+testare la vostra soluzione. Questi sono simili a quelli che avrete in
+sede di esame, pertanto vi consiglio di imparate ad usarli. Per portare
+a termine l’esercizio è necessario</p>
+<ul>
+<li>scrivere un file di soluzione <strong>col nome
+specificato</strong>;</li>
+<li>avere dentro la funzione <strong>col nome specificato</strong>;</li>
+<li>porre il file di test corrispondente <strong>nella stessa
+cartella</strong>;</li>
+<li>eseguire in quella cartella il comando
+<code>python3 &lt;fileditest&gt;</code></li>
+</ul>
+<p>dove <code>&lt;fileditest&gt;</code> va ovviamente sostituito con il
+nome del file di test appropriato per l’esercizio su cui state
+lavorando. Per ogni esercizio ci sta un file di test indipendente, così
+da poter lavorare sugli esercizi uno alla volta con più agio.</p>
+<p>Il risultato di ogni test è una schermata (o più schermate) nella
+quale si mostra:</p>
+<ul>
+<li>se è stato trovato il file con il nome corretto,</li>
+<li>se il file contiene la funzione con il nome corretto,</li>
+<li>se chiamate alla funzione con diversi valori dei parametri terminano
+restituendo risultati corretti.</li>
+</ul>
+<p>Per ogni funzione scritta vengono eseguite chiamate con diversi
+valori dei parametri. L’esito dei test viene riportato con il
+carattere</p>
+<ul>
+<li><code>E</code> se la chiamata non può essere eseguita,</li>
+<li><code>F</code> se la funzione non restituisce il risultato
+corretto,</li>
+<li><code>.</code> se la funzione restituisce il risultato
+corretto.</li>
+</ul>
+<hr>
+<h1 id="conteggio-delle-vocali">Conteggio delle vocali</h1>
+<p>Scrivete una funzione <code>conteggiovocali(testo)</code> che
+restituisce il numero di vocali presenti nella stringa
+<code>testo</code>. Ad esempio</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(conteggiovocali(<span class="st">&quot;Contate le vocali.&quot;</span>))</span></code></pre></div>
+<pre><code>7
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>conteggiovocali.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_conteggiovocali.py" target="_blank"><code>test_conteggiovocali.py</code></p></a><p>
+<hr>
+<h1 id="spazi-a-capo">Spazi a capo</h1>
+<p>Scrivete una funzione <code>spaziacapo(s)</code> che costruisce e restituisce una stringa 
+in cui ogni
+spazio di <code>s</code> &egrave; sostituito da un simbolo a capo <code>\n</code>. Ad
+esempio</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(spaziacapo(<span class="st">&quot;c&#39;era una volta&quot;</span>))</span></code></pre></div>
+<pre><code>c&#39;era
+una
+volta
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>spaziacapo.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_spaziacapo.py" target="_blank"><code>test_spaziacapo.py</code></p></a><p>
+<hr>
+<h1 id="moltiplica-caratteri">Moltiplica caratteri</h1>
+<p>Scrivete una funzione <code>moltiplicacaratteri(s, c, x)</code> che costruisce e 
+restituisce una stringa uguale a <code>s</code> in cui
+ogni occorrenza di <code>c</code> &egrave; sostituita con <code>x</code>
+occorrenze consecutive. Ad esempio</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(moltiplicacaratteri(<span class="st">&#39;abcb&#39;</span>,<span class="st">&#39;b&#39;</span>,<span class="dv">3</span>))</span></code></pre></div>
+<pre><code>abbbcbbb
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>moltiplicacaratteri.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_moltiplicacaratteri.py" target="_blank"><code>test_moltiplicacaratteri.py</code></p></a><p>
+<hr>
+<h1 id="scambia-caratteri">Scambia caratteri</h1>
+<p>Scrivi una funzione <code>scambia_caratteri(s, x, y)</code> che
+prenda in input - una stringa <code>s</code> - due interi <code>x</code>
+e <code>y</code></p>
+<p>La funzione deve restituire una stringa uguale a <code>s</code> ma
+con i caratteri in posizione <code>x</code> e <code>y</code> scambiati.
+Se <code>x</code> o <code>y</code> non sono posizioni valide, la
+funzione deve restituire <code>None</code>.</p>
+<p>Ad esempio</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(scambia_caratteri(<span class="st">&#39;balletto&#39;</span>, <span class="dv">1</span>, <span class="dv">7</span>))</span></code></pre></div>
+<pre><code>bolletta
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>scambia_caratteri.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_scambia_caratteri.py" target="_blank"><code>test_scambia_caratteri.py</code></p></a><p>
+<hr>
+<h1 id="rimuovi-doppie">Rimuovi Doppie</h1>
+<p>Scrivete una funzione <code>rimuoviDoppie(s)</code> che prende una
+stringa <code>s</code> in input e restituisce una stringa uguale, ma
+priva di doppie. Ad esempio</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(rimuoviDoppie(<span class="st">&#39;tapparella&#39;</span>))</span></code></pre></div>
+<pre><code>taparela
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>rimuoviDoppie.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_rimuoviDoppie.py" target="_blank"><code>test_rimuoviDoppie.py</code></p></a><p>
+<hr>
+<h1 id="rimuovi-ripetizioni">Rimuovi Ripetizioni</h1>
+<p>Scrivete una funzione <code>rimuoviripetizioni(s)</code> che prende
+una stringa <code>s</code> in input e restituisce una stringa uguale, ma
+priva di ripetizioni. Ad esempio</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(rimuoviripetizioni(<span class="st">&#39;allietare&#39;</span>))</span></code></pre></div>
+<pre><code>alietr
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>rimuoviripetizioni.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_rimuoviripetizioni.py" target="_blank"><code>test_rimuoviripetizioni.py</code></p></a><p>
+<hr>
+<h1 id="formatta-secondi">Formatta secondi</h1>
+<p>Scrivere una funzione <code>formatta_hhssmm(sec)</code> che:</p>
+<ul>
+<li>dato in input un numero di secondi <code>sec</code>;</li>
+<li>restituisca l’equivalente in formato hh:mm:ss;</li>
+<li>le ore, i minuti e i secondi devono essere stampati sempre con
+almeno due cifre, ad esempio 9 è 09 e 7 è 07 e 0 è 00.</li>
+<li>le ore possono utilizzare un numero arbitrario di cifre (ma sempre
+almeno due).</li>
+</ul>
+<p>Scrivere a tal fine le seguenti funzioni ausiliarie - una funzione
+che dato un numero di secondi totali restituisce tre numeri
+corrispondenti a ore, minuti e secondi. - un’altra funzione per gestire
+la conversione da numero a stringa, con in più l’aggiunta dello zero
+iniziale, quando questo zero iniziale dovesse servire.</p>
+<p>A tal fine, consultare https://pyformat.info</p>
+<p>Esempi: - <code>formatta_hhssmm(11537)</code> ritorna il valore
+<code>03:12:17</code></p>
+<p>La funzione deve essere salvata in un file che si chiama
+<code>formatta_hhssmm.py</code></p>
+<p>Il programma Python deve essere salvato nel file:
+<code>formatta_hhssmm.py</code></p>
+<p>File di test (scaricare con il click destro): <a href="test_formatta_hhssmm.py" target="_blank"><code>test_formatta_hhssmm.py</code></p></a><p>
+</body>
+</html>

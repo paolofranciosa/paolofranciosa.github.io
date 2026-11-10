@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guida esercitazione 9</title>
+   <link rel="stylesheet" href="http://www.statistica.uniroma1.it/users/pfrancio/styles/sapienzaStyle.css">
+</head>
+
+<body>
+<h1>Modalit&agrave; di svolgimento dell'esercitazione</h1>
+<p>Viene richiesto di scrivere funzioni per risolvere vari problemi,
+e viene fornito anche uno strumento che mette alla prova il comportamento delle funzioni che avete scritto.</p>
+<p>Create una cartella, nella quale saranno creati sia i file contenenti le funzioni che avete scritto (una per ciascun file), sia i file di test (forniti dal docente).<br>
+I nomi di questi file devono essere esattamente i seguenti:
+<ul>
+<li><code>labEserc9_1.py</code>, <code>labEserc9_2.py</code>, <code>labEserc9_3.py</code>, <code>labEserc9_4.py</code>, <code>labEserc9_5.py</code>, <code>labEserc9_6.py</code>, <code>labEserc9_7.py</code>,  per i sette files contenenti le funzioni scritte da voi,</li>
+<li><code>test_lab9_1.py</code>, <code>test_lab9_2.py</code>, <code>test_lab9_3.py</code>, <code>test_lab9_4.py</code>, <code>test_lab9_5.py</code>, <code>test_lab9_6.py</code>, <code>test_lab9_7.py</code> per i file di test (forniti dal docente)</li>
+</ul>
+</p>
+<p>Per ciascuno dei problemi elencati nel seguito dovrete scrivere un file contenente la soluzione richiesta, in cui <strong>il nome della funzione deve essere esattamente quello indicato nel testo seguente</strong>.</p>
+<p>Una volta salvato il file nella cartella, e salvato anche il corrispondente file di test fornito dal docente, dovete eseguire il comando
+<pre>python3 test_lab9_X.py
+</pre>
+dove <code>X</code> &egrave; il numero da 1 a 7 corrispondente all'esercizio che volete verificare.</p>
+
+<p>Il risultato del test &egrave; una schermata (o pi&ugrave; schermate) nella quale si mostra:
+<ul>
+<li>se &egrave; stato trovato il file con il nome corretto,</li>
+<li>se il file contiene la funzione con il nome corretto,</li>
+<li>se chiamate alla funzione con diversi valori dei parametri terminano restituendo risultati corretti.</li>
+</ul>
+</p>
+<p>Per ogni funzione scritta vengono eseguite chiamate con diversi valori dei parametri. L'esito dei test viene riportato con il carattere
+<ul>
+<li><strong>E</strong> se la chiamata non pu&ograve; essere eseguita,</li>
+<li><strong>F</strong> se la funzione non restituisce il risultato corretto,</li>
+<li><strong>.</strong> se la funzione restituisce il risultato corretto.</li>
+</ul>
+</p>
+
+<hr>
+<h1>Funzioni su liste</h1>
+<h2>Primo esercizio: calcolo delle medie mobili</h2>
+<p>Scrivere una funzione <code>medie_mobili(seq, k)</code> che:</p>
+<ul>
+	<li>riceve come parametro una lista di numeri <code>seq</code> e un numero naturale <code>k</code>;</li>
+	<li>solleva una eccezione <code>TypeError</code> se il primo parametro ricevuto non &egrave; una lista, o se gli elementi della lista non sono numeri;</li>
+	<li>solleva una eccezione <code>ValueError</code> se la sequenza ha lunghezza 0;</li>
+	<li>solleva una eccezione <code>ValueError</code> se il valore del secondo parametro
+	&egrave; minore o uguale a 0 oppure &egrave; maggiore della lunghezza del primo parametro;</li>
+	<li>costruisce la lista delle <code>len(seq)-k+1</code> <em>medie mobili semplici</em> di ordine <code>k</code>. Una <a href="https://it.wikipedia.org/wiki/Media_mobile" target="_blank">media mobile semplice</a> di ordine <code>k</code> &egrave; la media aritmetica di <code>k</code> elementi consecutivi nella sequenza, quindi se la sequenza ha lunghezza <code>n</code> si possono calcolare <code>n-k+1</code> medie mobili: dalla porzione di sequenza [0:k] alla porzione di sequenza [n-k:n] (estremo iniziale incluso, estremo finale escluso). Notare che il numero di medie mobili calcolate dipende dalla lunghezza della sequenza e dal valore di <code>k</code></li>
+</ul>
+<p>Ad esempio, se la funzione <code>medie_mobili(seq, k)</code> viene chiamata con parametri<br>
+	<code>seq = [2, 4, 3, 6, 8, 9, 10, 12]</code> e <code>k = 4</code><br>
+	deve essere restituita la lista <code>[3.75, 5.25, 6.5, 8.25, 9.75]</code>, che rappresenta le medie delle 5 sequenze <code>[2, 4, 3, 6]</code>, <code>[4, 3, 6, 8]</code>, <code>[3, 6, 8, 9]</code>, <code>[6, 8, 9, 10]</code>, <code>[8, 9, 10, 12]</code>.
+</p>
+
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab9_1.py" target="_blank"><code>test_lab9_1.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc9_1.py</code></p>
+
+<h2>Secondo esercizio: posizione della massima media mobile</h2>
+<p>Scrivere una funzione <code>pos_max_media_mobile(seq, k)</code> che, utilizzando anche la funzione definita nell'esercizio precedente:</p>
+<ul>
+	<li>riceve come parametro una lista di numeri <code>seq</code> e un numero naturale <code>k</code>;</li>
+	<li>solleva eccezioni come nell'esercizio precedente;</li>
+	<li>restituisce la posizione della massima media mobile di ordine <code>k</code> della sequenza <code>seq</code> (vedi definizione nell'esercizio precedente).</li>
+</ul>
+<p>Ad esempio, se viene chiamata con parametri<br>
+	<code>[2, 4, 3, 6, 8, 9, 10, 12], 4</code><br>
+	deve essere restituito il valore 4, poich&eacute; la sequenza delle medie mobili &egrave; <code>[3.75, 5.25, 6.5, 8.25, 9.75]</code> e il massimo compare in posizione 4.
+</p>
+
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab9_2.py" target="_blank"><code>test_lab9_2.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc9_2.py</code></p>
+
+<h1>Esercizi su matrici</h1>
+<h2>Terzo esercizio: verificare se una lista rappresenta una matrice rettangolare</h2>
+<p>Scrivere una funzione <code>verifica_mat_rett(m)</code> che:</p>
+<ul>
+	<li>riceve come parametro una lista di liste <code>m</code>;</li>
+	<li>solleva una eccezione <code>TypeError</code> se il parametro ricevuto non &egrave; una lista di lunghezza almeno 1, o se gli elementi della lista non sono liste di lunghezza almeno 1;</li>
+	<li>restituisce <code>True</code> se tutti gli elementi di <code>m</code> hanno la stessa lunghezza, <code>False</code> altrimenti.</li>
+</ul>
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab9_3.py" target="_blank"><code>test_lab9_3.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc9_3.py</code></p>
+	
+
+<h2>Quarto esercizio: creazione e inizializzazione di una matrice</h2>
+<p>Scrivere una funzione <code>crea_mat(nrighe, ncol, val)</code> che:</p>
+<ul>
+	<li>riceve come parametro due numeri naturali <code>nrighe</code> e <code>ncol</code>, pi&ugrave; un terzo parametro opzionale <code>val</code> che per default vale 0;</li>
+	<li>solleva una eccezione <code>TypeError</code> se i primi due parametri non sono numeri interi;</li>
+	<li>solleva una eccezione <code>ValueError</code> se i primi due parametri non sono strettamente maggiori di 0;</li>
+	<li>crea e restituisce una lista di <code>nrighe</code> elementi, ciascuno dei quali &egrave; una lista di <code>ncol</code> elementi. Ciascuno di tali elementi deve essere inizializzato con il valore <code>val</code>. Ad esempio, se vengono passati come parametri i valori <code>2, 3, 7</code> deve essere restituita la lista
+	<code>[ [7, 7, 7], [7, 7, 7] ]</code>.</li>
+</ul>
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab9_4.py" target="_blank"><code>test_lab9_4.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc9_4.py</code></p>
+
+
+<h2>Quinto esercizio: creazione della matrice trasposta</h2>
+<p>Scrivere una funzione <code>trasposta(m)</code> che:</p>
+<ul>
+	<li>riceve come parametro una lista di liste <code>m</code>;</li>
+	<li>solleva una eccezione <code>TypeError</code> se la lista di liste non rappresenta una matrice rettangolare (vedi terzo esercizio);</li>
+	<li>crea e restituisce la matrice trasposta di <code>m</code> (per questo &egrave; utile prima creare la matrice chiamando la funzione definita nel quarto esercizio, per poi modificarne gli elementi in modo da avere la trasposta di <code>m</code>.<br>
+	Ad esempio, se viene passata come parametro la lista
+	<code>[[2, 3, 7], [5, 3, 1]]</code> deve essere restituita la lista
+	<code>[[2, 5], [3, 3], [7, 1]]</code></li>
+</ul>
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab9_5.py" target="_blank"><code>test_lab9_5.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc9_5.py</code></p>
+
+
+<h2>Sesto esercizio: contare il numero di righe strettamente crescenti di una matrice</h2>
+<p>Scrivere una funzione <code>num_righe_crescenti(m)</code> che:</p>
+<ul>
+	<li>riceve come parametro una lista di liste <code>m</code>;</li>
+	<li>solleva una eccezione <code>TypeError</code> se il parametro ricevuto non &egrave; una lista, o se gli elementi della lista non sono liste;</li>
+	<li>solleva una eccezione <code>TypeError</code> se gli elementi della matrice non sono numeri;</li>
+	<li>restituisce il numero di righe di <code>m</code> che sono strettamente crescenti.</li>
+</ul>
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab9_6.py" target="_blank"><code>test_lab9_6.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc9_6.py</code></p>
+	
+
+<h2>Settimo esercizio: punto di sella di una matrice</h2>
+<p>Un elemento <code>m[i][j]</code> di una matrice <code>m</code> si dice <em>punto di sella</em> se &egrave; strettamente maggiore di tutti gli altri elementi sulla riga <code>i</code> ed &egrave; strettamente minore di tutti gli altri elementi sulla colonna <code>j</code>. Notare che una matrice contiene al massimo un solo punto di sella.<br>
+Ad esempio, la matrice
+<pre>9   4  16  10   4
+2   5   7   6   2
+8  12  13   9   1
+</pre>
+ha un punto di sella a riga 1 e colonna 2 (il valore 7) poich&eacute;
+7 &egrave; il massimo della riga 1 ed &egrave; anche il minimo della colonna 2.<br>
+Scrivere una funzione <code>punto_di_sella(m)</code> che:</p>
+<ul>
+	<li>riceve come parametro una lista di liste <code>m</code>;</li>
+	<li>solleva una eccezione <code>TypeError</code> se il parametro ricevuto non &egrave; una lista, o se gli elementi della lista non sono liste;</li>
+	<li>solleva una eccezione <code>TypeError</code> se la lista di liste non rappresenta una matrice rettangolare (vedi terzo esercizio);</li>
+	<li>restituisce la coppia di indici <code>(i, j)</code> del punto di sella, se esiste, e restituisce <code>None</code> se <code>m</code> non ha un punto di sella.</li>
+</ul>
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab9_7.py" target="_blank"><code>test_lab9_7py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc9_7.py</code></p>
+	
+</body>
+
+</html>
+

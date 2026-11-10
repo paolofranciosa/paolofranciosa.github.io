@@ -1,0 +1,232 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Introduction to computer programming, 3 CFU (2023-2024)</title>
+<style type="text/css">
+	* {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table.lezione {
+		border: 3px solid #822433
+	}
+	 table.lezione td, table.lezione th {
+		border: 1px solid #822433;
+		padding: 10px
+	}
+	pre {
+	    font-family: monospace, monospace;
+	}
+	hr {
+		border: 1px solid #822433
+	}
+
+	td p {
+		margin: 3 0
+	}
+</style>
+
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+<hr>
+<h1>Lab activity</h1>
+<p>The purpose of the lab is to practice and measure one’s preparation:
+the exercises are not too difficult, if you have followed the lectures.
+However, no score is put on them.</p>
+<p><strong>Working mode</strong>: students should work independently or
+in small groups, without disturbing colleagues. Group work is fruitful
+only if everyone participates and if everyone writes their own solution
+for all exercises.</p>
+<p>The teacher will try as much as possible not to occupy the time of
+the laboratory to introduce new material, although sometimes this will
+be necessary. The lecturer is available to help students, who can start
+working even before the lecturer arrives in the classroom, if they
+wish.</p>
+<p><strong>Recommendations</strong>: Read the text of the exercises
+carefully before ask for clarification. In any case, I will be in the
+classroom with you.</p>
+<p><strong>Using test files</strong>: To help you complete this exercise
+you have test programs available to test your solution. These are
+similar to those you will have on the exam, so I recommend that you
+learn how to use them. To complete the exercise you will need to</p>
+<ul>
+<li>write a solution file <strong>with the specified name</strong>;</li>
+<li>have inside the function <strong>with the specified
+name</strong>;</li>
+<li>place the corresponding test file <strong>in the same
+folder</strong>;</li>
+<li>run the <code>python3 &lt;fileditest&gt;</code> command in that
+folder;</li>
+</ul>
+<p>where <code>&lt;fileditest&gt;</code> should obviously be replaced by
+the name of the test appropriate for the exercise you are working on.
+For each exercise there is an independent test file, so that you can
+easily work on the exercises one at a time.</p>
+<p>The result of each test is a screen(s) in which it is shown:</p>
+<ul>
+<li>whether the file with the correct name was found,</li>
+<li>whether the file contains the function with the correct name,</li>
+<li>whether calls to the function with different parameter values return
+correct results.</li>
+</ul>
+<p>For each function written, calls are made with different values of
+the parameters. The outcome of the tests is reported with the
+character</p>
+<ul>
+<li><code>E</code> if the call cannot be executed,</li>
+<li><code>F</code> if the function does not return the correct
+result,</li>
+<li><code>.</code> if the function returns the correct result.</li>
+</ul>
+<hr>
+<h1 id="sum-elements-of-a-numeric-matrix">Sum elements of a numeric
+matrix</h1>
+<p>Write a function <code>mat_sum(m)</code> that:</p>
+<ul>
+<li>takes as argument a matrix <code>m</code>, represented as a list of
+lists;</li>
+<li>returns the sum of all elements in <code>m</code>.</li>
+</ul>
+<p>We represent an <span
+class="math inline"><em>r</em> × <em>c</em></span> matrix in Python as a
+list with length <span class="math inline"><em>r</em></span>, where each
+element is a list of length <span class="math inline"><em>c</em></span>.
+You may assume that the argument is well formed, with <span
+class="math inline"><em>r</em> ≥ 1</span>, <span
+class="math inline"><em>c</em> ≥ 1</span>, and all the lists
+representing rows contain <code>c</code> numeric elements.</p>
+<p>Python code must be saved in file: <code>mat_sum.py</code></p>
+<p>Test file (download by right click): <a href="test_mat_sum.py" target="_blank"><code>test_mat_sum.py</code></a></p><p>
+
+<hr>
+<h1 id="minimum-element-in-a-numeric-matrix">Minimum element in a
+numeric matrix</h1>
+<p>Write a function <code>mat_min(m)</code> that:</p>
+<ul>
+<li>takes as argument a matrix <code>m</code>, represented as a list of
+lists;</li>
+<li>returns the value of the minimum element in <code>m</code>.</li>
+</ul>
+<p>We represent an <span
+class="math inline"><em>r</em> × <em>c</em></span> matrix in Python as a
+list with length <span class="math inline"><em>r</em></span>, where each
+element is a list of length <span class="math inline"><em>c</em></span>.
+You may assume that the argument is well formed, with <span
+class="math inline"><em>r</em> ≥ 1</span>, <span
+class="math inline"><em>c</em> ≥ 1</span>, and all the lists
+representing rows contain <code>c</code> numeric elements.</p>
+<p>Python code must be saved in file: <code>mat_min.py</code></p>
+<p>Test file (download by right click): <a href="test_mat_min.py" target="_blank"><code>test_mat_min.py</code></a></p><p>
+
+<hr>
+<h1 id="maximum-element-position-in-a-numeric-matrix">Maximum element
+position in a numeric matrix</h1>
+<p>Write a function <code>mat_posmax(m)</code> that:</p>
+<ul>
+<li>takes as argument a matrix <code>m</code>;</li>
+<li>returns a pair of integers, e.g. by a <code>return i, j</code>, that
+are the row and column indices where the maximum element in the matrix
+appears. In case of more maxima, the position of the first occurrence
+must be returned (minimum row index, and in case of more maxima in that
+row minimum column index)</li>
+</ul>
+<p>Python code must be saved in file: <code>mat_posmax.py</code></p>
+<p>Test file (download by right click): <a href="test_mat_posmax.py" target="_blank"><code>test_mat_posmax.py</code></a></p><p>
+
+<hr>
+<h1 id="somma-degli-elementi-della-diagonale-di-una-matrice-numerica">Sum of elements in the diagonal of a squared numeric matrix</h1>
+<p>Write a function <code>mat_sumdiagonal(m)</code> that:</p>
+<ul>
+<li>takes as argument a square matrix <code>m</code>, represented as a
+list of lists;</li>
+<li>returns the sum of elements in the main diagonal of
+<code>m</code>.</li>
+</ul>
+<p>We represent an <span
+class="math inline"><em>r</em> × <em>c</em></span> matrix in Python as a
+list with length <span class="math inline"><em>r</em></span>, where each
+element is a list of length <span class="math inline"><em>c</em></span>.
+You may assume that the argument is well formed, with <span
+class="math inline"><em>r</em> ≥ 1</span>, <span
+class="math inline"><em>c</em> = <em>r</em></span>, and all the lists
+representing rows contain <code>c</code> numeric elements.</p>
+<p>Python code must be saved in file:
+<code>mat_sumdiagonal.py</code></p>
+<p>Test file (download by right click): <a href="test_mat_sumdiagonal.py" target="_blank"><code>test_mat_sumdiagonal.py</code></a></p><p>
+
+<hr>
+<h1 id="row-sums-of-a-numeric-matrix">Row sums of a numeric matrix</h1>
+<p>Write a function <code>mat_row_sums(m)</code> that:</p>
+<ul>
+<li>takes as argument a matrix <code>m</code>, represented as a list of
+lists;</li>
+<li>returns a list in which element <code>i</code> is the sum of all
+elements in row <code>i</code> of <code>m</code>. The length of the
+returned list is equal to the number of rows in <code>m</code>.</li>
+</ul>
+<p>We represent an <span
+class="math inline"><em>r</em> × <em>c</em></span> matrix in Python as a
+list with length <span class="math inline"><em>r</em></span>, where each
+element is a list of length <span class="math inline"><em>c</em></span>.
+You may assume that the argument is well formed, with <span
+class="math inline"><em>r</em> ≥ 1</span>, <span
+class="math inline"><em>c</em> ≥ 1</span>, and all the lists
+representing rows contain <code>c</code> numeric elements.</p>
+<p>Python code must be saved in file: <code>mat_row_sums.py</code></p>
+<p>Test file (download by right click): <a href="test_mat_row_sums.py" target="_blank"><code>test_mat_row_sums.py</code></a></p><p>
+
+<hr>
+<h1 id="column-sums-of-a-numeric-matrix">Column sums of a numeric
+matrix</h1>
+<p>Write a function <code>mat_col_sums(m)</code> that:</p>
+<ul>
+<li>takes as argument a matrix <code>m</code>, represented as a list of
+lists;</li>
+<li>returns a list in which element <code>i</code> is the sum of all
+elements in column <code>i</code> of <code>m</code>. The length of the
+returned list is equal to the number of columns in <code>m</code>.</li>
+</ul>
+<p>We represent an <span
+class="math inline"><em>r</em> × <em>c</em></span> matrix in Python as a
+list with length <span class="math inline"><em>r</em></span>, where each
+element is a list of length <span class="math inline"><em>c</em></span>.
+You may assume that the argument is well formed, with <span
+class="math inline"><em>r</em> ≥ 1</span>, <span
+class="math inline"><em>c</em> ≥ 1</span>, and all the lists
+representing rows contain <code>c</code> numeric elements.</p>
+<p>Python code must be saved in file: <code>mat_col_sums.py</code></p>
+<p>Test file (download by right click): <a href="test_mat_col_sums.py" target="_blank"><code>test_mat_col_sums.py</code></a></p><p>
+
+<hr>
+<h1 id="position-of-row-having-maximum-sum">Position of row having
+maximum sum</h1>
+<p>Write a function <code>mat_posmaxrow(m)</code> that:</p>
+<ul>
+<li><p>takes as argument a matrix <code>m</code>, represented as a list
+of lists;</p></li>
+<li><p>returns the position of the row having maximum sum. E.G., if
+called with argument</p>
+<pre class="example"><code>[ [2, 4, 3, 6, 8], [3, 1, 4, 0, 0], [9, 5, 9, 7, 4] ]</code></pre>
+<p>value 2 should be returned, since row 2 has sum 34, while rows in
+position 0 and 1 have sum 23 and 8 respectively.</p></li>
+</ul>
+<p>We represent an <span
+class="math inline"><em>r</em> × <em>c</em></span> matrix in Python as a
+list with length <span class="math inline"><em>r</em></span>, where each
+element is a list of length <span class="math inline"><em>c</em></span>.
+You may assume that the argument is well formed, with <span
+class="math inline"><em>r</em> ≥ 1</span>, <span
+class="math inline"><em>c</em> ≥ 1</span>, and all the lists
+representing rows contain <code>c</code> numeric elements.</p>
+<p>Python code must be saved in file: <code>mat_posmaxrow.py</code></p>
+<p>Test file (download by right click): <a href="test_mat_posmaxrow.py" target="_blank"><code>test_mat_posmaxrow.py</code></a></p><p>
+
+</body>
+</html>

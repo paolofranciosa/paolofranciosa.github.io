@@ -1,0 +1,223 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Esercitazione 8</title>
+   <link rel="stylesheet" href="http://www.statistica.uniroma1.it/users/pfrancio/styles/sapienzaStyle.css">
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+<h1>Esercitazione 8</h1>
+<p>Lo scopo del laboratorio è di esercitarsi e misurare la propria
+preparazione: gli esercizi non sono troppo difficili, se si sono seguite
+le lezioni. Non vi viene comunque messo alcun voto.</p>
+<p><strong>Modalità di lavoro</strong>: gli studenti devono lavorare in
+autonomia o in piccoli gruppi, senza disturbare i colleghi. Il lavoro di
+gruppo è fruttuoso solo se tutti partecipano e se ognuno scrive una
+propria soluzione per tutti gli esercizi.</p>
+<p>Il docente cercherà per quanto possibile di non occupare il tempo del
+laboratorio per introdurre materiale nuovo, anche se a volte questo sarà
+necessario. Il docente è a disposizione per aiutare gli studenti, che
+possono iniziare a lavorare anche prima che il docente arrivi in aula,
+se lo desiderano</p>
+<p><strong>Raccomandazioni</strong>: leggete bene il testo degli
+esercizi prima di chiedere chiarimenti. In ogni caso sarò in aula con
+voi.</p>
+<p><strong>Uso dei file di test</strong>: per aiutarvi a completare
+questa esercitazione avete a disposizione dei programmi di test per
+testare la vostra soluzione. Questi sono simili a quelli che avrete in
+sede di esame, pertanto vi consiglio di imparate ad usarli. Per portare
+a termine l’esercizio è necessario</p>
+<ul>
+<li>scrivere un file di soluzione <strong>col nome
+specificato</strong>;</li>
+<li>avere dentro la funzione <strong>col nome specificato</strong>;</li>
+<li>porre il file di test corrispondente <strong>nella stessa
+cartella</strong>;</li>
+<li>eseguire in quella cartella il comando
+<code>python3 &lt;fileditest&gt;</code></li>
+</ul>
+<p>dove <code>&lt;fileditest&gt;</code> va ovviamente sostituito con il
+nome del file di test appropriato per l’esercizio su cui state
+lavorando. Per ogni esercizio ci sta un file di test indipendente, così
+da poter lavorare sugli esercizi uno alla volta con più agio.</p>
+<p>Il risultato di ogni test è una schermata (o più schermate) nella
+quale si mostra:</p>
+<ul>
+<li>se è stato trovato il file con il nome corretto,</li>
+<li>se il file contiene la funzione con il nome corretto,</li>
+<li>se chiamate alla funzione con diversi valori dei parametri terminano
+restituendo risultati corretti.</li>
+</ul>
+<p>Per ogni funzione scritta vengono eseguite chiamate con diversi
+valori dei parametri. L’esito dei test viene riportato con il
+carattere</p>
+<ul>
+<li><code>E</code> se la chiamata non può essere eseguita,</li>
+<li><code>F</code> se la funzione non restituisce il risultato
+corretto,</li>
+<li><code>.</code> se la funzione restituisce il risultato
+corretto.</li>
+</ul>
+<hr>
+<h1 id="somma-degli-elementi-di-una-matrice-numerica">Somma degli
+elementi di una matrice numerica</h1>
+<p>Scrivere una funzione <code>somma_mat(m)</code> che:</p>
+<ul>
+<li>riceva come parametro una matrice <code>m</code>;</li>
+<li>restituisca la somma di tutti gli elementi della matrice.</li>
+</ul>
+<p>Ricordiamo che in Python noi rappresentiamo una matrice <span
+class="math inline"><em>r</em> × <em>c</em></span> come una lista di
+lunghezza <span class="math inline"><em>r</em></span>, contenente <span
+class="math inline"><em>r</em></span> liste tutte quante di lunghezza
+<span class="math inline"><em>c</em></span>. Potete sempre assumere che
+l'input di questo esercizio sia una matrice ben formata, con <span
+class="math inline"><em>r</em> ≥ 1</span> e <span
+class="math inline"><em>c</em> ≥ 1</span>, e che tutte le liste che
+rappresentano le righe contengano <span
+class="math inline"><em>c</em></span> valori numerici.</p>
+<p>Il programma Python deve essere salvato nel file:
+<code>somma_mat.py</code></p>
+<p>File di test: <a href="test_somma_mat.py" target="_blank"><code>test_somma_mat.py</code></a></p>
+<hr>
+<h1 id="minimo-degli-elementi-di-una-matrice-numerica">Minimo degli
+elementi di una matrice numerica</h1>
+<p>Scrivere una funzione <code>min_mat(m)</code> che:</p>
+<ul>
+<li>riceva come parametro una matrice <code>m</code>;</li>
+<li>restituisca il valore dell'elemento minimo nella matrice.</li>
+</ul>
+<p>Ricordiamo che in Python noi rappresentiamo una matrice <span
+class="math inline"><em>r</em> × <em>c</em></span> come una lista di
+lunghezza <span class="math inline"><em>r</em></span>, contenente <span
+class="math inline"><em>r</em></span> liste tutte quante di lunghezza
+<span class="math inline"><em>c</em></span>. Potete sempre assumere che
+l'input di questo esercizio sia una matrice ben formata, con <span
+class="math inline"><em>r</em> ≥ 1</span> e <span
+class="math inline"><em>c</em> ≥ 1</span>, e che tutte le liste che
+rappresentano le righe contengano <span
+class="math inline"><em>c</em></span> valori numerici.</p>
+<p>Il programma Python deve essere salvato nel file:
+<code>min_mat.py</code></p>
+<p>File di test: <a href="test_min_mat.py" target="_blank"><code>test_min_mat.py</code></a></p>
+<hr>
+<h1
+id="posizione-del-massimo-elemento-di-una-matrice-numerica">Posizione
+del massimo elemento di una matrice numerica</h1>
+<p>Scrivere una funzione <code>posmax_mat(m)</code> che:</p>
+<ul>
+<li>riceva come parametro una matrice <code>m</code>;</li>
+<li>restituisca una coppia di interi, ad esempio con un
+<code>return i, j</code> che siano rispettivamente l'indice di riga e di
+colonna in cui compare il massimo elemento della matrice. In caso di più
+massimi, deve essere restituita la posizione del primo di essi (minima
+riga e, in caso di più massimi sulla riga, minima colonna).</li>
+</ul>
+<p>Il programma Python deve essere salvato nel file:
+<code>posmax_mat.py</code></p>
+<p>File di test: <a href="test_posmax_mat.py" target="_blank"><code>test_posmax_mat.py</code></a></p>
+<hr>
+<h1
+id="somma-degli-elementi-della-diagonale-di-una-matrice-numerica">Somma
+degli elementi della diagonale di una matrice numerica</h1>
+<p>Scrivere una funzione <code>sommadiagonale_mat(m)</code> che:</p>
+<ul>
+<li>riceva come parametro una matrice <code>m</code>;</li>
+<li>restituisce la somma degli elementi sulla diagonale principale.
+Notare che per una matrice con <code>n</code> righe ed <code>n</code>
+colonne si devono sommare solo <code>n</code> elementi.</li>
+</ul>
+<p>Ricordiamo che in Python noi rappresentiamo una matrice <span
+class="math inline"><em>r</em> × <em>c</em></span> come una lista di
+lunghezza <span class="math inline"><em>r</em></span>, contenente <span
+class="math inline"><em>r</em></span> liste tutte quante di lunghezza
+<span class="math inline"><em>c</em></span>. Potete sempre assumere che
+l'input di questo esercizio sia una matrice ben formata, con <span
+class="math inline"><em>r</em> ≥ 1</span> e <span
+class="math inline"><em>c</em> ≥ 1</span>, e che tutte le liste che
+rappresentano le righe contengano <span
+class="math inline"><em>c</em></span> valori numerici.</p>
+<p>Il programma Python deve essere salvato nel file:
+<code>sommadiagonale_mat.py</code></p>
+<p>File di test: <a href="test_sommadiagonale_mat.py" target="_blank"><code>test_sommadiagonale_mat.py</code></a></p>
+<hr>
+<h1 id="somme-per-riga-di-una-matrice-numerica">Somme per riga di una
+matrice numerica</h1>
+<p>Scrivere una funzione <code>somme_per_riga_mat(m)</code> che:</p>
+<ul>
+<li>riceva come parametro una matrice <code>m</code> di numeri;</li>
+<li>restituisca una lista in cui l'elemento di posto <code>i</code> è la
+somma degli elementi della riga <code>i</code>-esima. La lunghezza di
+tale lista è uguale al numero di righe della matrice.</li>
+</ul>
+<p>Ricordiamo che in Python noi rappresentiamo una matrice <span
+class="math inline"><em>r</em> × <em>c</em></span> come una lista di
+lunghezza <span class="math inline"><em>r</em></span>, contenente <span
+class="math inline"><em>r</em></span> liste tutte quante di lunghezza
+<span class="math inline"><em>c</em></span>. Potete sempre assumere che
+l'input di questo esercizio sia una matrice ben formata, con <span
+class="math inline"><em>r</em> ≥ 1</span> e <span
+class="math inline"><em>c</em> ≥ 1</span>, e che tutte le liste che
+rappresentano le righe contengano <span
+class="math inline"><em>c</em></span> valori numerici.</p>
+<p>Il programma Python deve essere salvato nel file:
+<code>somme_per_riga_mat.py</code></p>
+<p>File di test: <a href="test_somme_per_riga_mat.py" target="_blank"><code>test_somme_per_riga_mat.py</code></a></p>
+<hr>
+<h1 id="somme-per-colonna-di-una-matrice-numerica">Somme per colonna di
+una matrice numerica</h1>
+<p>Scrivere una funzione <code>somme_per_colonna_mat(m)</code> che:</p>
+<ul>
+<li>riceva come parametro una matrice <code>m</code>;</li>
+<li>restituisca una lista in cui l'elemento di posto <code>i</code> è la
+somma degli elementi della colonna <code>i</code>-esima. La lunghezza di
+tale lista è uguale al numero di colonne della matrice.</li>
+</ul>
+<p>Ricordiamo che in Python noi rappresentiamo una matrice <span
+class="math inline"><em>r</em> × <em>c</em></span> come una lista di
+lunghezza <span class="math inline"><em>r</em></span>, contenente <span
+class="math inline"><em>r</em></span> liste tutte quante di lunghezza
+<span class="math inline"><em>c</em></span>. Potete sempre assumere che
+l'input di questo esercizio sia una matrice ben formata, con <span
+class="math inline"><em>r</em> ≥ 1</span> e <span
+class="math inline"><em>c</em> ≥ 1</span>, e che tutte le liste che
+rappresentano le righe contengano <span
+class="math inline"><em>c</em></span> valori numerici.</p>
+<p>Il programma Python deve essere salvato nel file:
+<code>somme_per_colonna_mat.py</code></p>
+<p>File di test: <a href="test_somme_per_colonna_mat.py" target="_blank"><code>test_somme_per_colonna_mat.py</code></a></p>
+<hr>
+<h1 id="posizione-della-riga-con-somma-massima">Posizione della riga con
+somma massima</h1>
+<p>Scrivere una funzione <code>pos_maxriga_mat(m)</code> che:</p>
+<ul>
+<li><p>riceva come parametro una matrice <code>m</code>;</p></li>
+<li><p>restituisca la posizione della riga che ha massima somma. Ad
+esempio, se viene chiamata con parametro</p>
+<pre class="example"><code>[ [2, 4, 3, 6, 8], [3, 1, 4, 0, 0], [9, 5, 9, 7, 4] ]</code></pre>
+<p>deve restituire il valore 2, poiché la riga in posizione 2 ha somma
+34, mentre le righe in posizione 0 e 1 hanno rispettivamente somma 23 e
+8.</p></li>
+</ul>
+<p>Ricordiamo che in Python rappresentiamo una matrice <span
+class="math inline"><em>r</em> × <em>c</em></span> come una lista di
+lunghezza <span class="math inline"><em>r</em></span>, contenente <span
+class="math inline"><em>r</em></span> liste tutte quante di lunghezza
+<span class="math inline"><em>c</em></span>. Potete sempre assumere che
+l'input di questo esercizio sia una matrice ben formata, con <span
+class="math inline"><em>r</em> ≥ 1</span> e <span
+class="math inline"><em>c</em> ≥ 1</span>, e che tutte le liste che
+rappresentano le righe contengano <span
+class="math inline"><em>c</em></span> valori numerici.</p>
+<p>Il programma Python deve essere salvato nel file:
+<code>pos_maxriga_mat.py</code></p>
+<p>File di test: <a href="test_pos_maxriga_mat.py" target="_blank"><code>test_pos_maxriga_mat.py</code></a></p>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guida esercitazione files e dizionari</title>
+</head>
+
+<body>
+<h1>Uso di dizionari (<code>dict</code>)</h1>
+
+<ol>
+
+<li><p>Scrivere una funzione che, data una stringhe, restituisce il carattere che compare il massimo numero di volte. In caso ci siamo pi&ugrave; caratteri con la stessa propriet&agrave;, restituire uno qualsiasi di essi.<br>
+Per esempio, se viene passata la stringa "abracadabra" deve essere restituita la lettera "a", che compare 5 volte.<br>
+<em>Suggerimento: creare un dizionario in cui le chiavi sono le lettere che compaiono nella stringa, e i valori sono le frequenze. Cercare poi la chiave associata al valore massimo.</em></p></li>
+
+<li>
+<p>Modificare il programma richiesto al punto precedente, in modo che nel caso in cui ci siano pi&ugrave; lettere con frequenza massima vengano restituite tutte. Ad esempio, se viene passata la stringa "essere sani" deve essere restituita la stringa "es" poich&eacute; sia la "e" che la "s" compaiono tre volte. Non &egrave; rilevante l'ordine in cui compaiono le lettere nel risultato.</p></li>
+
+</ol>
+
+<h1>Uso di file di testo</h1>
+<ol>
+<li><p>Scrivere una funzione che, dato come parametro il nome di un file (stringa, compresa l'eventuale estensione), stampa 
+a video tutte le righe del file. La funzione non deve restituire nulla.<br>
+Per provare il programma salvare, nella stessa cartella in cui si trova il programma, un file contenente testo a piacere. Il file pu&ograve; essere creato utilizzando qualunque editor di testo (anche l'editor usato per scrivere sorgenti Python).</p></li>
+
+<li><p>Scrivere una funzione che, dato come parametro il nome di un file (stringa, compresa l'eventuale estensione), stampa
+il numero di righe del file, il numero totale di caratteri e la lunghezza della riga pi&ugrave; corta. La funzione non deve restituire nulla.</p></li>
+
+<li><p>Scrivere una funzione che, dati come parametri tre nomi di file A, B, C, e un intero n, legge righe dal file A e copia in B le righe di lunghezza maggiore di n e in C le righe di lunghezza minore o uguale a n. Al termine, i file B e C devono essere chiusi usando il metodo <code>.close()</code> per ciascuno dei due file. La funzione non deve restituire nulla.<br>
+Un esempio di chiamata alla funzione &egrave;<br> 
+<code>separa_righe("testo.txt", "righelunghe.txt", "righecorte.txt", 15)</code><br>
+assumendo che esista un file di nome "testo.txt"<br>
+<em>Suggerimento: devono essere aperti un file in lettura e due file in scrittura, quindi si avranno tre oggetti.</em></p></li>
+
+<li>Scrivere una funzione che legge da un file una tabella di valori numerici e restituisce una matrice (lista di liste) che rappresenta la tabella. Stampare poi la matrice utilizzando una seconda funzione.<br>
+Si assuma che il file contenga una riga della tabella su ciascuna riga, in cui i valori sono separati dal carattere "," (virgola). Ad esempio il file potrebbe contenere<br>
+<pre>12,345,41,83
+-3,0,0,123
+45,1,-8,9
+</pre></li>
+<li>Scrivere una funzione che, dato come parametro il nome di un file, legge dal file una matrice di numeri rappresentata come nel punto precedente e scrive in un secondo file solo le righe che contengono almeno un valore positivo e almeno un valore negativo. Il nome del file prodotto deve essere lo stesso del file letto, con aggiunto il suffisso "filtered.txt".
+</ol>
+</body>
+
+</html>
+

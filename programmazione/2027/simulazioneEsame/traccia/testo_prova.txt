@@ -1,0 +1,9 @@
+descrizione: Simulazione Esame
+sommavalorigrandi 7
+seq_compresi 7
+teoriaforbase 4 manuale
+riga_max_file 5
+bordo_zero_mat 5
+coppia_differenza_minima 6
+complessità_ricerca_binaria 6 manuale
+

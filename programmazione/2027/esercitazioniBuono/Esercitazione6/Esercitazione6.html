@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guida esercitazione 6</title>
+   <link rel="stylesheet" href="http://www.statistica.uniroma1.it/users/pfrancio/styles/sapienzaStyle.css">
+</head>
+
+<body>
+<h1>Modalit&agrave; di svolgimento dell'esercitazione</h1>
+<p>Questa volta viene richiesto di scrivere funzioni per risolvere vari problemi,
+e viene fornito anche uno strumento che mette alla prova il comportamento delle funzioni che avete scritto.</p>
+<p>Create una cartella, nella quale saranno creati sia i file contenenti le funzioni che avete scritto (una per ciascun file), sia i file di test (forniti dal docente).<br>
+I nomi di questi file devono essere esattamente i seguenti:
+<ul>
+<li><code>labEserc6_1.py</code>, <code>labEserc6_2.py</code>, <code>labEserc6_3.py</code>, <code>labEserc6_4.py</code>, <code>labEserc6_5.py</code>,  per i cinque files contenenti le funzioni scritte da voi,</li>
+<li><code>test_labEserc6_1.py</code>, <code>test_labEserc6_2.py</code>, <code>test_labEserc6_3.py</code>, <code>test_labEserc6_4.py</code>, <code>test_labEserc6_5.py</code> per i file di test (forniti dal docente)</li>
+</ul>
+</p>
+<p>Per ciascuno dei 5 problemi elencati nel seguito dovrete scrivere un file contenente la soluzione richiesta, in cui <strong>il nome della funzione deve essere esattamente quello indicato nel testo seguente</strong>.</p>
+<p>Una volta salvato il file nella cartella, e salvato anche il corrispondente file di test fornito dal docente, dovete eseguire il comando
+<pre>python3 test_labEserc6_X.py
+</pre>
+dove <code>X</code> &egrave; il numero da 1 a 5 corrispondente all'esercizio che volete verificare.</p>
+
+<p>Il risultato del test &egrave; una schermata (o pi&ugrave; schermate) nella quale si mostra:
+<ul>
+<li>se &egrave; stato trovato il file con il nome corretto,</li>
+<li>se il file contiene la funzione con il nome corretto,</li>
+<li>se chiamate alla funzione con diversi valori dei parametri terminano restituendo risultati corretti.</li>
+</ul>
+</p>
+<p>Per ogni funzione scritta vengono eseguite chiamate con diversi valori dei parametri. L'esito dei test viene riportato con il carattere
+<ul>
+<li><strong>E</strong> se la chiamata non pu&ograve; essere eseguita,</li>
+<li><strong>F</strong> se la funzione non restituisce il risultato corretto,</li>
+<li><strong>.</strong> se la funzione restituisce il risultato corretto.</li>
+</ul>
+</p>
+
+<hr>
+<h1>Semplici algoritmi su liste</h1>
+<h2>Primo esercizio: <code>somma_liste</code></h2>
+<p>Scrivere una funzione <code>somma_liste(a, b)</code> che:</p>
+<ul>
+	<li>riceve come parametri due liste <code>a</code>, <code>b</code> della stessa lunghezza, in cui ciascun elemento &egrave; un numero <code>int</code>;</li>
+	<li>solleva una eccezione <code>TypeError</code> se i parametri ricevuti non sono liste, o se gli elementi delle liste non sono tutti numeri interi;</code>
+	<li>solleva una eccezione di tipo <code>ValueError</code> se le liste non hanno la stessa lunghezza;</li>
+	<li>crea e restituisce una lista, della stessa lunghezza di quelle ricevute come parametri, in cui l'elemento i-esimo della lista &egrave; uguale alla somma dell'elemento i-esimo di <code>a</code> e dell'elemento i-esimo di <code>b</code></li>
+</ul>
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_labEserc6_1.py" target="_blank"><code>test_labEserc6_1.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc6_1.py</code></p>
+
+<h2>Secondo esercizio: <code>prodotto_scalare</code></h2>
+<p>Scrivere una funzione <code>prodotto_scalare(a, b)</code> che:</p>
+<ul>
+	<li>riceve come parametri due liste non vuote <code>a</code>, <code>b</code> della stessa lunghezza, in cui ciascun elemento &egrave; un numero (<code>int</code> oppure <code>float</code>);</li>
+	<li>solleva una eccezione <code>TypeError</code> se i parametri ricevuti non sono liste, o gli elementi delle liste non sono tutti numeri;</code></li>
+	<li>solleva una eccezione di tipo <code>ValueError</code> se le liste non hanno la stessa lunghezza oppure sono liste vuote;</li>
+	<li>restituisce il prodotto scalare delle due liste. Il prodotto scalare tra due vettori
+	NON &Egrave; UN VETTORE, bens&igrave; un numero: il prodotto scalare &egrave; la
+	somma dei prodotti degli elementi omologhi:<br>
+	ad esempio, il prodotto scalare tra i vettori (1, 4, 3) e (5, 5, 1) &egrave; 1*5 + 4*5 + 3*1 = 28.</li>
+	</ul>
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_labEserc6_2.py" target="_blank"><code>test_labEserc6_2.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc6_2.py</code></p>
+	
+
+<h2>Terzo esercizio: <code>separa_elementi</code></h2>
+<p>Scrivere una funzione <code>separa_elementi(valori)</code> che:</p>
+<ul>
+	<li>riceve come parametro una lista <code>valori</code>, in cui ciascun elemento &egrave; un numero (<code>int</code> oppure <code>float</code>);</li>
+	<li>solleva una eccezione <code>TypeError</code> se il parametro ricevuto non &egrave; una lista, o se gli elementi della lista non sono tutti numeri;</code></li>
+	<li>restituisce due liste (notare che &egrave; ammessa l'istruzione <code>return lista1, lista2</code>). La prima lista deve contenere tutti gli elementi di <code>valori</code> che sono maggiori della media degli elementi di <code>valori</code>, mentre la seconda lista deve contenere tutti gli elementi di <code>valori</code> che sono minori o uguali alla media degli elementi di <code>valori</code>.<br>
+Ad esempio, se la lista contenesse i valori [0.96, 0.2, 0.4, 0.1, 0.55, 0.03, 0.88],
+poich&eacute; la media degli elementi &egrave; 0.4457, si dovrebbero restituire le liste [0.96, 0.55, 0.88] e [0.2, 0.4, 0.1, 0.03]</li>
+<!--<p><a href="separaElementi.py" target="_blank">Soluzione</a></p>
+-->
+	<li>nel caso di una lista vuota, la funzione deve restituire una coppia di liste vuote (non ha senso calcolare la media dei valori)</li>
+</ul>
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_labEserc6_3.py" target="_blank"><code>test_labEserc6_3.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc6_3.py</code></p>
+
+<h2>Quarto esercizio: <code>intersezione</code></h2>
+<p>Scrivere una funzione <code>intersezione(a, b)</code> che:</p>
+<ul>
+	<li>riceve come parametri due liste <code>a</code>, <code>b</code>;</li>
+	<li>solleva una eccezione <code>TypeError</code> se i parametri ricevuti non sono liste;</code>
+	<li>restituisce una lista <strong>ordinata</strong> che rappresenta l'intersezione tra le due liste, cio&egrave; gli elementi che appartengono sia alla lista <code>a</code> che alla lista <code>b</code>. Si pu&ograve; assumere che <code>a</code> non contenga elementi duplicati e che <code>b</code> non contenga elementi duplicati.
+	<br>Per ordinare il risultato, prima di restituirlo, basta chiamare il metodo <code>sort</code>,
+	ad esempio con <code>risultato.sort()</code></li>
+</ul>
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_intersezione.py" target="_blank"><code>test_intersezione.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>intersezione.py</code></p>
+
+<h2>Quinto esercizio: <code>unione</code></h2>
+<p>Scrivere una funzione <code>unione(a, b)</code> che:</p>
+<ul>
+	<li>riceve come parametri due liste <code>a</code>, <code>b</code>;</li>
+	<li>solleva una eccezione <code>TypeError</code> se i parametri ricevuti non sono liste;</code>
+	<li>restituisce una lista <strong>ordinata</strong> che rappresenta l'unione tra le due liste, cio&egrave; gli elementi che appartengono alla lista <code>a</code> e/o alla lista <code>b</code>. Si pu&ograve; assumere che <code>a</code> non contenga elementi duplicati e che <code>b</code> non contenga elementi duplicati.
+		<br>Per ordinare il risultato, prima di restituirlo, basta chiamare il metodo <code>sort</code>,
+	ad esempio con <code>risultato.sort()</code></li>
+</ul>
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_unione.py" target="_blank"><code>test_unione.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>unione.py</code></p>
+
+</body>
+
+</html>
+

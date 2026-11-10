@@ -1,0 +1,259 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Introduction to computer programming, 3 CFU (2023-2024)</title>
+<style type="text/css">
+	* {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table.lezione {
+		border: 3px solid #822433
+	}
+	 table.lezione td, table.lezione th {
+		border: 1px solid #822433;
+		padding: 10px
+	}
+	pre {
+	    font-family: monospace, monospace;
+	}
+	hr {
+		border: 1px solid #822433
+	}
+
+	td p {
+		margin: 3 0
+	}
+</style>
+
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+<h1>Lab activity</h1>
+<p>The purpose of the lab is to practice and measure one’s preparation:
+the exercises are not too difficult, if you have followed the lectures.
+However, no score is put on them.</p>
+<p><strong>Working mode</strong>: students should work independently or
+in small groups, without disturbing colleagues. Group work is fruitful
+only if everyone participates and if everyone writes their own solution
+for all exercises.</p>
+<p>The teacher will try as much as possible not to occupy the time of
+the laboratory to introduce new material, although sometimes this will
+be necessary. The lecturer is available to help students, who can start
+working even before the lecturer arrives in the classroom, if they
+wish.</p>
+<p><strong>Recommendations</strong>: Read the text of the exercises
+carefully before ask for clarification. In any case, I will be in the
+classroom with you.</p>
+<p><strong>Using test files</strong>: To help you complete this exercise
+you have test programs available to test your solution. These are
+similar to those you will have on the exam, so I recommend that you
+learn how to use them. To complete the exercise you will need to</p>
+<ul>
+<li>write a solution file <strong>with the specified name</strong>;</li>
+<li>have inside the function <strong>with the specified
+name</strong>;</li>
+<li>place the corresponding test file <strong>in the same
+folder</strong>;</li>
+<li>run the <code>python3 &lt;fileditest&gt;</code> command in that
+folder;</li>
+</ul>
+<p>where <code>&lt;fileditest&gt;</code> should obviously be replaced by
+the name of the test appropriate for the exercise you are working on.
+For each exercise there is an independent test file, so that you can
+easily work on the exercises one at a time.</p>
+<p>The result of each test is a screen(s) in which it is shown:</p>
+<ul>
+<li>whether the file with the correct name was found,</li>
+<li>whether the file contains the function with the correct name,</li>
+<li>whether calls to the function with different parameter values return
+correct results.</li>
+</ul>
+<p>For each function written, calls are made with different values of
+the parameters. The outcome of the tests is reported with the
+character</p>
+<ul>
+<li><code>E</code> if the call cannot be executed,</li>
+<li><code>F</code> if the function does not return the correct
+result,</li>
+<li><code>.</code> if the function returns the correct result.</li>
+</ul>
+<hr>
+<h1 id="set-negatives-to-zero">Set negatives to zero</h1>
+<p>Write a function <code>setnegatives(values)</code> that:</p>
+<ul>
+<li>expects as an argument a list of numeric values (<code>int</code> or
+<code>float</code>)</li>
+<li>edits the received list, setting all negative items to zero.</li>
+</ul>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Introduction to computer programming, 3 CFU (2023-2024)</title>
+<style type="text/css">
+	* {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    table.lezione {
+		border: 3px solid #822433
+	}
+	 table.lezione td, table.lezione th {
+		border: 1px solid #822433;
+		padding: 10px
+	}
+	pre {
+	    font-family: monospace, monospace;
+	}
+	hr {
+		border: 1px solid #822433
+	}
+
+	td p {
+		margin: 3 0
+	}
+</style>
+
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+<p>The function must return nothing, but it must modify the list passed
+as an argument. In particular, it is possible to write this function
+without using the <code>return</code> statement. Look in the next
+example how the function should behave</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> [<span class="fl">1.2</span>, <span class="op">-</span><span class="fl">0.4</span>, <span class="dv">5</span>, <span class="op">-</span><span class="dv">2</span>, <span class="dv">12</span> ]</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>setnegatives(L)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L)</span></code></pre></div>
+<pre><code>[1.2, 0, 5, 0, 12]
+</code></pre>
+<p>Python code must be saved in file: <code>setnegatives.py</code></p>
+<p>Test file (download by right click): <a href="test_setnegatives.py" target="_blank"><code>test_setnegatives.py</code></a></p><p>
+<hr>
+<h1 id="list-of-numbers">List of numbers</h1>
+<p>Write a function <code>createlist(a, b)</code> that:</p>
+<ul>
+<li>expect as arguments two numbers <code>a</code> and <code>b</code>,
+with <code>b</code> to be a natural number;</li>
+<li>create and return a list containing the first <code>b</code>
+integers starting from <code>a</code>.</li>
+</ul>
+<p>For example, the instruction <code>s = crealist1(14, 5)</code> must
+assign to <code>s</code> the list <code>[14, 15, 16, 17, 18]</code>.</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> createlist(<span class="fl">14</span>, <span class="dv">5</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> createlist(<span class="dv">14</span>, <span class="dv">7</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(s)</span></code></pre></div>
+<pre><code>[14, 15, 16, 17, 18]
+[14, 15, 16, 17, 18, 19, 20]
+</code></pre>
+<p>Python code must be saved in file: <code>createlist.py</code></p>
+<p>Test file (download by right click): <a href="test_createlist.py" target="_blank"><code>test_createlist.py</code></a></p><p>
+<hr>
+<h1 id="intersection">Intersection</h1>
+<p>Write a function <code>intersection(a, b)</code> that:</p>
+<ul>
+<li>takes as arguments two lists <code>a</code>, <code>b</code>;</li>
+<li>returns a <strong>sorted</strong> list representing the intersection
+between the two lists, that is, the elements that belong to both list
+<code>a</code> and the list <code>b</code>. It can be assumed that
+<code>a</code> and <code>b</code> contain no duplicates.</li>
+</ul>
+<p>To get a sorted copy of a list you can call function
+<code>sorted(...)</code></p>
+<p>For example:</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> intersection([<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">3</span>,<span class="dv">1</span>],[<span class="dv">4</span>,<span class="dv">1</span>,<span class="dv">5</span>])</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(L)</span></code></pre></div>
+<pre><code>[1, 4]
+</code></pre>
+<p>Python code must be saved in file: <code>intersection.py</code></p>
+<p>Test file (download by right click): <a href="test_intersection.py" target="_blank"><code>test_intersection.py</code></a></p><p>
+<hr>
+<h1 id="local-maxima">Local maxima</h1>
+<p>Write a function <code>localmaxima(seq)</code> that:</p>
+<ul>
+<li>takes as argument a list <code>seq</code>;</li>
+<li>creates and returns a list containing the local maxima in seq.</li>
+</ul>
+<p>An element of a sequence is a local maximum if:</p>
+<ul>
+<li>it is not at an extreme of the list;</li>
+<li>it is preceded and followed by elements strictly less than the
+element itself.</li>
+</ul>
+<p>A list containing fewer than three elements contains no local
+maximum, so an empty list must be returned in this case.</p>
+<p>Python code must be saved in file: <code>localmaxima.py</code></p>
+<p>Test file (download by right click): <a href="test_localmaxima.py" target="_blank"><code>test_localmaxima.py</code></a></p><p>
+<hr>
+<h1 id="union">Union</h1>
+<p>Write a function <code>union(a, b)</code> that:</p>
+<ul>
+<li>takes as arguments two lists <code>a</code>, <code>b</code>;</li>
+<li>return a <em>sorted</em> list representing the union between the two
+lists <code>a</code> and <code>b</code>, that is, the elements that
+belong to list <code>a</code> and/or list <code>b</code>. It can be
+assume that <code>a</code> and <code>b</code> contain no duplicates
+respectively. However, an element might appear in both in <code>a</code>
+and in <code>b</code>, and must appear once only once in their
+union.</li>
+</ul>
+<p>Python code must be saved in file: <code>union.py</code></p>
+<p>Test file (download by right click): <a href="test_union.py" target="_blank"><code>test_union.py</code></a></p><p>
+<hr>
+<h1 id="test-whether-a-sequence-is-bitonic">Test whether a sequence is
+bitonic</h1>
+<p>Write a function <code>bitonic(L)</code> that:</p>
+<ul>
+<li>takes as argument a list <code>L</code>;</li>
+<li>returns <code>True</code> if the sequence is
+<strong>bitonic</strong>, <code>False</code> otherwise.</li>
+</ul>
+<p>A sequence is considered bitonic if it consists of a
+<strong>strictly</strong> increasing first part with at least two
+elements, followed by a <strong>strictly</strong> decreasing part, also
+consisting of at least two elements. For example, the following
+sequences are bitonic:</p>
+<ul>
+<li><code>2 4 13 34 23</code></li>
+<li><code>3 4 1</code></li>
+<li><code>27 48 113 134 23 12</code></li>
+</ul>
+<p>Observe that, as in the examples, the last element of the increasing
+part is also the first element of the decreasing part. No bitonic
+sequence can have less than three elements. In fact, the list</p>
+<ul>
+<li><code>2 4 6 6 3 -2</code></li>
+</ul>
+<p>is not bitonic because the segment <code>6 6</code> is neither
+strictly increasing nor decreasing.</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bitonic([<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">13</span>,<span class="dv">34</span>,<span class="dv">23</span>]))</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bitonic([<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">1</span>]))</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bitonic([<span class="dv">27</span>,<span class="dv">48</span>,<span class="dv">113</span>,<span class="dv">134</span>,<span class="dv">23</span>,<span class="dv">12</span>]))</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(bitonic([<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">6</span>,<span class="dv">3</span>,<span class="op">-</span><span class="dv">2</span>]))</span></code></pre></div>
+<pre><code>True
+True
+True
+False
+</code></pre>
+<p>Python code must be saved in file: <code>bitonic.py</code></p>
+<p>Test file (download by right click): <a href="test_bitonic.py" target="_blank"><code>test_bitonic.py</code></a></p><p>
+</body>
+</html>

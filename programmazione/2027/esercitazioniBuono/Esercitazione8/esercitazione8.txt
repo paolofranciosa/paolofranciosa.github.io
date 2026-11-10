@@ -1,0 +1,7 @@
+somma_mat
+min_mat
+posmax_mat
+sommadiagonale_mat
+somme_per_riga_mat
+somme_per_colonna_mat
+pos_maxriga_mat

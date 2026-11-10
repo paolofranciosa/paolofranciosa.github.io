@@ -1,0 +1,111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Esercizi di programmazione in Python</title>
+<style type="text/css">
+	table.lezione {
+		border: 3px solid #822433
+	}
+	 table.lezione td, table.lezione th {
+		border: 1px solid #822433;
+		padding: 10px
+	}
+	
+	hr {
+		border: 1px solid #822433
+	}
+
+	td p {
+		margin: 3 0
+	}
+</style>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+<h1>Esercizi di programmazione in Python</h1>
+Segue un elenco di esercizi da svolgere in Python. L'ordine in cui compaiono non &egrave; significativo, e potrebbero esserci ripetizioni rispetto agli esercizi proposti a lezione. Per alcuni esercizi &egrave; riportata anche una delle soluzioni possibili.
+      <ol>
+        <li>creare una lista contenente 20 interi random in [0, 100) e stampare il numero di elementi pari,
+            il numero di elementi maggiori di 70, media e varianza degli elementi;</li>
+        <li>leggere da tastiera una sequenza di interi (la lunghezza &egrave;
+data anch'essa da tastiera), memorizzarla in una lista, verificare se la
+sequenza &egrave; in ordine non decrescente;</li>
+		<li>modificare il programma precedente per verificare se la sequenza &egrave; crescente, non decrescente, non crescente o decrescente</li>
+        <li>data una lista di interi, creare un altra lista contenente solo gli elementi di posizione pari della prima lista;</li>
+        <li>data una lista di interi, creare un altra lista contenente solo gli elementi di posizione dispari della prima lista;</li>
+        <li>data una lista di interi, creare un altra lista contenente solo gli elementi pari (deve essere pari il valore, indipendentemente dalla posizione) della prima lista;</li>
+		<li>date due liste di interi A e B, con <code>len(A) &geq; len(B)</code>, verificare se la sequenza B compare in A, e
+		in caso positivo indicare in quale posizione.
+		Ad esempio, la sequenza B = 3, 2, 10 compare nella sequenza A = 12, 2, 3, 2, 8, <strong>3, 2, 10</strong>, 4, 2 in posizione 5</li>
+      	<li>funzione che, dato <code>n</code>, restituisce la lista dei primi <code>n</code> numeri della <a href="http://it.wikipedia.org/wiki/Successione_di_Fibonacci" target="_blank">successione di Fibonacci</a>
+      		<ul>
+      			<li>versione ricorsiva <a href="listatiPython/listaFibonacciRicorsiva.py" target="_blank">listaFibonacciRicorsiva.py</a></li>
+      			<li>versione iterativa <a href="listatiPython/listaFibonacciIterativa.py" target="_blank">listaFibonacciIterativa.py</a></li>
+      		</ul>
+      		</li>
+      		<li>inversione di lista
+      		  <ul>
+      			<li>versione che inverte la lista parametro <a href="listatiPython/invertiLista.py" target="_blank">invertiLista.py</a></li>
+      			<li>versione che restituisce una copia invertira <a href="listatiPython/creaListaInversa.py" target="_blank">creaListaInversa.py</a></li>
+      		</ul>
+            </li>
+            
+        <li>creare una lista contenente 20 interi random in [0, 100) e stampare il numero di elementi pari,
+            il numero di elementi maggiori di 70, media e varianza degli elementi;</li>
+        <li>leggere da tastiera una sequenza di interi (la lunghezza &egrave;
+data anch'essa da tastiera), memorizzarla in una lista, verificare se la
+sequenza &egrave; in ordine non decrescente;</li>
+		<li>modificare il programma precedente per verificare se la sequenza &egrave; crescente, non decrescente, non crescente o decrescente</li>
+        <li>data una lista di interi, creare un altra lista contenente solo gli elementi di posizione pari della prima lista;</li>
+        <li>data una lista di interi, creare un altra lista contenente solo gli elementi di posizione dispari della prima lista;</li>
+        <li>data una lista di interi, creare un altra lista contenente solo gli elementi pari (deve essere pari il valore, indipendentemente dalla posizione) della prima lista;</li>
+		<li>date due liste di interi A e B, con <code>len(A) &geq; len(B)</code>, verificare se la sequenza B compare in A, e
+		in caso positivo indicare in quale posizione.
+		Ad esempio, la sequenza B = 3, 2, 10 compare nella sequenza A = 12, 2, 3, 2, 8, <strong>3, 2, 10</strong>, 4, 2 in posizione 5</li>
+
+<li>scrivere una funzione <code>simmetrica(m)</code> che:
+      <ul>
+	    <li>riceve una matrice come parametro</li>
+	    <li>verifica che sia quadrata (altrimenti solleva <code>ValueError</code>)</li>
+        <li>restituisce <code>True</code> se la matrice &egrave; simmetrica (rispetto alla diagonale principale), <code>False</code> altrimenti</li>
+    </ul>
+<li>scrivere una funzione <code>trasposta(m)</code> che, data una matrice m di r righe e c colonne
+costruisce un'altra matrice e la restituisce. La matrice restituita deve essere
+la trasposta della matrice m, quindi avr&agrave; c righe e r colonne
+<a href="listatiPython/trasposta.py" target="_blank"><code>trasposta.py</code></a></li>
+<li>scrivere una funzione <code>mat_identita(n)</code> che, dato un naturale n, 
+costruisce e restituisce la matrice identit&agrave; di dimensione n
+<a href="listatiPython/matriceIdentita.py" target="_blank"><code>matriceIdentita.py</code></a></li>
+<li>scrivere una funzione <code>cerca(testo, parola)</code> che, date due sequenze (liste o stringhe) <code>testo</code> e <code>parola</code>, 
+restituisce la posizione iniziale della prima occorrenza di <code>parola</code> in <code>testo</code>. Se non c'&egrave; alcuna occorrenza restituisce -1.
+<a href="listatiPython/cercaStringa.py" target="_blank"><code>cercaStringa.py</code></a>. Modificare poi la funzione per cercare la posizione dell'ultima occorrenza invece della prima.</li>
+<li>analogamente al punto precedente, scrivere una funzione  <code>cerca_matrice_in_matrice(mat_grande, mat_piccola)</code> che, date due matrici, 
+restituisce la posizione iniziale  (coppia di coordinate) della prima occorrenza di <code>mat_piccola</code> in <code>mat_grande</code>. Se non c'&egrave; alcuna occorrenza restituisce la coppia -1, -1. Una bozza della soluzione &egrave; mostrata in 
+<a href="listatiPython/cercaMatrice.py" target="_blank"><code>cercaMatrice.py</code></a>.</li>
+
+
+<li>scrivere una funzione che verifica (restituisce <code>True</code> o <code>False</code>) se una matrice quadrata
+&egrave; triangolare SUPERIORE (tutti gli elementi SOTTO la diagonale principale sono 0)
+<pre>5  2  7  0  3  5
+0  4  7  0  2  2
+0  0  6  8  4  2
+0  0  0  4  3  1
+0  0  0  0  7  3
+0  0  0  0  0  1
+</pre>
+</li>
+<li>scrivere una funzione che verifica (restituisce <code>True</code> o <code>False</code>) se una matrice quadrata
+&egrave; una matrice diagonale (tutti gli elementi tranne la diagonale principale sono 0)
+<pre>6  0  0  0
+0  4  0  0
+0  0  7  0
+0  0  0  0
+</pre>
+<a href="listatiPython/verificaDiagonale.py" target="_blank"><code>verificaDiagonale.py</code></a>
+</li>
+ 
+      </ol>
+
+</body>
+</html>

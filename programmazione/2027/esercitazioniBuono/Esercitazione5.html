@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guida esercitazione 5</title>
+   <link rel="stylesheet" href="http://www.statistica.uniroma1.it/users/pfrancio/styles/sapienzaStyle.css">
+</head>
+
+<body>
+<h1>Esercitazione su stringhe di caratteri, cicli, etc.</h1>
+<hr>
+<h2>Espansione di stringhe</h2>
+<p>Scrivere una funzione <code>espandi</code> che, data una stringa di caratteri s e un intero k,
+stampa la stringa s in modo che tra ciascuna coppia di caratteri vengano stampati k spazi, pi&ugrave; un ";" al termine. Ad esempio, la chiamata<br>
+<code>espandi("Esame", 2)</code> dovrebbe produrre la stampa
+<pre>E  s  a  m  e;</pre>
+mentre la chiamata <code>espandi("Esame", 3)</code> dovrebbe produrre la stampa
+<pre>E   s   a   m   e;</pre>
+<p>
+
+<p>Rendere opzionale il secondo parametro, che per default dovr&agrave; valere 1. Quindi la chiamata <code>espandi("Esame", 2)</code>, in modo che sia possibile chiamare
+<code>espandi("Esame")</code> ottenendo lo stesso effetto di <code>espandi("Esame", 1)</code>
+</p>
+
+<!--
+<p>Un esempio di soluzione &egrave; in <a href="../listatiPython/espandi.py" target="_blank">espandi.py</a></p>
+-->
+
+<hr>
+<h2>Stampa di stringhe</h2>
+<p>Scrivere una funzione che, date due stringhe della stessa lunghezza, le stampa in verticale una affianco all'altra separate da due spazi. Se la funzione viene chiamata con argomenti "pippo" e "pluto" deve essere prodotta la stampa 
+<pre>p  p
+i  l
+p  u
+p  t
+o  o
+</pre>
+</p>
+<p> Modificare la funzione precedente in modo che si comporti correttamente anche in presenza di stringhe di lunghezza diversa.  Se la funzione viene chiamata con argomenti "topolino" e "pippo" deve essere prodotta la stampa
+<pre>t  p
+o  i
+p  p
+o  p
+l  o
+i
+n
+o
+</pre>
+Mentre se la funzione viene chiamata con argomenti "pippo" e "topolino" deve essere prodotta la stampa
+<pre>p  t
+i  o
+p  p
+p  o
+o  l
+   i
+   n
+   o
+</pre>
+<p>
+
+<!--
+<p>Un esempio di soluzione &egrave; in <a href="../listatiPython/stampaVerticale.py" target="_blank">stampaVerticale.py</a></p>
+<p>Una soluzione pi&ugrave; elegante &egrave; in <a href="../listatiPython/stampaVerticaleMigliorato.py" target="_blank">stampaVerticaleMigliorato.py</a></p>
+-->
+
+<hr>
+<h2>Fattoriale</h2>
+<p>Scrivere una funzione che restituisce il fattoriale di un numero naturale. Se la funzione viene chiamata con un argomento negativo deve essere <em>sollevata una eccezione</em>. Lo stesso dovrebbe accadere se l'argomento non &egrave; intero.
+Una <strong>eccezione</strong> &egrave; una anomalia durante l'esecuzione che, nel caso pi&ugrave; semplice, blocca l'esecuzione di un programma, mostrando a video il tipo di errore. Ad esempio, si pu&ograve; includere nella funzione una istruzione del tipo
+<pre>if CONDIZIONE:
+    raise ValueError</pre>
+Verificare il buon funzionamento della funzione realizzata eseguendo il seguente programma di prova:
+<pre>print(fattoriale(5))    # deve stampare 120
+print(fattoriale(1))    # deve stampare 1
+print(fattoriale(20))   # deve stampare 2432902008176640000
+print(fattoriale(0))    # deve stampare 1
+print(fattoriale(-5))   # deve mostrare un errore di tipo ValueError
+print(fattoriale(4.56)) # anche questo deve mostrare un errore di tipo ValueError
+</pre>
+</p>
+
+<hr>
+<h2>Approssimazione del fattoriale</h2>
+<p>Stampare, per valori di <code>n</code> che vanno da 10 a 30, la differenza tra il valore di <code>n!</code> e l'<a href="https://it.m.wikipedia.org/wiki/Approssimazione_di_Stirling" target="_blank">approssimazione di Stirling</a> del fattoriale. Il valore di pi greco &egrave; disponibile come <code>math.pi</code>, e il valore della costante <code>e</code> &egrave; disponibile come <code>math.e</code>. &Egrave; preferibile stampare tutti i valori come <code>float</code>.<br>
+Mostrare che all'aumentare di <code>n</code> il rapporto tra <code>n!</code> e l'approssimazione di Stirling si avvicina a 1.</p>
+<p>Mostrare l'andamento  del rapporto per valori di <code>n</code> che vanno da 10 a 50, con passo 5 (quindi per i valori 10, 15, 20, 25, ..., 50).
+
+<!--
+<p>Un esempio di soluzione &egrave; in <a href="../listatiPython/fattorialeStirling.py" target="_blank">fattorialeStirling.py</a></p>
+-->
+
+</body>
+
+</html>
+
