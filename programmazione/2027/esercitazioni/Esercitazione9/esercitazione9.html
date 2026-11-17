@@ -1,0 +1,309 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Esercitazione 9</title>
+   <link rel="stylesheet" href="http://www.statistica.uniroma1.it/users/pfrancio/styles/sapienzaStyle.css">
+<script type="text/Javascript">
+	function avviso() {
+		window.alert("Si raccomanda di osservare la soluzione proposta solo dopo aver tentato "+
+		"sufficientemente a lungo di scrivere un programma che risolve il problema");
+	}
+</script>
+
+</head>
+<body link="#0000ff" vlink="#800080">
+<h1>Esercitazione 9</h1>
+<p>Lo scopo del laboratorio è di esercitarsi e misurare la propria
+preparazione: gli esercizi non sono troppo difficili, se si sono seguite
+le lezioni. Non vi viene comunque messo alcun voto.</p>
+<p><strong>Modalità di lavoro</strong>: gli studenti devono lavorare in
+autonomia o in piccoli gruppi, senza disturbare i colleghi. Il lavoro di
+gruppo è fruttuoso solo se tutti partecipano e se ognuno scrive una
+propria soluzione per tutti gli esercizi.</p>
+<p>Il docente cercherà per quanto possibile di non occupare il tempo del
+laboratorio per introdurre materiale nuovo, anche se a volte questo sarà
+necessario. Il docente è a disposizione per aiutare gli studenti, che
+possono iniziare a lavorare anche prima che il docente arrivi in aula,
+se lo desiderano</p>
+<p><strong>Raccomandazioni</strong>: leggete bene il testo degli
+esercizi prima di chiedere chiarimenti. In ogni caso sarò in aula con
+voi.</p>
+<p><strong>Uso dei file di test</strong>: per aiutarvi a completare
+questa esercitazione avete a disposizione dei programmi di test per
+testare la vostra soluzione. Questi sono simili a quelli che avrete in
+sede di esame, pertanto vi consiglio di imparate ad usarli. Per portare
+a termine l’esercizio è necessario</p>
+<ul>
+<li>scrivere un file di soluzione <strong>col nome
+specificato</strong>;</li>
+<li>avere dentro la funzione <strong>col nome specificato</strong>;</li>
+<li>porre il file di test corrispondente <strong>nella stessa
+cartella</strong>;</li>
+<li>eseguire in quella cartella il comando
+<code>python3 &lt;fileditest&gt;</code></li>
+</ul>
+<p>dove <code>&lt;fileditest&gt;</code> va ovviamente sostituito con il
+nome del file di test appropriato per l’esercizio su cui state
+lavorando. Per ogni esercizio ci sta un file di test indipendente, così
+da poter lavorare sugli esercizi uno alla volta con più agio.</p>
+<p>Il risultato di ogni test è una schermata (o più schermate) nella
+quale si mostra:</p>
+<ul>
+<li>se è stato trovato il file con il nome corretto,</li>
+<li>se il file contiene la funzione con il nome corretto,</li>
+<li>se chiamate alla funzione con diversi valori dei parametri terminano
+restituendo risultati corretti.</li>
+</ul>
+<p>Per ogni funzione scritta vengono eseguite chiamate con diversi
+valori dei parametri. L’esito dei test viene riportato con il
+carattere</p>
+<ul>
+<li><code>E</code> se la chiamata non può essere eseguita,</li>
+<li><code>F</code> se la funzione non restituisce il risultato
+corretto,</li>
+<li><code>.</code> se la funzione restituisce il risultato
+corretto.</li>
+</ul>
+<hr>
+<h1 id="dizionario-dei-quadrati">Dizionario dei quadrati</h1>
+<p>Scrivete una funzione <code>dict_quadrati(n)</code> che:</p>
+<ul>
+<li>si aspetti come argomento un numero intero non negativo</li>
+<li>sollevi un'eccezione <code>TypeError</code> se l’argomento non è un
+intero;</li>
+<li>sollevi un'eccezione <code>ValueError</code> se l’argomento è
+negativo;</li>
+<li>crei e restituisca un <code>dict</code> che ha come chiavi gli
+interi da 1 a <code>n</code> (inclusi), in cui alla chiave
+<code>i</code> è associato il valore <code>i^2</code>, per
+<code>i</code> che va da 1 a <code>n</code>.</li>
+</ul>
+<p><code>d = dict_quadrati(4)</code> deve assegnare a <code>d</code> il
+dict <code>{1: 1, 2: 4, 3: 9, 4: 16}</code>.</p>
+<p>Se l’argomento è <code>0</code> deve essere restituito il dict
+vuoto.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> dict_quadrati(<span class="dv">4</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> dict_quadrati(<span class="dv">10</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d)</span></code></pre></div>
+<pre><code>{1: 1, 2: 4, 3: 9, 4: 16}
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64, 9: 81, 10: 100}
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>dict_quadrati.py</code></p>
+<p>File di test: <a href="test_dict_quadrati.py" target="_blank"><code>test_dict_quadrati.py</code></a></p>
+<hr>
+<h1
+id="crea-un-dizionario-da-una-lista-di-chiavi-e-una-lista-di-valori">Crea
+un dizionario da una lista di chiavi e una lista di valori</h1>
+<p>Scrivi una funzione <code>dict_da_liste(k_list, v_list)</code> che:</p>
+<ul>
+<li>accetti come argomenti due liste <code>k_list</code> e
+<code>v_list</code> di uguale lunghezza;</li>
+<li>restituisca un <code>dict</code> le cui chiavi sono prese dagli
+elementi di <code>k_list</code> e i cui valori sono presi dagli elementi
+di <code>v_list</code>. L’elemento <code>v_list[0]</code> sarò associato
+alla chiave <code>k_list[0]</code>,l’elemento <code>v_list[1]</code>
+sarà associato alla chiave <code>k_list[1]</code> e così via.</li>
+</ul>
+<p>Per esempio:</p>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dict_da_liste([<span class="st">&quot;cat&quot;</span>, <span class="st">&quot;dog&quot;</span>, <span class="st">&quot;mouse&quot;</span>],</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>                             [<span class="st">&quot;gatto&quot;</span>, <span class="st">&quot;cane&quot;</span>, <span class="st">&quot;topo&quot;</span>]))</span></code></pre></div>
+<pre><code>{&#39;cat&#39;: &#39;gatto&#39;, &#39;dog&#39;: &#39;cane&#39;, &#39;mouse&#39;: &#39;topo&#39;}
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>dict_da_liste.py</code></p>
+<p>File di test: <a href="test_dict_da_liste.py" target="_blank"><code>test_dict_da_liste.py</code></a></p>
+<hr>
+<h1 id="azzera-valori-in-dizionario">Azzera valori in dizionario</h1>
+<p>Scrivete una funzione <code>dict_azzera(d, lista_chiavi)</code>
+che:</p>
+<ul>
+<li>si aspetti come argomenti un dizionario e una lista di chiavi;</li>
+<li>modifichi il dizionario azzerando i valori associati alle chiavi del
+dizionario che compaiono in lista_chiavi.</li>
+</ul>
+<p>Ad esempio:</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>diz <span class="op">=</span> {<span class="st">&#39;dog&#39;</span>: <span class="dv">3</span>, <span class="st">&#39;cat&#39;</span>: <span class="dv">9</span>, <span class="st">&#39;mouse&#39;</span>: <span class="dv">2</span>, <span class="st">&#39;fish&#39;</span>: <span class="op">-</span><span class="dv">3</span>}</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>lista <span class="op">=</span> [<span class="st">&#39;dog&#39;</span>, <span class="st">&#39;mouse&#39;</span>]</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>dict_azzera(diz, lista)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(diz)</span></code></pre></div>
+<pre><code>{&#39;dog&#39;: 0, &#39;cat&#39;: 9, &#39;mouse&#39;: 0, &#39;fish&#39;: -3}
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>dict_azzera.py</code></p>
+<p>File di test: <a href="test_dict_azzera.py" target="_blank"><code>test_dict_azzera.py</code></a></p>
+<hr>
+<h1 id="somma-i-valori-associati-a-chiavi-minori-di-k">Somma i valori
+associati a chiavi minori di k</h1>
+<p>Scrivi una funzione <code>dict_somma_chiavi_piccole(d, soglia)</code>
+che:</p>
+<ul>
+<li>accetti come argomenti un dizionario <code>d</code> con valori
+numerici e una chiave <code>soglia</code>;</li>
+<li>restituisca la somma di tutti i valori associati a chiavi minori di
+<code>soglia</code>.</li>
+</ul>
+<p>Si può assumere che i valori nel dizionario siano tutti numerici. Se
+il dizionario è vuoto o non contiene chiavi minori di
+<code>soglia</code> la funzione deve restituire 0.</p>
+<p>Per esempio:</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> {<span class="st">&quot;Mario&quot;</span>: <span class="dv">1000</span>, <span class="st">&quot;Gianna&quot;</span> : <span class="dv">8000</span>, <span class="st">&quot;Alberto&quot;</span>: <span class="dv">4000</span>}</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dict_somma_chiavi_piccole(d, <span class="st">&quot;Lucia&quot;</span>))</span></code></pre></div>
+<pre><code>12000
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>dict_somma_chiavi_piccole.py</code></p>
+<p>File di test: <a href="test_dict_somma_chiavi_piccole.py" target="_blank"><code>test_dict_somma_chiavi_piccole.py</code></a></p>
+<hr>
+<h1 id="verifica-che-le-chiavi-di-un-dizionario-siano-brevi">Verifica
+che le chiavi di un dizionario siano brevi</h1>
+<p>Scrivi una funzione
+<code>dict_verifica_chiavi_corte(d, soglia)</code> che:</p>
+<ul>
+<li>accetti come argomenti un dizionario <code>d</code> con chiavi di
+tipo <code>str</code> e un intero <code>soglia</code>;</li>
+<li>restituisca <code>True</code> se tutte le chiavi hanno lunghezza
+minore o uguale alla <code>soglia</code>, restituisce <code>False</code>
+altrimenti.</li>
+</ul>
+<p>Si può assumere che tutte le chiavi nel dizionario siano
+stringhe.</p>
+<p>Per esempio:</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> {<span class="st">&quot;Mario&quot;</span>: <span class="dv">1000</span>, <span class="st">&quot;Gianna&quot;</span> : <span class="dv">8000</span>, <span class="st">&quot;Alberto&quot;</span>: <span class="dv">4000</span>}</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dict_verifica_chiavi_corte(d, <span class="dv">6</span>))</span></code></pre></div>
+<pre><code>False
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>dict_verifica_chiavi_corte.py</code></p>
+<p>File di test: <a href="test_dict_verifica_chiavi_corte.py" target="_blank"><code>test_dict_verifica_chiavi_corte.py</code></a></p>
+<hr>
+<h1 id="restituire-il-valore-associato-alla-massima-chiave">Restituire
+il valore associato alla massima chiave</h1>
+<p>Scrivete una funzione <code>dict_max_chiave(d)</code> che:</p>
+<ul>
+<li>si aspetti come argomento un dizionario;</li>
+<li>restituisca il valore associato alla massima chiave in
+<code>d</code>.</li>
+</ul>
+<p>Si può assumere che il dizionario contenga almeno una chiave.</p>
+<p>Per ottenere la chiave massima si può utilizzare la funzione <code>max(....)</code>, che restituisce il massimo tra gli elementi dell'oggetto passato come parametro. Sperimentare l'uso della funzione <code>max(...)</code> dando come parametro o l'insieme delle chiavi del dizionario (metodo <code>.keys()</code>) oppure direttamente il dizionario.</p>
+<p>Ad esempio:</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>diz <span class="op">=</span> {<span class="st">&#39;xx&#39;</span>: <span class="dv">44</span>, <span class="st">&#39;yy&#39;</span>: <span class="dv">33</span>, <span class="st">&#39;zz&#39;</span>: <span class="dv">22</span>}</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dict_max_chiave(diz))</span></code></pre></div>
+<pre><code>22
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>dict_max_chiave.py</code></p>
+<p>File di test: <a href="test_dict_max_chiave.py" target="_blank"><code>test_dict_max_chiave.py</code></a></p>
+<hr>
+<h1 id="rimuovere-chiavi-da-un-dizionario">Rimuovere chiavi da un
+dizionario</h1>
+<p>Scrivete una funzione <code>dict_rimuovi(d, lista_chiavi)</code>
+che:</p>
+<ul>
+<li>si aspetti come argomenti un dizionario e una lista di chiavi;</li>
+<li>crei e restituisca un <code>dict</code>, che contiene solo le
+chiavi, insieme ai rispettivi valori, che non appartengono a
+lista_chiavi.</li>
+</ul>
+<p>Ad esempio:</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>diz <span class="op">=</span> {<span class="st">&#39;dog&#39;</span>: <span class="st">&#39;cane&#39;</span>, <span class="st">&#39;cat&#39;</span>: <span class="st">&#39;gatto&#39;</span>, <span class="st">&#39;mouse&#39;</span>: <span class="st">&#39;topo&#39;</span>, <span class="st">&#39;fish&#39;</span>: <span class="st">&#39;pesce&#39;</span>}</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>lista <span class="op">=</span> [<span class="st">&#39;dog&#39;</span>, <span class="st">&#39;mouse&#39;</span>]</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>diz_1 <span class="op">=</span> dict_rimuovi(diz, lista)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(diz_1)</span></code></pre></div>
+<pre><code>{&#39;cat&#39;: &#39;gatto&#39;, &#39;fish&#39;: &#39;pesce&#39;}
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>dict_rimuovi.py</code></p>
+<p>File di test: <a href="test_dict_rimuovi.py" target="_blank"><code>test_dict_rimuovi.py</code></a></p>
+<hr>
+<h1 id="verifica-se-due-dizionari-contengono-le-stesse-chiavi">Verifica
+se due dizionari contengono le stesse chiavi</h1>
+<p>Scrivete una funzione <code>dict_stesse_chiavi(d1, d2)</code>
+che:</p>
+<ul>
+<li>si aspetti come argomenti due dizionari;</li>
+<li>restituisca <code>True</code> se i due dizionari contengono
+esattamente le stesse chiavi, <code>False</code> altrimenti.</li>
+</ul>
+<p>Ad esempio:</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>diz_a <span class="op">=</span> {<span class="st">&#39;xx&#39;</span>: <span class="dv">22</span>, <span class="st">&#39;yy&#39;</span>: <span class="dv">33</span>, <span class="st">&#39;zz&#39;</span>: <span class="dv">22</span>}</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>diz_b <span class="op">=</span> {<span class="st">&#39;xx&#39;</span>: <span class="dv">18</span>, <span class="st">&#39;yy&#39;</span>: <span class="dv">45</span>, <span class="st">&#39;zz&#39;</span>: <span class="dv">22</span>}</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dict_stesse_chiavi(diz_a, diz_b))</span></code></pre></div>
+<pre><code>True
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>dict_stesse_chiavi.py</code></p>
+<p>File di test: <a href="test_dict_stesse_chiavi.py" target="_blank"><code>test_dict_stesse_chiavi.py</code></a></p>
+<hr>
+<h1 id="unione-di-due-dizionari">Unione di due dizionari</h1>
+<p>Scrivi una funzione <code>dict_unione(d1, d2)</code> che:</p>
+<ul>
+<li>accetti come argomenti due dizionari <code>d1</code> e
+<code>d2</code> con valori numerici;</li>
+<li>restituisca un <code>dict</code> le cui chiavi sono prese dalle
+chiavi di <code>d1</code> e le chiavi di <code>d2</code>. Se una chiave
+è presente solo in <code>d1</code> o solo in <code>d2</code> il valore
+associato sarà riportato nel dizionario risultato. Se una chiave è
+presente sia in <code>d1</code> che in <code>d2</code> il valore
+associato nel risultato sarà la somma dei valori nei dizionari di
+partenza.</li>
+</ul>
+<p>Per esempio:</p>
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>d1 <span class="op">=</span> {<span class="st">&quot;gennaio&quot;</span>: <span class="dv">10000</span>, <span class="st">&quot;febbraio&quot;</span> : <span class="dv">8000</span>, <span class="st">&quot;marzo&quot;</span>: <span class="dv">4000</span>}</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>d2 <span class="op">=</span> {<span class="st">&quot;gennaio&quot;</span>: <span class="dv">3000</span>, <span class="st">&quot;aprile&quot;</span> : <span class="dv">2000</span>, <span class="st">&quot;maggio&quot;</span>: <span class="dv">1000</span>}</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dict_unione(d1, d2))</span></code></pre></div>
+<pre><code>{&#39;gennaio&#39;: 13000, &#39;febbraio&#39;: 8000, &#39;marzo&#39;: 4000, &#39;aprile&#39;: 2000, &#39;maggio&#39;: 1000}
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>dict_unione.py</code></p>
+<p>File di test: <a href="test_dict_unione.py" target="_blank"><code>test_dict_unione.py</code></a></p>
+<hr>
+<h1 id="dizionario-da-stringa">Dizionario da stringa</h1>
+<p>Scrivete una funzione <code>dict_da_stringa_parole(stringa)</code>
+che:</p>
+<ul>
+<li>si aspetti come argomento una stringa costituita da un numero pari
+di parole, separate da spazi;</li>
+<li>crei e restituisca un <code>dict</code>, ottenuto prendendo le
+parole di posto pari (iniziando da 0) come chiavi, e le parole di posto
+dispari come valori.</li>
+</ul>
+<p>Una stringa <code>s</code> può essere spezzata in porzioni in
+corrispondenza degli spazi attraverso il metodo <code>s.split()</code>,
+che restituisce una lista in cui ciascun elemento è una delle porzioni
+della stringa <code>s</code> delimitate da spazi.</p>
+<p>Ad esempio, l’istruzione</p>
+<p><code>s = dict_da_stringa_parole("dog cane cat gatto mouse topo")</code>
+deve assegnare a <code>s</code> il dict
+<code>{'dog': 'cane', 'cat': 'gatto', 'mouse': 'topo'}</code>.</p>
+<p>Se la stringa non contiene alcuna parola la funzione deve restituire
+un dict vuoto.</p>
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> dict_da_stringa_parole(<span class="st">&quot;dog cane cat gatto mouse topo&quot;</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> dict_da_stringa_parole(<span class="st">&quot;123 numero_grande 8 numero_piccolo&quot;</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(d)</span></code></pre></div>
+<pre><code>{&#39;dog&#39;: &#39;cane&#39;, &#39;cat&#39;: &#39;gatto&#39;, &#39;mouse&#39;: &#39;topo&#39;}
+{&#39;123&#39;: &#39;numero_grande&#39;, &#39;8&#39;: &#39;numero_piccolo&#39;}
+</code></pre>
+<p>Il programma Python deve essere salvato nel file:
+<code>dict_da_stringa_parole.py</code></p>
+<p>File di test: <a href="test_dict_da_stringa_parole.py" target="_blank"><code>test_dict_da_stringa_parole.py</code></a></p>
+<hr>
+</body>
+</html>

@@ -1,0 +1,10 @@
+dict_quadrati
+dict_da_liste
+dict_azzera
+dict_somma_chiavi_piccole
+dict_verifica_chiavi_corte
+dict_max_chiave
+dict_rimuovi
+dict_stesse_chiavi
+dict_unione
+dict_da_stringa_parole
