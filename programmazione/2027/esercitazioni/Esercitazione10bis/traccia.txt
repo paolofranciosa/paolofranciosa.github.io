@@ -1,0 +1,56 @@
+da stringa
+- sostituire con " " caratteri non alfabetici
+funzione che data una stringa di caratteri restituisce una stringa di caratteri.
+La stringa restituita contiene la stessa sequenza, ma ciascun carattere non alfabetico deve essere sostituito da uno spazio. Ad esempio, se il parametro è la stringa <code>"Buongiorno, vengo dall'Umbria."</code> deve essere restituita la stringa
+<code>"Buongiorno  vengo dall Umbria "</code>
+<code>["B","u","o","n","g","i","o","r","n","o"," "," ","v","e","n","g","o", "d","a","l","l"," ","U","m","b","r","i","a"," "]</code> Notare la presenza di un elemento <code>" "</code> in corrispondenza dei caratteri virgola, apostrofo e punto.
+
+Per verificare se un carattere (contenuto in una variabile p.es. di nome pippo) &egrave; una lettera si pu&ograve; il metodo pippo.isalpha(), che restituisce <code>True</code> oppure  <code>False</code>.
+
+
+- rendere tutto minuscolo
+funzione che data una stringa di caratteri, che contiene esclusivamente lettere maiuscole, minuscole e spazi, restituisce una stringa nella quale per ciascun carattere maiuscoli viene inserito il corrispondente minuscolo.
+Ad esempio, se il parametro &egrave; la stringa
+<code>"Buongiorno  vengo dall Umbria "</code>
+<code>["B","u","o","n","g","i","o","r","n","o"," "," ","v","e","n","g","o", "d","a","l","l"," ","U","m","b","r","i","a"," "]</code>, essa deve essere trasformata in 
+<code>"buongiorno  vengo dall umbria "</code>
+<code>["b","u","o","n","g","i","o","r","n","o"," "," ","v","e","n","g","o", "d","a","l","l"," ","u","m","b","r","i","a"," "]</code>
+
+Per verificare se un carattere (contenuto in una variabile p.es. di nome pippo) &egrave; una lettera maiuscola si possono utilizzare condizioni del tipo
+<code>if pippo >= "A"</code>.
+
+
+
+
+
+
+- con .split() passare a una lista di parole
+funzione che data una stringa restituisce una lista formata da un elemento per ciascuna parola nella stringa. Ad esempio, se il parametro &egrave; la stringa
+<code>"buongiorno  vengo dall umbria "</code>
+deve essere restituita la lista
+<code>["buongiorno", "vengo", "dall", "umbria"]</code>.
+Le stringhe possiedono un metodo <code>.split()</code>. Verificarne il funzionamento dall'interprete Python provando ad eseguire ad esempio le istruzioni<br>
+<code>s = "pippo  pluto topolino"</code><br>
+<code>print(s.split())</code>
+
+- ordinare la lista
+funzione che data una lista di parole la restituisce ordinata.
+Ad esempio, se il parametro &egrave; la lista
+<code>["buongiorno", "vengo", "dall", "umbria", "e", "in", "umbria", "torno"]</code>
+essa deve essere modificata in
+<code>["buongiorno", "dall", "e", "in", "torno", "umbria", "umbria", "vengo"]</code>
+
+La funzione non deve restituire nulla, bens&igrave; deve limitarsi a modificare la lista parametro. Per ordinare la lista si pu&ograve; utilizzare uno qualunque degli algoritmi di ordinamento visti a lezione, oppure il metodo <code>.sort()</code> delle liste.
+
+
+- eliminare i duplicati
+funzione che, data una lista ordinata di parole, restituisce un'altra lista che contiene le stesse parole ma senza duplicati.
+Poich&eacute; la lista &egrave; ordinata, eventuali parole duplicate compaiono in posizioni consecutive.
+Ad esempio, se il parametro &egrave; la lista
+<code>["buongiorno", "dall", "e", "in", "torno", "umbria", "umbria", "vengo"]</code>
+deve essere restituita la lista
+<code>["buongiorno", "dall", "e", "in", "torno", "umbria", "vengo"]</code>
+
+
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="it">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guida esercitazione 10</title>
+   <link rel="stylesheet" href="http://www.statistica.uniroma1.it/users/pfrancio/styles/sapienzaStyle.css">
+</head>
+
+<body>
+<h1>Modalit&agrave; di svolgimento dell'esercitazione</h1>
+<p>Viene richiesto di scrivere funzioni per risolvere vari problemi,
+e viene fornito anche uno strumento che mette alla prova il comportamento delle funzioni che avete scritto.</p>
+<p>Create una cartella, nella quale saranno creati sia i file contenenti le funzioni che avete scritto (una per ciascun file), sia i file di test (forniti dal docente).<br>
+I nomi di questi file devono essere esattamente i seguenti:
+<ul>
+<li><code>labEserc10_1.py</code>, <code>labEserc10_2.py</code>, <code>labEserc10_3.py</code>, <code>labEserc10_4.py</code>, <code>labEserc10_5.py</code>, <code>labEserc10_6.py</code>, <code>labEserc10_7.py</code>,  per i files contenenti le funzioni scritte da voi,</li>
+<li><code>test_lab10_1.py</code>, <code>test_lab10_2.py</code>, <code>test_lab10_3.py</code>, <code>test_lab10_4.py</code>, <code>test_lab10_5.py</code>, <code>test_lab10_6.py</code>, <code>test_lab10_7.py</code> per i file di test (forniti dal docente)</li>
+</ul>
+</p>
+<p>Per ciascuno dei problemi elencati nel seguito dovrete scrivere un file contenente la soluzione richiesta, in cui <strong>il nome della funzione deve essere esattamente quello indicato nel testo seguente</strong>.</p>
+<p>Una volta salvato il file nella cartella, e salvato anche il corrispondente file di test fornito dal docente, dovete eseguire il comando
+<pre>python3 test_lab10_X.py
+</pre>
+dove <code>X</code> &egrave; il numero corrispondente all'esercizio che volete verificare.</p>
+
+<p>Il risultato del test &egrave; una schermata (o pi&ugrave; schermate) nella quale si mostra:
+<ul>
+<li>se &egrave; stato trovato il file con il nome corretto,</li>
+<li>se il file contiene la funzione con il nome corretto,</li>
+<li>se chiamate alla funzione con diversi valori dei parametri terminano restituendo risultati corretti.</li>
+</ul>
+</p>
+<p>Per ogni funzione scritta vengono eseguite chiamate con diversi valori dei parametri. L'esito dei test viene riportato con il carattere
+<ul>
+<li><strong>E</strong> se la chiamata non pu&ograve; essere eseguita,</li>
+<li><strong>F</strong> se la funzione non restituisce il risultato corretto,</li>
+<li><strong>.</strong> se la funzione restituisce il risultato corretto.</li>
+</ul>
+</p>
+
+<hr>
+<h1>Funzioni su caratteri</h1>
+<h2>Primo esercizio: sostituzione dei caratteri non alfabetici</h2>
+<p>Scrivere una funzione <code>sostituisci_con_spazi(frase)</code> che data una stringa di caratteri restituisce una stringa di caratteri. La stringa restituita contiene la stessa sequenza, ma ciascun carattere non alfabetico deve essere sostituito da uno spazio. Ad esempio, se il parametro &egrave; la stringa<br>
+<pre>"Buongiorno, vengo dall'Umbria."</pre> deve essere restituita la stringa<br>
+<pre>"Buongiorno  vengo dall Umbria "</pre><br>
+Notare la presenza di un elemento <code>" "</code> in corrispondenza dei caratteri virgola, apostrofo e punto.
+</p>
+
+<p>Per verificare se un carattere (contenuto in una variabile p.es. di nome <code>pippo</code>) &egrave; una lettera si pu&ograve; usare il metodo <code>pippo.isalpha()</code>, che restituisce <code>True</code> oppure  <code>False</code>.
+</p>
+<p>La funzione deve sollevare una eccezione <code>TypeError</code> se il parametro ricevuto non &egrave; una stringa.</p>
+
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab10_1.py" target="_blank"><code>test_lab10_1.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc10_1.py</code></p>
+
+
+<h2>Secondo esercizio: conversione in minuscoli</h2>
+<p>Scrivere una funzione <code>copia_minuscola(frase)</code> che, che data una stringa di caratteri che contiene esclusivamente lettere maiuscole, minuscole e spazi, restituisce una stringa nella quale per ciascun carattere maiuscolo viene inserito il corrispondente minuscolo.
+Ad esempio, se il parametro &egrave; la stringa
+<pre>"Buongiorno  vengo dall Umbria "</pre>
+deve essere restituire la stringa
+<pre>"buongiorno  vengo dall umbria "</pre>
+</p>
+<p>
+Per verificare se un carattere (contenuto in una variabile p.es. di nome <code>pippo</code>) &egrave; una lettera maiuscola si possono utilizzare condizioni del tipo
+<code>if pippo >= "A"</code>, confrontando naturalmente anche con <code>"Z"</code>.
+</p>
+<p>Per ottenere la versione minuscola di un carattere si pu&ograve; usare il metodo
+<code>.lower()</code>, che restituisce la versione minuscola di un carattere.</p>
+<p>La funzione deve sollevare una eccezione <code>TypeError</code> se il parametro ricevuto non &egrave; una stringa.</p>
+
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab10_2.py" target="_blank"><code>test_lab10_2.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc10_2.py</code></p>
+
+<h2>Terzo esercizio: convertire una stringa in una lista di parole</h2>
+<p>Scrivere una funzione <code>spezza_in_parole(frase)</code> che data una stringa restituisce una lista formata da un elemento per ciascuna parola nella stringa. Ad esempio, se il parametro &egrave; la stringa
+<pre>"buongiorno  vengo dall umbria "</pre>
+deve essere restituita la lista
+<pre>["buongiorno", "vengo", "dall", "umbria"]</pre>
+</p>
+<p>Si pu&ograve; assumere che la stringa fornita come parametro sia composta esclusivamente
+da caratteri minuscoli e spazi.</p>
+<p>
+Le stringhe possiedono un metodo <code>.split()</code>. Verificarne il funzionamento dall'interprete Python provando ad eseguire ad esempio le istruzioni<br>
+<code>s = "pippo  pluto topolino"</code><br>
+<code>print(s.split())</code>:</p>
+<p>La funzione deve sollevare una eccezione <code>TypeError</code> se il parametro ricevuto non &egrave; una stringa.</p>
+
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab10_3.py" target="_blank"><code>test_lab10_3.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc10_3.py</code></p>
+	
+
+<h2>Quarto esercizio: ordinare una lista di parole</h2>
+<p>Scrivere una funzione <code>parole_ordinate(lista_parole)</code> che data una lista di parole ne restituisce una copia ordinata.
+Ad esempio, se il parametro &egrave; la lista
+<pre>["buongiorno", "vengo", "dall", "umbria", "e", "in", "umbria", "torno"]</pre>
+essa deve essere restituita la lista
+<pre>["buongiorno", "dall", "e", "in", "torno", "umbria", "umbria", "vengo"]</pre>
+
+Per ordinare la lista si pu&ograve; utilizzare uno qualunque degli algoritmi di ordinamento visti a lezione, oppure il metodo <code>.sort()</code> delle liste. Se ad esempio, avendo una lista <code>pippo</code>, si chiama il metodo <code>pippo.sort()</code> verr&agrave; modificata la lista <code>pippo</code>, che risulter&agrave; ordinata. Nel nostro caso &egrave; invece richiesto di costruire un'altra lista ordinata, quindi &egrave; necessario costruirne prima una copia per non modificare l'originale, e poi ordinare la copia.</p>
+
+<p>La funzione deve sollevare una eccezione <code>TypeError</code> se il parametro ricevuto non &egrave; una lista.</p>
+
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab10_4.py" target="_blank"><code>test_lab10_4.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc10_4.py</code></p>
+
+
+<h2>Quinto esercizio: costruire una lista eliminando i duplicati</h2>
+<p>Scrivere una funzione <code>elimina_duplicati(lista)</code> che data una lista ordinata di parole restituisce un'altra lista che contiene le stesse parole ma senza duplicati.
+Poich&eacute; la lista &egrave; ordinata, eventuali parole duplicate compaiono in posizioni consecutive.
+Ad esempio, se il parametro &egrave; la lista
+<pre>["buongiorno", "dall", "e", "e", "in", "torno", "umbria", "umbria", "vengo"]</pre>
+deve essere restituita la lista
+<pre>["buongiorno", "dall", "e", "in", "torno", "umbria", "vengo"]</pre></p>
+<p>Poich&eacute; la lista &egrave; ordinata, eventuali parole duplicate compaiono sicuramente il posizioni adiacenti.</p>
+<p>La funzione deve sollevare una eccezione <code>TypeError</code> se il parametro ricevuto non &egrave; una lista.</p>
+<p>La funzione deve sollevare una eccezione <code>ValueError</code> se il parametro ricevuto non &egrave; una lista ordinata in senso non decrescente.</p>
+
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab10_5.py" target="_blank"><code>test_lab10_5.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc10_5.py</code></p>
+
+
+<h2>Sesto esercizio: utilizzare le funzioni definite nei punti precedenti</h2>
+<p>Per risolvere questo esercizio si chiamano tutte le funzioni definite nei punti precedenti.<br>
+Scrivere una funzione <code>elenco_parole_presenti(frase)</code> che data una stringa costruisce la lista delle parole presenti, senza duplicati, in ordine alfabetico, considerando uguali caratteri minuscoli e maiuscoli.</p
+<p>
+Ad esempio, se il parametro &egrave; la stringa
+<pre>"Pippo, Pluto e Topolino incontrano Minnie. E lei li ignora, come se non li avesse visti!"</pre>
+deve essere restituita la lista
+<pre>["avesse", "come", "e", "ignora", "incontrano", "lei", "li", "minnie", "non", "pippo", "pluto", "se", "topolino", "visti"]</pre></p
+
+<p>Il file di test da  memorizzare nella propria cartella per questo esercizio &egrave; <a href="test_lab10_6.py" target="_blank"><code>test_lab10_6.py</code></a><br>
+La soluzione deve essere prodotta in un file di nome <code>labEserc10_6.py</code></p>
+	
+</body>
+
+</html>
+
